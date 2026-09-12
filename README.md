@@ -54,7 +54,7 @@ This is the main scientific theme of the project.
 ### Measured on Apple M4 Pro
 
 <p align="center">
-  <img src="paper/figures/stage2-performance.pdf" alt="Stage 2 performance figure" width="900" />
+  <img src="paper/figures/stage2-performance.png" alt="Stage 2 performance figure" width="900" />
 </p>
 
 The measured data shows that the same model can prefer different formats depending on whether the bottleneck is prefill or decode.
@@ -80,10 +80,10 @@ This is the central evidence pattern behind the project.
 The project includes a set of paper figures and evidence views for the resulting analysis.
 
 <p align="center">
-  <a href="paper/figures/architecture.pdf"><img src="paper/figures/architecture.pdf" alt="Architecture figure" width="210" /></a>
-  <a href="paper/figures/operator.pdf"><img src="paper/figures/operator.pdf" alt="Operator figure" width="210" /></a>
-  <a href="paper/figures/search.pdf"><img src="paper/figures/search.pdf" alt="Search figure" width="210" /></a>
-  <a href="paper/figures/stage2-performance.pdf"><img src="paper/figures/stage2-performance.pdf" alt="Performance figure" width="210" /></a>
+  <a href="paper/figures/architecture.png"><img src="paper/figures/architecture.png" alt="Architecture figure" width="210" /></a>
+  <a href="paper/figures/operator.png"><img src="paper/figures/operator.png" alt="Operator figure" width="210" /></a>
+  <a href="paper/figures/search.png"><img src="paper/figures/search.png" alt="Search figure" width="210" /></a>
+  <a href="paper/figures/stage2-performance.png"><img src="paper/figures/stage2-performance.png" alt="Performance figure" width="210" /></a>
 </p>
 
 - [Architecture view](paper/figures/architecture.pdf)
