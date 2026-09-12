@@ -1,49 +1,102 @@
 # EdgeDecode
 
-EdgeDecode is a research artifact for phase-aware LLM inference on edge-class systems.
+<p align="center">
+  <img src="https://img.shields.io/badge/Research-LLM%20Inference-5C7AEA?style=for-the-badge" alt="Research LLM Inference" />
+  <img src="https://img.shields.io/badge/Focus-Prefill%20%2F%20Decode-00C2A8?style=for-the-badge" alt="Focus Prefill/Decode" />
+  <img src="https://img.shields.io/badge/Platform-Apple%20M4%20Pro-FF9F1C?style=for-the-badge" alt="Platform Apple M4 Pro" />
+</p>
 
-It studies how model scale, prompt length, generation length, and scheduling behavior change the CPU/GPU boundary during inference.
+A research prototype for understanding when the inference boundary moves between CPU and accelerator-friendly execution paths on edge-class systems.
 
-## At a glance
+## Project goal
 
-This repository is built around measured evidence from a local Apple M4 Pro host and a Qwen2.5-1.5B-Instruct GGUF benchmark path.
+This project asks a concrete hardware question:
 
-| Metric | F16 | Q8_0 | Q4_K_M |
-|---|---:|---:|---:|
-| Model size (bytes) | 3,560,416,288 | 1,894,532,128 | 1,117,320,736 |
-| Compression vs F16 | 1.0x | 1.88x | 3.19x |
-| WikiText-2 perplexity | 8.9573 | 8.9524 | 9.3102 |
-| HellaSwag accuracy | 61.5% | 61.5% | 60.0% |
-| CPU decode throughput (tg128) | 40.95 tok/s | 70.81 tok/s | 113.99 tok/s |
-| Metal decode throughput (tg128) | 62.78 tok/s | 98.76 tok/s | 121.29 tok/s |
-| CPU prefill throughput (pp128) | 325.69 tok/s | 449.84 tok/s | 423.20 tok/s |
-| Metal prefill throughput (pp128) | 1629.82 tok/s | 1591.19 tok/s | 1406.20 tok/s |
+> How do model scale, context length, generation length, and software blocking change the point where prefill and decode stop behaving like the same workload?
 
-## Key finding
+The focus is not a generic "CPU vs GPU" statement. The focus is a more useful question:
 
-The measured results do not support a universal recommendation of one quantized format for all phases.
+> Which phase is dominant, and which execution path fits that phase best?
 
-- On CPU decode, Q4_K_M is the fastest path.
-- On Metal decode, Q4_K_M is also the fastest path.
-- On Metal prefill, F16 remains the fastest path.
-- Q8_0 matches F16 quality in the measured pilot while reducing model size substantially.
-- Q4_K_M has a measurable quality penalty, but it is still highly attractive for decode-heavy workloads.
+---
 
-This is exactly the phase-sensitive behavior that motivates the project.
+## Why this matters
+
+LLM inference is not one monolithic task. It is a combination of at least two very different workloads:
+
+| Phase | What happens | Why it matters |
+|---|---|---|
+| Prefill | Long prompt/context is processed in bulk | Large memory and bandwidth pressure; often dominated by dense compute |
+| Decode | Tokens are generated one by one | Streaming workload; weight access and latency become central |
+
+These phases do not share the same bottleneck. That is why a single hardware verdict is usually misleading.
+
+---
+
+## Research narrative
+
+EdgeDecode is built to expose this boundary clearly and measure it with real execution evidence instead of a single abstract rule.
+
+### Core claim
+
+The winning execution path depends on the phase, not just the model or the device.
+
+- Decode-heavy workloads benefit strongly from lower-precision formats.
+- Prefill-heavy workloads may still favor a different precision and backend path.
+- The boundary shifts as context length and software blocking change.
+
+This is the main scientific theme of the project.
+
+---
+
+## Highlighted results
+
+### Measured on Apple M4 Pro
+
+<p align="center">
+  <img src="paper/figures/stage2-performance.pdf" alt="Stage 2 performance figure" width="900" />
+</p>
+
+The measured data shows that the same model can prefer different formats depending on whether the bottleneck is prefill or decode.
+
+| Format | Model size | WikiText-2 PPL | HellaSwag accuracy | CPU decode | Metal decode |
+|---|---:|---:|---:|---:|---:|
+| F16 | 3.56 GB | 8.9573 | 61.5% | 40.95 tok/s | 62.78 tok/s |
+| Q8_0 | 1.89 GB | 8.9524 | 61.5% | 70.81 tok/s | 98.76 tok/s |
+| Q4_K_M | 1.12 GB | 9.3102 | 60.0% | 113.99 tok/s | 121.29 tok/s |
+
+### Phase split in plain terms
+
+- Q4_K_M is fastest for decode.
+- F16 remains strongest for Metal prefill.
+- Q8_0 remains close to F16 quality while offering lower size and strong efficiency.
+
+This is the central evidence pattern behind the project.
+
+---
 
 ## Figure gallery
 
-The project includes figure assets and manuscript output that summarize the measured and synthetic evidence.
+The project includes a set of paper figures and evidence views for the resulting analysis.
+
+<p align="center">
+  <a href="paper/figures/architecture.pdf"><img src="paper/figures/architecture.pdf" alt="Architecture figure" width="210" /></a>
+  <a href="paper/figures/operator.pdf"><img src="paper/figures/operator.pdf" alt="Operator figure" width="210" /></a>
+  <a href="paper/figures/search.pdf"><img src="paper/figures/search.pdf" alt="Search figure" width="210" /></a>
+  <a href="paper/figures/stage2-performance.pdf"><img src="paper/figures/stage2-performance.pdf" alt="Performance figure" width="210" /></a>
+</p>
 
 - [Architecture view](paper/figures/architecture.pdf)
 - [Operator view](paper/figures/operator.pdf)
 - [Search-space view](paper/figures/search.pdf)
-- [Stage-2 performance summary](paper/figures/stage2-performance.pdf)
+- [Stage-2 performance view](paper/figures/stage2-performance.pdf)
 - [Working paper](paper/main.pdf)
 
-## Measured result snapshots
+---
 
-### CPU performance
+## Measured performance snapshot
+
+### CPU throughput
 
 | Phase | F16 | Q8_0 | Q4_K_M |
 |---|---:|---:|---:|
@@ -51,7 +104,7 @@ The project includes figure assets and manuscript output that summarize the meas
 | pp2048 | 516.13 tok/s | 419.67 tok/s | 357.34 tok/s |
 | tg128 | 40.95 tok/s | 70.81 tok/s | 113.99 tok/s |
 
-### Metal performance
+### Metal throughput
 
 | Phase | F16 | Q8_0 | Q4_K_M |
 |---|---:|---:|---:|
@@ -59,56 +112,38 @@ The project includes figure assets and manuscript output that summarize the meas
 | pp2048 | 1872.16 tok/s | 1530.36 tok/s | 1287.24 tok/s |
 | tg128 | 62.78 tok/s | 98.76 tok/s | 121.29 tok/s |
 
-## Quality and model fidelity
+---
 
-| Format | WikiText-2 PPL | Delta vs F16 | HellaSwag Acc | Delta vs F16 |
-|---|---:|---:|---:|---:|
-| F16 | 8.9573 | 0.00% | 61.5% | 0.0 pt |
-| Q8_0 | 8.9524 | -0.05% | 61.5% | 0.0 pt |
-| Q4_K_M | 9.3102 | +3.94% | 60.0% | -1.5 pt |
+## Decision signal
 
-## Research interpretation
+The project intentionally avoids a universal "one quantization rule".
 
-The project does not claim that one backend or one quantization format is universally optimal.
-
-Instead, the measured evidence supports a more conservative conclusion:
+Instead, the measured evidence supports this conclusion:
 
 > Precision choice is phase- and backend-dependent.
 
-The practical implication is to separate the architecture into at least two design targets:
+The design implication is therefore phase-aware inference architecture:
 
-1. a dense, high-throughput prefill path
-2. a separate decode path that is optimized for weight streaming and token generation
+1. keep a dense, high-throughput prefill path
+2. optimize a distinct decode path for token generation and weight streaming
+3. treat fixed-format recommendations as workload-specific, not universal
 
-This is the design signal that emerges from the data, rather than a universal low-precision rule.
+---
 
-## Evidence scope and limits
+## Evidence scope
 
-This project is intentionally explicit about what it does and does not claim.
+This project is explicit about its boundaries.
 
-- Measured on one Apple M4 Pro host
-- One 1.5B model family
 - Real GGUF + llama.cpp execution path
-- No measured Arm GPU/NPU results
-- No measured silicon area claims
-- No product-level power recommendation from this artifact alone
+- Apple M4 Pro host measurements
+- One 1.5B model family
+- No measured Arm GPU/NPU result
+- No silicon-area product claim
+- No universal low-precision recommendation
 
-The repository keeps measured results, quality pilots, and hypothetical architecture scenarios distinct.
+The repository keeps measured results, quality checks, and hypothetical architecture analysis separate.
 
-## Repository structure
-
-```text
-edgedecode/          Core analysis and benchmark logic
-native/              CPU and Metal reference code
-configs/             Benchmark and scenario configuration files
-results/             Measured and synthetic evidence outputs
-scripts/             Reproduction and experiment orchestration
-tests/               Validation and regression checks
-paper/               LaTeX paper source and generated PDF
-docs/                Evidence, reproduction, and format notes
-models/              Local GGUF model files used in the benchmark flow
-third_party/         Pinned llama.cpp checkout
-```
+---
 
 ## Quick start
 
@@ -119,26 +154,41 @@ python -m pip install -e .
 sh scripts/reproduce.sh
 ```
 
-Optional Metal evaluation:
+Optional Metal flow:
 
 ```bash
 python scripts/build_native.py --metal
 python -m edgedecode.experiment --out results/local-metal --backends cpu metal
 ```
 
-## Reproduction notes
-
-The project includes a real-model workflow using the GGUF benchmark stack and logs the measured outputs under `results/m4-stage2/`.
-
-For the paper build:
+Paper build:
 
 ```bash
 python -m pip install -r requirements-paper.txt
 make paper
 ```
 
+---
+
+## Repository structure
+
+```text
+edgedecode/          Core benchmark and analysis logic
+native/              CPU and Metal reference kernels
+configs/             Benchmark and scenario configuration files
+results/             Measured and synthetic evidence outputs
+scripts/             Reproduction and experiment orchestration
+tests/               Validation and regression checks
+paper/               LaTeX paper source and compiled PDF
+docs/                Evidence and format notes
+models/              Local GGUF model files
+third_party/         Pinned llama.cpp checkout
+```
+
+---
+
 ## License
 
 MIT.
 
-This project intentionally does not package third-party weights or datasets. Any external model or data artifacts must be obtained separately under their respective licenses.
+This project does not bundle third-party model weights or datasets. Those must be obtained separately under their own licenses.
