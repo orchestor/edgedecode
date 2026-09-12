@@ -1,64 +1,116 @@
 # EdgeDecode
 
-EdgeDecode is a research prototype for studying where and why LLM inference shifts between CPU and GPU-like execution paths on edge-class systems.
+EdgeDecode is a research artifact for phase-aware LLM inference on edge-class systems.
 
-It focuses on a simple but important question:
+It studies how model scale, prompt length, generation length, and scheduling behavior change the CPU/GPU boundary during inference.
 
-> When does a model's prefill phase behave differently from its decode phase, and how do model scale, context length, and concurrency change the hardware boundary?
+## At a glance
 
-This repository combines three layers of evidence:
+This repository is built around measured evidence from a local Apple M4 Pro host and a Qwen2.5-1.5B-Instruct GGUF benchmark path.
 
-- real model execution with GGUF + llama.cpp
-- reference operator measurements on CPU and Metal
-- synthetic architecture exploration to reason about future hardware choices
+| Metric | F16 | Q8_0 | Q4_K_M |
+|---|---:|---:|---:|
+| Model size (bytes) | 3,560,416,288 | 1,894,532,128 | 1,117,320,736 |
+| Compression vs F16 | 1.0x | 1.88x | 3.19x |
+| WikiText-2 perplexity | 8.9573 | 8.9524 | 9.3102 |
+| HellaSwag accuracy | 61.5% | 61.5% | 60.0% |
+| CPU decode throughput (tg128) | 40.95 tok/s | 70.81 tok/s | 113.99 tok/s |
+| Metal decode throughput (tg128) | 62.78 tok/s | 98.76 tok/s | 121.29 tok/s |
+| CPU prefill throughput (pp128) | 325.69 tok/s | 449.84 tok/s | 423.20 tok/s |
+| Metal prefill throughput (pp128) | 1629.82 tok/s | 1591.19 tok/s | 1406.20 tok/s |
 
-Documentation: [中文项目说明](docs/PROJECT.zh-CN.md) · [Working paper](paper/main.pdf) · [Reproduction guide](docs/REPRODUCIBILITY.md) · [Evidence ledger](docs/EVIDENCE.md) · [Format notes](docs/FORMAT.md)
+## Key finding
 
-## Why this project exists
+The measured results do not support a universal recommendation of one quantized format for all phases.
 
-The central issue is not "CPU vs GPU" in the abstract.
+- On CPU decode, Q4_K_M is the fastest path.
+- On Metal decode, Q4_K_M is also the fastest path.
+- On Metal prefill, F16 remains the fastest path.
+- Q8_0 matches F16 quality in the measured pilot while reducing model size substantially.
+- Q4_K_M has a measurable quality penalty, but it is still highly attractive for decode-heavy workloads.
 
-The real problem is that LLM inference is not one uniform workload. It has at least two distinct phases:
+This is exactly the phase-sensitive behavior that motivates the project.
 
-- Prefill: process a long prompt or context in bulk
-- Decode: generate tokens one by one
+## Figure gallery
 
-These phases stress hardware differently. In practice, the best execution path depends on:
+The project includes figure assets and manuscript output that summarize the measured and synthetic evidence.
 
-- model size
-- prompt/context length
-- generation length
-- service concurrency
-- software blocking and scheduling behavior
-- quantization format and weight packing
+- [Architecture view](paper/figures/architecture.pdf)
+- [Operator view](paper/figures/operator.pdf)
+- [Search-space view](paper/figures/search.pdf)
+- [Stage-2 performance summary](paper/figures/stage2-performance.pdf)
+- [Working paper](paper/main.pdf)
 
-EdgeDecode is designed to make this visible and auditable instead of hiding it behind a single headline claim.
+## Measured result snapshots
 
-## What the project measures
+### CPU performance
 
-The repository contains evidence for several layers of the stack:
+| Phase | F16 | Q8_0 | Q4_K_M |
+|---|---:|---:|---:|
+| pp128 | 325.69 tok/s | 449.84 tok/s | 423.20 tok/s |
+| pp2048 | 516.13 tok/s | 419.67 tok/s | 357.34 tok/s |
+| tg128 | 40.95 tok/s | 70.81 tok/s | 113.99 tok/s |
 
-- real GGUF execution on local Qwen models via llama.cpp
-- CPU and Metal reference kernel measurements
-- packed low-precision weight experiments
-- synthetic composed-network architecture exploration
-- stage-2 summaries that separate measured results from hypothetical scenarios
+### Metal performance
 
-On the M4 Pro host used in this project, the measured results show that decode often benefits more strongly from low-precision formats, while prefill can favor a higher-precision path depending on the backend. The key point is not that one format is universally best; it is that the winning choice depends on which phase is dominating the workload.
+| Phase | F16 | Q8_0 | Q4_K_M |
+|---|---:|---:|---:|
+| pp128 | 1629.82 tok/s | 1591.19 tok/s | 1406.20 tok/s |
+| pp2048 | 1872.16 tok/s | 1530.36 tok/s | 1287.24 tok/s |
+| tg128 | 62.78 tok/s | 98.76 tok/s | 121.29 tok/s |
 
-## Repository status
+## Quality and model fidelity
 
-This project intentionally keeps evidence levels separate:
+| Format | WikiText-2 PPL | Delta vs F16 | HellaSwag Acc | Delta vs F16 |
+|---|---:|---:|---:|---:|
+| F16 | 8.9573 | 0.00% | 61.5% | 0.0 pt |
+| Q8_0 | 8.9524 | -0.05% | 61.5% | 0.0 pt |
+| Q4_K_M | 9.3102 | +3.94% | 60.0% | -1.5 pt |
 
-- actual measurements
-- quality pilots and model-level checks
-- hypothetical architecture scenarios
+## Research interpretation
 
-The last category is explicitly labeled as a design-analysis tool, not as a direct product prediction or a measured silicon result.
+The project does not claim that one backend or one quantization format is universally optimal.
+
+Instead, the measured evidence supports a more conservative conclusion:
+
+> Precision choice is phase- and backend-dependent.
+
+The practical implication is to separate the architecture into at least two design targets:
+
+1. a dense, high-throughput prefill path
+2. a separate decode path that is optimized for weight streaming and token generation
+
+This is the design signal that emerges from the data, rather than a universal low-precision rule.
+
+## Evidence scope and limits
+
+This project is intentionally explicit about what it does and does not claim.
+
+- Measured on one Apple M4 Pro host
+- One 1.5B model family
+- Real GGUF + llama.cpp execution path
+- No measured Arm GPU/NPU results
+- No measured silicon area claims
+- No product-level power recommendation from this artifact alone
+
+The repository keeps measured results, quality pilots, and hypothetical architecture scenarios distinct.
+
+## Repository structure
+
+```text
+edgedecode/          Core analysis and benchmark logic
+native/              CPU and Metal reference code
+configs/             Benchmark and scenario configuration files
+results/             Measured and synthetic evidence outputs
+scripts/             Reproduction and experiment orchestration
+tests/               Validation and regression checks
+paper/               LaTeX paper source and generated PDF
+docs/                Evidence, reproduction, and format notes
+models/              Local GGUF model files used in the benchmark flow
+third_party/         Pinned llama.cpp checkout
+```
 
 ## Quick start
-
-Requirements: Python 3.10+, NumPy, and a local C/C++ toolchain.
 
 ```bash
 python3 -m venv .venv
@@ -67,82 +119,26 @@ python -m pip install -e .
 sh scripts/reproduce.sh
 ```
 
-This runs the local reproduction flow and writes outputs under `results/` without overwriting the committed benchmark evidence.
-
-## Stage 2 real-model workflow
-
-The real-model benchmark protocol is configured in `configs/stage2.json`.
-
-After obtaining the required model files, datasets, and a local llama.cpp checkout, run:
-
-```bash
-python scripts/run_stage2.py --mode all
-python -m edgedecode.stage2_analysis
-```
-
-The repository checks input SHA-256 values before execution and retains raw logs and measurements in `results/m4-stage2/`.
-
-## Optional Metal experiment
+Optional Metal evaluation:
 
 ```bash
 python scripts/build_native.py --metal
 python -m edgedecode.experiment --out results/local-metal --backends cpu metal
 ```
 
-A missing device is recorded as skipped rather than silently counted as a successful run. The project is careful not to overstate Apple Metal as a general Arm GPU result.
+## Reproduction notes
 
-## Minimal operator entry point
+The project includes a real-model workflow using the GGUF benchmark stack and logs the measured outputs under `results/m4-stage2/`.
 
-You can run a single tensor-level operator check with a local `.npz` file containing FP32-compatible arrays:
-
-```bash
-python -m edgedecode.experiment --tensors my_operator.npz \
-  --skip-search --out results/local --backends cpu
-```
-
-This is an operator test, not a full LLM benchmark.
-
-## Project layout
-
-```text
-edgedecode/          Core benchmark and analysis code
-native/              Native CPU/Metal reference implementations
-configs/             Benchmark and scenario configuration files
-results/             Measured and synthetic evidence outputs
-scripts/             Reproducibility and experiment orchestration
-tests/               Validation and regression checks
-paper/               LaTeX paper source and generated PDF
-docs/                Project design, evidence, and formatting notes
-models/              Local GGUF model files used by the benchmark flow
-third_party/         Pinned llama.cpp checkout
-```
-
-## Research message
-
-This project does not claim a universal statement like "quantization always helps" or "GPU always wins."
-
-Its more defensible conclusion is:
-
-- prefill and decode are different workloads
-- the execution boundary moves with model size, prompt length, and service concurrency
-- low-precision formats can help decode strongly, while prefill may still favor higher-precision or different execution paths
-- architectural recommendations should therefore be phase-aware, not one-size-fits-all
-
-## Paper and reproduction
+For the paper build:
 
 ```bash
 python -m pip install -r requirements-paper.txt
 make paper
 ```
 
-The manuscript is maintained in `paper/main.tex` and compiled locally with LaTeX.
-
 ## License
 
-MIT license for the project code and documentation.
+MIT.
 
-The repository intentionally does not bundle third-party model weights or datasets. Any external artifacts must be obtained separately as required by their licenses.
-
-## Important note
-
-This is a research artifact, not a product claim. It is designed for auditability, careful reproduction, and clear separation between measured results and hypothetical architecture reasoning.
+This project intentionally does not package third-party weights or datasets. Any external model or data artifacts must be obtained separately under their respective licenses.
