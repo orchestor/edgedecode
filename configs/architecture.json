@@ -1,0 +1,11 @@
+{
+  "evidence": "hypothetical_uncalibrated_scenarios_not_product_specs",
+  "activation_bytes": 4,
+  "profiles": [
+    {"name":"cpu_like", "bandwidth_GB_s":30, "compute_GFLOP_s":100, "decode_Gweight_s":3, "launch_us":1},
+    {"name":"gpu_like", "bandwidth_GB_s":100, "compute_GFLOP_s":2000, "decode_Gweight_s":20, "launch_us":20},
+    {"name":"npu_like", "bandwidth_GB_s":20, "compute_GFLOP_s":4000, "decode_Gweight_s":4, "launch_us":5}
+  ],
+  "energy_assumptions": {"external_pJ_byte":20, "mac_pJ":0.5, "decode_pJ_weight":0.2},
+  "note":"Illustrative values only. No product calibration, NPU compilation, synthesis, or measured energy. Resident weights/activation reuse are idealized."
+}

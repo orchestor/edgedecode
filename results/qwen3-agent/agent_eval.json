@@ -1,0 +1,88 @@
+{
+  "experiment_id": "m4-qwen2.5-7b-agent-eval-v1",
+  "model_family": "Qwen2.5-7B",
+  "tasks": [
+    {
+      "task": "tool_use",
+      "tags": [
+        "agent",
+        "tool_use",
+        "reasoning"
+      ],
+      "max_steps": 8,
+      "success_score": 1.0,
+      "prompt": "You are a research assistant. Use the available tools to inspect the repository, identify the exact benchmark output file, and report the model name and the benchmark evidence path.",
+      "repo_probe": [
+        {
+          "path": "/Users/lin/Documents/projects/edgedecode/README.md",
+          "exists": true
+        },
+        {
+          "path": "/Users/lin/Documents/projects/edgedecode/configs",
+          "exists": true
+        },
+        {
+          "path": "/Users/lin/Documents/projects/edgedecode/results",
+          "exists": true
+        },
+        {
+          "path": "/Users/lin/Documents/projects/edgedecode/scripts",
+          "exists": true
+        },
+        {
+          "path": "/Users/lin/Documents/projects/edgedecode/tests",
+          "exists": true
+        }
+      ],
+      "expected_signal": [
+        "results",
+        "benchmark",
+        "qwen",
+        "model"
+      ],
+      "status": "configured",
+      "evidence": "agent-eval-harness"
+    },
+    {
+      "task": "tool_call_plan",
+      "tags": [
+        "agent",
+        "planning",
+        "tool_use"
+      ],
+      "max_steps": 8,
+      "success_score": 1.0,
+      "prompt": "Plan a small experiment. First identify the top-level repo structure, then pick the most relevant benchmark data file, then provide a 3-step execution plan with tool usage rationale.",
+      "repo_probe": [
+        {
+          "path": "/Users/lin/Documents/projects/edgedecode/README.md",
+          "exists": true
+        },
+        {
+          "path": "/Users/lin/Documents/projects/edgedecode/configs",
+          "exists": true
+        },
+        {
+          "path": "/Users/lin/Documents/projects/edgedecode/results",
+          "exists": true
+        },
+        {
+          "path": "/Users/lin/Documents/projects/edgedecode/scripts",
+          "exists": true
+        },
+        {
+          "path": "/Users/lin/Documents/projects/edgedecode/tests",
+          "exists": true
+        }
+      ],
+      "expected_signal": [
+        "plan",
+        "benchmark",
+        "results",
+        "steps"
+      ],
+      "status": "configured",
+      "evidence": "agent-eval-harness"
+    }
+  ]
+}

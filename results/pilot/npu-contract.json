@@ -1,0 +1,12 @@
+{
+  "compatible_with_declared_contract": false,
+  "issues": [
+    "unsupported weight precision",
+    "unsupported scale grouping",
+    "activation quantization/retraining not implemented",
+    "format conversion or custom operator required"
+  ],
+  "evidence": "static_hypothetical_contract_check",
+  "compiled": false,
+  "cycle_estimate": null
+}

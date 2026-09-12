@@ -1,0 +1,9 @@
+{
+  "name":"illustrative-integer-NPU-contract-NOT-an-Arm-product",
+  "weight_bits":[8],
+  "group_sizes":[128],
+  "activation_dtype":"i8",
+  "k_multiple":32,
+  "native_format":"backend_defined",
+  "note":"Replace with documented target compiler requirements before interpreting compatibility. No particular NPU's capabilities are asserted."
+}

@@ -1,0 +1,38 @@
+{
+  "experiment_id": "m4-qwen2.5-7b-agent-eval-v1",
+  "model_family": "Qwen2.5-7B",
+  "model_repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+  "model_revision": "main",
+  "agent_tasks": [
+    {
+      "name": "tool_use",
+      "tags": ["agent", "tool_use", "reasoning"],
+      "prompt": "You are a research assistant. Use the available tools to inspect the repository, identify the exact benchmark output file, and report the model name and the benchmark evidence path.",
+      "expected_signal": ["results", "benchmark", "qwen", "model"],
+      "max_steps": 8,
+      "success_score": 1.0
+    },
+    {
+      "name": "tool_call_plan",
+      "tags": ["agent", "planning", "tool_use"],
+      "prompt": "Plan a small experiment. First identify the top-level repo structure, then pick the most relevant benchmark data file, then provide a 3-step execution plan with tool usage rationale.",
+      "expected_signal": ["plan", "benchmark", "results", "steps"],
+      "max_steps": 8,
+      "success_score": 1.0
+    }
+  ],
+  "runtime": {
+    "backend": "cpu",
+    "threads": 8,
+    "batch": 1,
+    "ubatch": 1,
+    "prompt_tokens": 128,
+    "generation_tokens": 32,
+    "repetitions": 1,
+    "ngl": 0,
+    "sampling": "temperature=0.7"
+  },
+  "evidence": {
+    "notes": "This config is a lightweight agent-evaluation harness for the available local Qwen2.5-7B GGUF split model; it is intentionally separate from the committed Qwen2.5-1.5B evidence and requires llama.cpp to run a real generation path."
+  }
+}

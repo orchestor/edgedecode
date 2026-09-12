@@ -1,0 +1,6575 @@
+[
+  {
+    "seed": 11,
+    "layer_costs_ms": [
+      [
+        0.028625,
+        0.033541,
+        0.041958,
+        0.022875,
+        0.029167,
+        0.03275
+      ],
+      [
+        0.016375,
+        0.018625,
+        0.021,
+        0.013333,
+        0.016583,
+        0.022416
+      ],
+      [
+        0.007708,
+        0.008625,
+        0.009209,
+        0.006625,
+        0.007958,
+        0.008458
+      ]
+    ],
+    "candidates": [
+      {
+        "config": [
+          0,
+          0,
+          0
+        ],
+        "bytes": 51200,
+        "dev_relative_mse": 0.06825565838175221,
+        "predicted_cpu_ms": 0.052708000000000005
+      },
+      {
+        "config": [
+          0,
+          0,
+          1
+        ],
+        "bytes": 50688,
+        "dev_relative_mse": 0.07700186450587683,
+        "predicted_cpu_ms": 0.053625000000000006
+      },
+      {
+        "config": [
+          0,
+          0,
+          2
+        ],
+        "bytes": 50432,
+        "dev_relative_mse": 0.08984888485273076,
+        "predicted_cpu_ms": 0.054209
+      },
+      {
+        "config": [
+          0,
+          0,
+          3
+        ],
+        "bytes": 55296,
+        "dev_relative_mse": 0.04632666901093716,
+        "predicted_cpu_ms": 0.051625000000000004
+      },
+      {
+        "config": [
+          0,
+          0,
+          4
+        ],
+        "bytes": 54784,
+        "dev_relative_mse": 0.0464433309017508,
+        "predicted_cpu_ms": 0.052958000000000005
+      },
+      {
+        "config": [
+          0,
+          0,
+          5
+        ],
+        "bytes": 54528,
+        "dev_relative_mse": 0.04642142947434196,
+        "predicted_cpu_ms": 0.053458000000000006
+      },
+      {
+        "config": [
+          0,
+          1,
+          0
+        ],
+        "bytes": 49664,
+        "dev_relative_mse": 0.0782905157079555,
+        "predicted_cpu_ms": 0.054958
+      },
+      {
+        "config": [
+          0,
+          1,
+          1
+        ],
+        "bytes": 49152,
+        "dev_relative_mse": 0.087216997992479,
+        "predicted_cpu_ms": 0.055875
+      },
+      {
+        "config": [
+          0,
+          1,
+          2
+        ],
+        "bytes": 48896,
+        "dev_relative_mse": 0.09974199131250695,
+        "predicted_cpu_ms": 0.056459
+      },
+      {
+        "config": [
+          0,
+          1,
+          3
+        ],
+        "bytes": 53760,
+        "dev_relative_mse": 0.05629267705193751,
+        "predicted_cpu_ms": 0.053875
+      },
+      {
+        "config": [
+          0,
+          1,
+          4
+        ],
+        "bytes": 53248,
+        "dev_relative_mse": 0.05630025742715526,
+        "predicted_cpu_ms": 0.055208
+      },
+      {
+        "config": [
+          0,
+          1,
+          5
+        ],
+        "bytes": 52992,
+        "dev_relative_mse": 0.05630265857905708,
+        "predicted_cpu_ms": 0.055708
+      },
+      {
+        "config": [
+          0,
+          2,
+          0
+        ],
+        "bytes": 53248,
+        "dev_relative_mse": 0.08452633411632503,
+        "predicted_cpu_ms": 0.057333
+      },
+      {
+        "config": [
+          0,
+          2,
+          1
+        ],
+        "bytes": 52736,
+        "dev_relative_mse": 0.0932974347203587,
+        "predicted_cpu_ms": 0.05825
+      },
+      {
+        "config": [
+          0,
+          2,
+          2
+        ],
+        "bytes": 52480,
+        "dev_relative_mse": 0.10445371049864006,
+        "predicted_cpu_ms": 0.058834000000000004
+      },
+      {
+        "config": [
+          0,
+          2,
+          3
+        ],
+        "bytes": 57344,
+        "dev_relative_mse": 0.06377167710503183,
+        "predicted_cpu_ms": 0.05625
+      },
+      {
+        "config": [
+          0,
+          2,
+          4
+        ],
+        "bytes": 56832,
+        "dev_relative_mse": 0.06372987199069338,
+        "predicted_cpu_ms": 0.057583
+      },
+      {
+        "config": [
+          0,
+          2,
+          5
+        ],
+        "bytes": 56576,
+        "dev_relative_mse": 0.06372930878248216,
+        "predicted_cpu_ms": 0.058083
+      },
+      {
+        "config": [
+          0,
+          3,
+          0
+        ],
+        "bytes": 63488,
+        "dev_relative_mse": 0.04563757988892462,
+        "predicted_cpu_ms": 0.049666
+      },
+      {
+        "config": [
+          0,
+          3,
+          1
+        ],
+        "bytes": 62976,
+        "dev_relative_mse": 0.05557632003106375,
+        "predicted_cpu_ms": 0.050583
+      },
+      {
+        "config": [
+          0,
+          3,
+          2
+        ],
+        "bytes": 62720,
+        "dev_relative_mse": 0.06807738678812848,
+        "predicted_cpu_ms": 0.051167000000000004
+      },
+      {
+        "config": [
+          0,
+          3,
+          3
+        ],
+        "bytes": 67584,
+        "dev_relative_mse": 0.025335435446072526,
+        "predicted_cpu_ms": 0.048583
+      },
+      {
+        "config": [
+          0,
+          3,
+          4
+        ],
+        "bytes": 67072,
+        "dev_relative_mse": 0.025375388565665465,
+        "predicted_cpu_ms": 0.049916
+      },
+      {
+        "config": [
+          0,
+          3,
+          5
+        ],
+        "bytes": 66816,
+        "dev_relative_mse": 0.025374150349437727,
+        "predicted_cpu_ms": 0.050416
+      },
+      {
+        "config": [
+          0,
+          4,
+          0
+        ],
+        "bytes": 61952,
+        "dev_relative_mse": 0.04586566754545254,
+        "predicted_cpu_ms": 0.052916000000000005
+      },
+      {
+        "config": [
+          0,
+          4,
+          1
+        ],
+        "bytes": 61440,
+        "dev_relative_mse": 0.055778971771663674,
+        "predicted_cpu_ms": 0.053833000000000006
+      },
+      {
+        "config": [
+          0,
+          4,
+          2
+        ],
+        "bytes": 61184,
+        "dev_relative_mse": 0.06827657583286494,
+        "predicted_cpu_ms": 0.054417
+      },
+      {
+        "config": [
+          0,
+          4,
+          3
+        ],
+        "bytes": 66048,
+        "dev_relative_mse": 0.025549766317716056,
+        "predicted_cpu_ms": 0.051833000000000004
+      },
+      {
+        "config": [
+          0,
+          4,
+          4
+        ],
+        "bytes": 65536,
+        "dev_relative_mse": 0.0255917242595201,
+        "predicted_cpu_ms": 0.053166000000000005
+      },
+      {
+        "config": [
+          0,
+          4,
+          5
+        ],
+        "bytes": 65280,
+        "dev_relative_mse": 0.025585999415853922,
+        "predicted_cpu_ms": 0.053666000000000005
+      },
+      {
+        "config": [
+          0,
+          5,
+          0
+        ],
+        "bytes": 69632,
+        "dev_relative_mse": 0.04579895598440431,
+        "predicted_cpu_ms": 0.058748999999999996
+      },
+      {
+        "config": [
+          0,
+          5,
+          1
+        ],
+        "bytes": 69120,
+        "dev_relative_mse": 0.055773725884768734,
+        "predicted_cpu_ms": 0.059666
+      },
+      {
+        "config": [
+          0,
+          5,
+          2
+        ],
+        "bytes": 68864,
+        "dev_relative_mse": 0.06823213371348695,
+        "predicted_cpu_ms": 0.06025
+      },
+      {
+        "config": [
+          0,
+          5,
+          3
+        ],
+        "bytes": 73728,
+        "dev_relative_mse": 0.025530196768389052,
+        "predicted_cpu_ms": 0.057666
+      },
+      {
+        "config": [
+          0,
+          5,
+          4
+        ],
+        "bytes": 73216,
+        "dev_relative_mse": 0.025573689848980806,
+        "predicted_cpu_ms": 0.058998999999999996
+      },
+      {
+        "config": [
+          0,
+          5,
+          5
+        ],
+        "bytes": 72960,
+        "dev_relative_mse": 0.02557128219768241,
+        "predicted_cpu_ms": 0.059498999999999996
+      },
+      {
+        "config": [
+          1,
+          0,
+          0
+        ],
+        "bytes": 48128,
+        "dev_relative_mse": 0.08432691301836136,
+        "predicted_cpu_ms": 0.057624
+      },
+      {
+        "config": [
+          1,
+          0,
+          1
+        ],
+        "bytes": 47616,
+        "dev_relative_mse": 0.09258963223190236,
+        "predicted_cpu_ms": 0.058541
+      },
+      {
+        "config": [
+          1,
+          0,
+          2
+        ],
+        "bytes": 47360,
+        "dev_relative_mse": 0.10646469775309506,
+        "predicted_cpu_ms": 0.059125000000000004
+      },
+      {
+        "config": [
+          1,
+          0,
+          3
+        ],
+        "bytes": 52224,
+        "dev_relative_mse": 0.061361605817572995,
+        "predicted_cpu_ms": 0.056541
+      },
+      {
+        "config": [
+          1,
+          0,
+          4
+        ],
+        "bytes": 51712,
+        "dev_relative_mse": 0.06148506013595084,
+        "predicted_cpu_ms": 0.057874
+      },
+      {
+        "config": [
+          1,
+          0,
+          5
+        ],
+        "bytes": 51456,
+        "dev_relative_mse": 0.0614480049793912,
+        "predicted_cpu_ms": 0.058374
+      },
+      {
+        "config": [
+          1,
+          1,
+          0
+        ],
+        "bytes": 46592,
+        "dev_relative_mse": 0.0945043460723907,
+        "predicted_cpu_ms": 0.059874
+      },
+      {
+        "config": [
+          1,
+          1,
+          1
+        ],
+        "bytes": 46080,
+        "dev_relative_mse": 0.10293242781063931,
+        "predicted_cpu_ms": 0.060791
+      },
+      {
+        "config": [
+          1,
+          1,
+          2
+        ],
+        "bytes": 45824,
+        "dev_relative_mse": 0.1166636955230079,
+        "predicted_cpu_ms": 0.061375
+      },
+      {
+        "config": [
+          1,
+          1,
+          3
+        ],
+        "bytes": 50688,
+        "dev_relative_mse": 0.07160040796192273,
+        "predicted_cpu_ms": 0.058791
+      },
+      {
+        "config": [
+          1,
+          1,
+          4
+        ],
+        "bytes": 50176,
+        "dev_relative_mse": 0.07161796872440017,
+        "predicted_cpu_ms": 0.060124
+      },
+      {
+        "config": [
+          1,
+          1,
+          5
+        ],
+        "bytes": 49920,
+        "dev_relative_mse": 0.07158910923409421,
+        "predicted_cpu_ms": 0.060624
+      },
+      {
+        "config": [
+          1,
+          2,
+          0
+        ],
+        "bytes": 50176,
+        "dev_relative_mse": 0.10098299237845614,
+        "predicted_cpu_ms": 0.062249
+      },
+      {
+        "config": [
+          1,
+          2,
+          1
+        ],
+        "bytes": 49664,
+        "dev_relative_mse": 0.10916472857710628,
+        "predicted_cpu_ms": 0.063166
+      },
+      {
+        "config": [
+          1,
+          2,
+          2
+        ],
+        "bytes": 49408,
+        "dev_relative_mse": 0.12173138820039622,
+        "predicted_cpu_ms": 0.06375
+      },
+      {
+        "config": [
+          1,
+          2,
+          3
+        ],
+        "bytes": 54272,
+        "dev_relative_mse": 0.07934547543479224,
+        "predicted_cpu_ms": 0.061166000000000005
+      },
+      {
+        "config": [
+          1,
+          2,
+          4
+        ],
+        "bytes": 53760,
+        "dev_relative_mse": 0.07931266907317927,
+        "predicted_cpu_ms": 0.062499
+      },
+      {
+        "config": [
+          1,
+          2,
+          5
+        ],
+        "bytes": 53504,
+        "dev_relative_mse": 0.07929476433786617,
+        "predicted_cpu_ms": 0.062999
+      },
+      {
+        "config": [
+          1,
+          3,
+          0
+        ],
+        "bytes": 60416,
+        "dev_relative_mse": 0.060994126927238046,
+        "predicted_cpu_ms": 0.054582
+      },
+      {
+        "config": [
+          1,
+          3,
+          1
+        ],
+        "bytes": 59904,
+        "dev_relative_mse": 0.07050822651528206,
+        "predicted_cpu_ms": 0.055499
+      },
+      {
+        "config": [
+          1,
+          3,
+          2
+        ],
+        "bytes": 59648,
+        "dev_relative_mse": 0.08413931596896174,
+        "predicted_cpu_ms": 0.056083
+      },
+      {
+        "config": [
+          1,
+          3,
+          3
+        ],
+        "bytes": 64512,
+        "dev_relative_mse": 0.03990731809872615,
+        "predicted_cpu_ms": 0.053499
+      },
+      {
+        "config": [
+          1,
+          3,
+          4
+        ],
+        "bytes": 64000,
+        "dev_relative_mse": 0.03995822925116346,
+        "predicted_cpu_ms": 0.054832
+      },
+      {
+        "config": [
+          1,
+          3,
+          5
+        ],
+        "bytes": 63744,
+        "dev_relative_mse": 0.03994364079576774,
+        "predicted_cpu_ms": 0.055332
+      },
+      {
+        "config": [
+          1,
+          4,
+          0
+        ],
+        "bytes": 58880,
+        "dev_relative_mse": 0.06111035447766906,
+        "predicted_cpu_ms": 0.057832
+      },
+      {
+        "config": [
+          1,
+          4,
+          1
+        ],
+        "bytes": 58368,
+        "dev_relative_mse": 0.07058846536707554,
+        "predicted_cpu_ms": 0.058749
+      },
+      {
+        "config": [
+          1,
+          4,
+          2
+        ],
+        "bytes": 58112,
+        "dev_relative_mse": 0.0842278616482819,
+        "predicted_cpu_ms": 0.059333000000000004
+      },
+      {
+        "config": [
+          1,
+          4,
+          3
+        ],
+        "bytes": 62976,
+        "dev_relative_mse": 0.0400118008122878,
+        "predicted_cpu_ms": 0.056749
+      },
+      {
+        "config": [
+          1,
+          4,
+          4
+        ],
+        "bytes": 62464,
+        "dev_relative_mse": 0.040063990263856715,
+        "predicted_cpu_ms": 0.058082
+      },
+      {
+        "config": [
+          1,
+          4,
+          5
+        ],
+        "bytes": 62208,
+        "dev_relative_mse": 0.040044484193535984,
+        "predicted_cpu_ms": 0.058582
+      },
+      {
+        "config": [
+          1,
+          5,
+          0
+        ],
+        "bytes": 66560,
+        "dev_relative_mse": 0.060863674053725204,
+        "predicted_cpu_ms": 0.063665
+      },
+      {
+        "config": [
+          1,
+          5,
+          1
+        ],
+        "bytes": 66048,
+        "dev_relative_mse": 0.07040121445866356,
+        "predicted_cpu_ms": 0.064582
+      },
+      {
+        "config": [
+          1,
+          5,
+          2
+        ],
+        "bytes": 65792,
+        "dev_relative_mse": 0.08399617503867303,
+        "predicted_cpu_ms": 0.065166
+      },
+      {
+        "config": [
+          1,
+          5,
+          3
+        ],
+        "bytes": 70656,
+        "dev_relative_mse": 0.03980656431865233,
+        "predicted_cpu_ms": 0.062582
+      },
+      {
+        "config": [
+          1,
+          5,
+          4
+        ],
+        "bytes": 70144,
+        "dev_relative_mse": 0.03986066864622299,
+        "predicted_cpu_ms": 0.063915
+      },
+      {
+        "config": [
+          1,
+          5,
+          5
+        ],
+        "bytes": 69888,
+        "dev_relative_mse": 0.0398445240958209,
+        "predicted_cpu_ms": 0.064415
+      },
+      {
+        "config": [
+          2,
+          0,
+          0
+        ],
+        "bytes": 46592,
+        "dev_relative_mse": 0.10690632262026875,
+        "predicted_cpu_ms": 0.066041
+      },
+      {
+        "config": [
+          2,
+          0,
+          1
+        ],
+        "bytes": 46080,
+        "dev_relative_mse": 0.11517655747349802,
+        "predicted_cpu_ms": 0.066958
+      },
+      {
+        "config": [
+          2,
+          0,
+          2
+        ],
+        "bytes": 45824,
+        "dev_relative_mse": 0.12886431682661928,
+        "predicted_cpu_ms": 0.067542
+      },
+      {
+        "config": [
+          2,
+          0,
+          3
+        ],
+        "bytes": 50688,
+        "dev_relative_mse": 0.08292155312568256,
+        "predicted_cpu_ms": 0.064958
+      },
+      {
+        "config": [
+          2,
+          0,
+          4
+        ],
+        "bytes": 50176,
+        "dev_relative_mse": 0.0830220104975405,
+        "predicted_cpu_ms": 0.066291
+      },
+      {
+        "config": [
+          2,
+          0,
+          5
+        ],
+        "bytes": 49920,
+        "dev_relative_mse": 0.08296564534334275,
+        "predicted_cpu_ms": 0.066791
+      },
+      {
+        "config": [
+          2,
+          1,
+          0
+        ],
+        "bytes": 45056,
+        "dev_relative_mse": 0.11603226609402179,
+        "predicted_cpu_ms": 0.068291
+      },
+      {
+        "config": [
+          2,
+          1,
+          1
+        ],
+        "bytes": 44544,
+        "dev_relative_mse": 0.1244438506090589,
+        "predicted_cpu_ms": 0.069208
+      },
+      {
+        "config": [
+          2,
+          1,
+          2
+        ],
+        "bytes": 44288,
+        "dev_relative_mse": 0.1374405651565304,
+        "predicted_cpu_ms": 0.069792
+      },
+      {
+        "config": [
+          2,
+          1,
+          3
+        ],
+        "bytes": 49152,
+        "dev_relative_mse": 0.09204932993557954,
+        "predicted_cpu_ms": 0.067208
+      },
+      {
+        "config": [
+          2,
+          1,
+          4
+        ],
+        "bytes": 48640,
+        "dev_relative_mse": 0.09205428000792303,
+        "predicted_cpu_ms": 0.068541
+      },
+      {
+        "config": [
+          2,
+          1,
+          5
+        ],
+        "bytes": 48384,
+        "dev_relative_mse": 0.0920138042891779,
+        "predicted_cpu_ms": 0.069041
+      },
+      {
+        "config": [
+          2,
+          2,
+          0
+        ],
+        "bytes": 48640,
+        "dev_relative_mse": 0.12284130003992398,
+        "predicted_cpu_ms": 0.070666
+      },
+      {
+        "config": [
+          2,
+          2,
+          1
+        ],
+        "bytes": 48128,
+        "dev_relative_mse": 0.13090756351399985,
+        "predicted_cpu_ms": 0.07158300000000001
+      },
+      {
+        "config": [
+          2,
+          2,
+          2
+        ],
+        "bytes": 47872,
+        "dev_relative_mse": 0.1427517055705832,
+        "predicted_cpu_ms": 0.07216700000000001
+      },
+      {
+        "config": [
+          2,
+          2,
+          3
+        ],
+        "bytes": 52736,
+        "dev_relative_mse": 0.09993032715523313,
+        "predicted_cpu_ms": 0.069583
+      },
+      {
+        "config": [
+          2,
+          2,
+          4
+        ],
+        "bytes": 52224,
+        "dev_relative_mse": 0.09989154930111155,
+        "predicted_cpu_ms": 0.070916
+      },
+      {
+        "config": [
+          2,
+          2,
+          5
+        ],
+        "bytes": 51968,
+        "dev_relative_mse": 0.09986004974222783,
+        "predicted_cpu_ms": 0.07141600000000001
+      },
+      {
+        "config": [
+          2,
+          3,
+          0
+        ],
+        "bytes": 58880,
+        "dev_relative_mse": 0.08245496525058857,
+        "predicted_cpu_ms": 0.062999
+      },
+      {
+        "config": [
+          2,
+          3,
+          1
+        ],
+        "bytes": 58368,
+        "dev_relative_mse": 0.09160378260430047,
+        "predicted_cpu_ms": 0.063916
+      },
+      {
+        "config": [
+          2,
+          3,
+          2
+        ],
+        "bytes": 58112,
+        "dev_relative_mse": 0.10510036033530763,
+        "predicted_cpu_ms": 0.0645
+      },
+      {
+        "config": [
+          2,
+          3,
+          3
+        ],
+        "bytes": 62976,
+        "dev_relative_mse": 0.060555089840430974,
+        "predicted_cpu_ms": 0.061916
+      },
+      {
+        "config": [
+          2,
+          3,
+          4
+        ],
+        "bytes": 62464,
+        "dev_relative_mse": 0.06058780823342541,
+        "predicted_cpu_ms": 0.063249
+      },
+      {
+        "config": [
+          2,
+          3,
+          5
+        ],
+        "bytes": 62208,
+        "dev_relative_mse": 0.06055407907622228,
+        "predicted_cpu_ms": 0.063749
+      },
+      {
+        "config": [
+          2,
+          4,
+          0
+        ],
+        "bytes": 57344,
+        "dev_relative_mse": 0.0825738256081465,
+        "predicted_cpu_ms": 0.066249
+      },
+      {
+        "config": [
+          2,
+          4,
+          1
+        ],
+        "bytes": 56832,
+        "dev_relative_mse": 0.09170964571129452,
+        "predicted_cpu_ms": 0.067166
+      },
+      {
+        "config": [
+          2,
+          4,
+          2
+        ],
+        "bytes": 56576,
+        "dev_relative_mse": 0.10522091959735531,
+        "predicted_cpu_ms": 0.06775
+      },
+      {
+        "config": [
+          2,
+          4,
+          3
+        ],
+        "bytes": 61440,
+        "dev_relative_mse": 0.060661561678738866,
+        "predicted_cpu_ms": 0.065166
+      },
+      {
+        "config": [
+          2,
+          4,
+          4
+        ],
+        "bytes": 60928,
+        "dev_relative_mse": 0.06069564024526528,
+        "predicted_cpu_ms": 0.066499
+      },
+      {
+        "config": [
+          2,
+          4,
+          5
+        ],
+        "bytes": 60672,
+        "dev_relative_mse": 0.06065719040184583,
+        "predicted_cpu_ms": 0.066999
+      },
+      {
+        "config": [
+          2,
+          5,
+          0
+        ],
+        "bytes": 65024,
+        "dev_relative_mse": 0.08235644272987591,
+        "predicted_cpu_ms": 0.07208200000000001
+      },
+      {
+        "config": [
+          2,
+          5,
+          1
+        ],
+        "bytes": 64512,
+        "dev_relative_mse": 0.09154400069157308,
+        "predicted_cpu_ms": 0.07299900000000001
+      },
+      {
+        "config": [
+          2,
+          5,
+          2
+        ],
+        "bytes": 64256,
+        "dev_relative_mse": 0.10501174546985512,
+        "predicted_cpu_ms": 0.073583
+      },
+      {
+        "config": [
+          2,
+          5,
+          3
+        ],
+        "bytes": 69120,
+        "dev_relative_mse": 0.06047864500333072,
+        "predicted_cpu_ms": 0.070999
+      },
+      {
+        "config": [
+          2,
+          5,
+          4
+        ],
+        "bytes": 68608,
+        "dev_relative_mse": 0.06051395341496272,
+        "predicted_cpu_ms": 0.07233200000000001
+      },
+      {
+        "config": [
+          2,
+          5,
+          5
+        ],
+        "bytes": 68352,
+        "dev_relative_mse": 0.06047771932101014,
+        "predicted_cpu_ms": 0.07283200000000001
+      },
+      {
+        "config": [
+          3,
+          0,
+          0
+        ],
+        "bytes": 75776,
+        "dev_relative_mse": 0.04310845243252985,
+        "predicted_cpu_ms": 0.046958
+      },
+      {
+        "config": [
+          3,
+          0,
+          1
+        ],
+        "bytes": 75264,
+        "dev_relative_mse": 0.05282707479286359,
+        "predicted_cpu_ms": 0.047875
+      },
+      {
+        "config": [
+          3,
+          0,
+          2
+        ],
+        "bytes": 75008,
+        "dev_relative_mse": 0.0645508067012001,
+        "predicted_cpu_ms": 0.048459
+      },
+      {
+        "config": [
+          3,
+          0,
+          3
+        ],
+        "bytes": 79872,
+        "dev_relative_mse": 0.020779603293969516,
+        "predicted_cpu_ms": 0.045875
+      },
+      {
+        "config": [
+          3,
+          0,
+          4
+        ],
+        "bytes": 79360,
+        "dev_relative_mse": 0.020871907005761713,
+        "predicted_cpu_ms": 0.047208
+      },
+      {
+        "config": [
+          3,
+          0,
+          5
+        ],
+        "bytes": 79104,
+        "dev_relative_mse": 0.02091289663292581,
+        "predicted_cpu_ms": 0.047708
+      },
+      {
+        "config": [
+          3,
+          1,
+          0
+        ],
+        "bytes": 74240,
+        "dev_relative_mse": 0.05327410489906141,
+        "predicted_cpu_ms": 0.049208
+      },
+      {
+        "config": [
+          3,
+          1,
+          1
+        ],
+        "bytes": 73728,
+        "dev_relative_mse": 0.06314965797265554,
+        "predicted_cpu_ms": 0.050125
+      },
+      {
+        "config": [
+          3,
+          1,
+          2
+        ],
+        "bytes": 73472,
+        "dev_relative_mse": 0.07473788324384593,
+        "predicted_cpu_ms": 0.050709
+      },
+      {
+        "config": [
+          3,
+          1,
+          3
+        ],
+        "bytes": 78336,
+        "dev_relative_mse": 0.03073925499707417,
+        "predicted_cpu_ms": 0.048125
+      },
+      {
+        "config": [
+          3,
+          1,
+          4
+        ],
+        "bytes": 77824,
+        "dev_relative_mse": 0.030724739835609163,
+        "predicted_cpu_ms": 0.049458
+      },
+      {
+        "config": [
+          3,
+          1,
+          5
+        ],
+        "bytes": 77568,
+        "dev_relative_mse": 0.030781990151769557,
+        "predicted_cpu_ms": 0.049958
+      },
+      {
+        "config": [
+          3,
+          2,
+          0
+        ],
+        "bytes": 77824,
+        "dev_relative_mse": 0.06044823737827596,
+        "predicted_cpu_ms": 0.051583000000000004
+      },
+      {
+        "config": [
+          3,
+          2,
+          1
+        ],
+        "bytes": 77312,
+        "dev_relative_mse": 0.06987637983641981,
+        "predicted_cpu_ms": 0.052500000000000005
+      },
+      {
+        "config": [
+          3,
+          2,
+          2
+        ],
+        "bytes": 77056,
+        "dev_relative_mse": 0.08041507325499847,
+        "predicted_cpu_ms": 0.053084
+      },
+      {
+        "config": [
+          3,
+          2,
+          3
+        ],
+        "bytes": 81920,
+        "dev_relative_mse": 0.039231500223725575,
+        "predicted_cpu_ms": 0.0505
+      },
+      {
+        "config": [
+          3,
+          2,
+          4
+        ],
+        "bytes": 81408,
+        "dev_relative_mse": 0.03916773764797794,
+        "predicted_cpu_ms": 0.051833000000000004
+      },
+      {
+        "config": [
+          3,
+          2,
+          5
+        ],
+        "bytes": 81152,
+        "dev_relative_mse": 0.03921112465254396,
+        "predicted_cpu_ms": 0.052333000000000005
+      },
+      {
+        "config": [
+          3,
+          3,
+          0
+        ],
+        "bytes": 88064,
+        "dev_relative_mse": 0.020457323875631834,
+        "predicted_cpu_ms": 0.043916
+      },
+      {
+        "config": [
+          3,
+          3,
+          1
+        ],
+        "bytes": 87552,
+        "dev_relative_mse": 0.03137199863581273,
+        "predicted_cpu_ms": 0.044833
+      },
+      {
+        "config": [
+          3,
+          3,
+          2
+        ],
+        "bytes": 87296,
+        "dev_relative_mse": 0.04330752932878221,
+        "predicted_cpu_ms": 0.045417
+      },
+      {
+        "config": [
+          3,
+          3,
+          3
+        ],
+        "bytes": 92160,
+        "dev_relative_mse": 0.00019199001958396475,
+        "predicted_cpu_ms": 0.042832999999999996
+      },
+      {
+        "config": [
+          3,
+          3,
+          4
+        ],
+        "bytes": 91648,
+        "dev_relative_mse": 0.00022490858457122043,
+        "predicted_cpu_ms": 0.044166
+      },
+      {
+        "config": [
+          3,
+          3,
+          5
+        ],
+        "bytes": 91392,
+        "dev_relative_mse": 0.0002692691178109468,
+        "predicted_cpu_ms": 0.044666
+      },
+      {
+        "config": [
+          3,
+          4,
+          0
+        ],
+        "bytes": 86528,
+        "dev_relative_mse": 0.02050383481557422,
+        "predicted_cpu_ms": 0.047166
+      },
+      {
+        "config": [
+          3,
+          4,
+          1
+        ],
+        "bytes": 86016,
+        "dev_relative_mse": 0.03140129531653455,
+        "predicted_cpu_ms": 0.048083
+      },
+      {
+        "config": [
+          3,
+          4,
+          2
+        ],
+        "bytes": 85760,
+        "dev_relative_mse": 0.043343208870635884,
+        "predicted_cpu_ms": 0.048667
+      },
+      {
+        "config": [
+          3,
+          4,
+          3
+        ],
+        "bytes": 90624,
+        "dev_relative_mse": 0.0002245847632033077,
+        "predicted_cpu_ms": 0.046083
+      },
+      {
+        "config": [
+          3,
+          4,
+          4
+        ],
+        "bytes": 90112,
+        "dev_relative_mse": 0.0002588682279642132,
+        "predicted_cpu_ms": 0.047416
+      },
+      {
+        "config": [
+          3,
+          4,
+          5
+        ],
+        "bytes": 89856,
+        "dev_relative_mse": 0.00029944294206150034,
+        "predicted_cpu_ms": 0.047916
+      },
+      {
+        "config": [
+          3,
+          5,
+          0
+        ],
+        "bytes": 94208,
+        "dev_relative_mse": 0.020488818119034656,
+        "predicted_cpu_ms": 0.052999
+      },
+      {
+        "config": [
+          3,
+          5,
+          1
+        ],
+        "bytes": 93696,
+        "dev_relative_mse": 0.031432630842628456,
+        "predicted_cpu_ms": 0.053916
+      },
+      {
+        "config": [
+          3,
+          5,
+          2
+        ],
+        "bytes": 93440,
+        "dev_relative_mse": 0.043319714407297934,
+        "predicted_cpu_ms": 0.0545
+      },
+      {
+        "config": [
+          3,
+          5,
+          3
+        ],
+        "bytes": 98304,
+        "dev_relative_mse": 0.0002552801463733771,
+        "predicted_cpu_ms": 0.051916
+      },
+      {
+        "config": [
+          3,
+          5,
+          4
+        ],
+        "bytes": 97792,
+        "dev_relative_mse": 0.0002915518176382522,
+        "predicted_cpu_ms": 0.053249
+      },
+      {
+        "config": [
+          3,
+          5,
+          5
+        ],
+        "bytes": 97536,
+        "dev_relative_mse": 0.0003354975511713471,
+        "predicted_cpu_ms": 0.053749
+      },
+      {
+        "config": [
+          4,
+          0,
+          0
+        ],
+        "bytes": 72704,
+        "dev_relative_mse": 0.043157369837100126,
+        "predicted_cpu_ms": 0.05325
+      },
+      {
+        "config": [
+          4,
+          0,
+          1
+        ],
+        "bytes": 72192,
+        "dev_relative_mse": 0.052912450995441174,
+        "predicted_cpu_ms": 0.054167
+      },
+      {
+        "config": [
+          4,
+          0,
+          2
+        ],
+        "bytes": 71936,
+        "dev_relative_mse": 0.06468613527161116,
+        "predicted_cpu_ms": 0.054751
+      },
+      {
+        "config": [
+          4,
+          0,
+          3
+        ],
+        "bytes": 76800,
+        "dev_relative_mse": 0.020786080867249628,
+        "predicted_cpu_ms": 0.052167
+      },
+      {
+        "config": [
+          4,
+          0,
+          4
+        ],
+        "bytes": 76288,
+        "dev_relative_mse": 0.02087702204164605,
+        "predicted_cpu_ms": 0.0535
+      },
+      {
+        "config": [
+          4,
+          0,
+          5
+        ],
+        "bytes": 76032,
+        "dev_relative_mse": 0.020922082325429282,
+        "predicted_cpu_ms": 0.054
+      },
+      {
+        "config": [
+          4,
+          1,
+          0
+        ],
+        "bytes": 71168,
+        "dev_relative_mse": 0.053280941976998626,
+        "predicted_cpu_ms": 0.055499999999999994
+      },
+      {
+        "config": [
+          4,
+          1,
+          1
+        ],
+        "bytes": 70656,
+        "dev_relative_mse": 0.06319238036481388,
+        "predicted_cpu_ms": 0.056416999999999995
+      },
+      {
+        "config": [
+          4,
+          1,
+          2
+        ],
+        "bytes": 70400,
+        "dev_relative_mse": 0.07482465730587382,
+        "predicted_cpu_ms": 0.057000999999999996
+      },
+      {
+        "config": [
+          4,
+          1,
+          3
+        ],
+        "bytes": 75264,
+        "dev_relative_mse": 0.030710999815039865,
+        "predicted_cpu_ms": 0.054417
+      },
+      {
+        "config": [
+          4,
+          1,
+          4
+        ],
+        "bytes": 74752,
+        "dev_relative_mse": 0.03069459795270722,
+        "predicted_cpu_ms": 0.055749999999999994
+      },
+      {
+        "config": [
+          4,
+          1,
+          5
+        ],
+        "bytes": 74496,
+        "dev_relative_mse": 0.03075580845184894,
+        "predicted_cpu_ms": 0.056249999999999994
+      },
+      {
+        "config": [
+          4,
+          2,
+          0
+        ],
+        "bytes": 74752,
+        "dev_relative_mse": 0.060554450162991276,
+        "predicted_cpu_ms": 0.057874999999999996
+      },
+      {
+        "config": [
+          4,
+          2,
+          1
+        ],
+        "bytes": 74240,
+        "dev_relative_mse": 0.07002087464888773,
+        "predicted_cpu_ms": 0.058792
+      },
+      {
+        "config": [
+          4,
+          2,
+          2
+        ],
+        "bytes": 73984,
+        "dev_relative_mse": 0.08056823894234243,
+        "predicted_cpu_ms": 0.059376
+      },
+      {
+        "config": [
+          4,
+          2,
+          3
+        ],
+        "bytes": 78848,
+        "dev_relative_mse": 0.039296434288548406,
+        "predicted_cpu_ms": 0.056792
+      },
+      {
+        "config": [
+          4,
+          2,
+          4
+        ],
+        "bytes": 78336,
+        "dev_relative_mse": 0.039231108736083604,
+        "predicted_cpu_ms": 0.058124999999999996
+      },
+      {
+        "config": [
+          4,
+          2,
+          5
+        ],
+        "bytes": 78080,
+        "dev_relative_mse": 0.03927876299779257,
+        "predicted_cpu_ms": 0.058625
+      },
+      {
+        "config": [
+          4,
+          3,
+          0
+        ],
+        "bytes": 84992,
+        "dev_relative_mse": 0.020545223843974756,
+        "predicted_cpu_ms": 0.050207999999999996
+      },
+      {
+        "config": [
+          4,
+          3,
+          1
+        ],
+        "bytes": 84480,
+        "dev_relative_mse": 0.03149385582173923,
+        "predicted_cpu_ms": 0.051125
+      },
+      {
+        "config": [
+          4,
+          3,
+          2
+        ],
+        "bytes": 84224,
+        "dev_relative_mse": 0.043454294018657504,
+        "predicted_cpu_ms": 0.051709
+      },
+      {
+        "config": [
+          4,
+          3,
+          3
+        ],
+        "bytes": 89088,
+        "dev_relative_mse": 0.00023932304569578003,
+        "predicted_cpu_ms": 0.049124999999999995
+      },
+      {
+        "config": [
+          4,
+          3,
+          4
+        ],
+        "bytes": 88576,
+        "dev_relative_mse": 0.0002709550178991557,
+        "predicted_cpu_ms": 0.050457999999999996
+      },
+      {
+        "config": [
+          4,
+          3,
+          5
+        ],
+        "bytes": 88320,
+        "dev_relative_mse": 0.00031773533396709186,
+        "predicted_cpu_ms": 0.050957999999999996
+      },
+      {
+        "config": [
+          4,
+          4,
+          0
+        ],
+        "bytes": 83456,
+        "dev_relative_mse": 0.020590869917094502,
+        "predicted_cpu_ms": 0.053458
+      },
+      {
+        "config": [
+          4,
+          4,
+          1
+        ],
+        "bytes": 82944,
+        "dev_relative_mse": 0.03152231386868578,
+        "predicted_cpu_ms": 0.054375
+      },
+      {
+        "config": [
+          4,
+          4,
+          2
+        ],
+        "bytes": 82688,
+        "dev_relative_mse": 0.04348861682254847,
+        "predicted_cpu_ms": 0.054959
+      },
+      {
+        "config": [
+          4,
+          4,
+          3
+        ],
+        "bytes": 87552,
+        "dev_relative_mse": 0.00027211126214829934,
+        "predicted_cpu_ms": 0.052375
+      },
+      {
+        "config": [
+          4,
+          4,
+          4
+        ],
+        "bytes": 87040,
+        "dev_relative_mse": 0.0003051284880017373,
+        "predicted_cpu_ms": 0.053708
+      },
+      {
+        "config": [
+          4,
+          4,
+          5
+        ],
+        "bytes": 86784,
+        "dev_relative_mse": 0.0003481277033812173,
+        "predicted_cpu_ms": 0.054208
+      },
+      {
+        "config": [
+          4,
+          5,
+          0
+        ],
+        "bytes": 91136,
+        "dev_relative_mse": 0.020580110470418956,
+        "predicted_cpu_ms": 0.059290999999999996
+      },
+      {
+        "config": [
+          4,
+          5,
+          1
+        ],
+        "bytes": 90624,
+        "dev_relative_mse": 0.031557394257776046,
+        "predicted_cpu_ms": 0.060208
+      },
+      {
+        "config": [
+          4,
+          5,
+          2
+        ],
+        "bytes": 90368,
+        "dev_relative_mse": 0.043469196650466335,
+        "predicted_cpu_ms": 0.060792
+      },
+      {
+        "config": [
+          4,
+          5,
+          3
+        ],
+        "bytes": 95232,
+        "dev_relative_mse": 0.0003060143980068153,
+        "predicted_cpu_ms": 0.058207999999999996
+      },
+      {
+        "config": [
+          4,
+          5,
+          4
+        ],
+        "bytes": 94720,
+        "dev_relative_mse": 0.0003409955715956555,
+        "predicted_cpu_ms": 0.059541
+      },
+      {
+        "config": [
+          4,
+          5,
+          5
+        ],
+        "bytes": 94464,
+        "dev_relative_mse": 0.00038737916198481107,
+        "predicted_cpu_ms": 0.060041
+      },
+      {
+        "config": [
+          5,
+          0,
+          0
+        ],
+        "bytes": 71168,
+        "dev_relative_mse": 0.04316170821157442,
+        "predicted_cpu_ms": 0.056833
+      },
+      {
+        "config": [
+          5,
+          0,
+          1
+        ],
+        "bytes": 70656,
+        "dev_relative_mse": 0.05293361494560259,
+        "predicted_cpu_ms": 0.05775
+      },
+      {
+        "config": [
+          5,
+          0,
+          2
+        ],
+        "bytes": 70400,
+        "dev_relative_mse": 0.06475254487589259,
+        "predicted_cpu_ms": 0.058334000000000004
+      },
+      {
+        "config": [
+          5,
+          0,
+          3
+        ],
+        "bytes": 75264,
+        "dev_relative_mse": 0.020845834351013733,
+        "predicted_cpu_ms": 0.05575
+      },
+      {
+        "config": [
+          5,
+          0,
+          4
+        ],
+        "bytes": 74752,
+        "dev_relative_mse": 0.020938158033910543,
+        "predicted_cpu_ms": 0.057083
+      },
+      {
+        "config": [
+          5,
+          0,
+          5
+        ],
+        "bytes": 74496,
+        "dev_relative_mse": 0.020985810680499126,
+        "predicted_cpu_ms": 0.057583
+      },
+      {
+        "config": [
+          5,
+          1,
+          0
+        ],
+        "bytes": 69632,
+        "dev_relative_mse": 0.05340923896147481,
+        "predicted_cpu_ms": 0.059083
+      },
+      {
+        "config": [
+          5,
+          1,
+          1
+        ],
+        "bytes": 69120,
+        "dev_relative_mse": 0.06335305782115923,
+        "predicted_cpu_ms": 0.06
+      },
+      {
+        "config": [
+          5,
+          1,
+          2
+        ],
+        "bytes": 68864,
+        "dev_relative_mse": 0.07503868835442189,
+        "predicted_cpu_ms": 0.060584
+      },
+      {
+        "config": [
+          5,
+          1,
+          3
+        ],
+        "bytes": 73728,
+        "dev_relative_mse": 0.030895901545153044,
+        "predicted_cpu_ms": 0.058
+      },
+      {
+        "config": [
+          5,
+          1,
+          4
+        ],
+        "bytes": 73216,
+        "dev_relative_mse": 0.030882281778103184,
+        "predicted_cpu_ms": 0.059333
+      },
+      {
+        "config": [
+          5,
+          1,
+          5
+        ],
+        "bytes": 72960,
+        "dev_relative_mse": 0.03094506627895636,
+        "predicted_cpu_ms": 0.059833
+      },
+      {
+        "config": [
+          5,
+          2,
+          0
+        ],
+        "bytes": 73216,
+        "dev_relative_mse": 0.06062265430516278,
+        "predicted_cpu_ms": 0.061458
+      },
+      {
+        "config": [
+          5,
+          2,
+          1
+        ],
+        "bytes": 72704,
+        "dev_relative_mse": 0.07012282097809236,
+        "predicted_cpu_ms": 0.062375
+      },
+      {
+        "config": [
+          5,
+          2,
+          2
+        ],
+        "bytes": 72448,
+        "dev_relative_mse": 0.08072471258761595,
+        "predicted_cpu_ms": 0.062959
+      },
+      {
+        "config": [
+          5,
+          2,
+          3
+        ],
+        "bytes": 77312,
+        "dev_relative_mse": 0.039418699142196076,
+        "predicted_cpu_ms": 0.060375000000000005
+      },
+      {
+        "config": [
+          5,
+          2,
+          4
+        ],
+        "bytes": 76800,
+        "dev_relative_mse": 0.03935617079737047,
+        "predicted_cpu_ms": 0.061708
+      },
+      {
+        "config": [
+          5,
+          2,
+          5
+        ],
+        "bytes": 76544,
+        "dev_relative_mse": 0.039405490644905616,
+        "predicted_cpu_ms": 0.062208
+      },
+      {
+        "config": [
+          5,
+          3,
+          0
+        ],
+        "bytes": 83456,
+        "dev_relative_mse": 0.020569238608227375,
+        "predicted_cpu_ms": 0.053791
+      },
+      {
+        "config": [
+          5,
+          3,
+          1
+        ],
+        "bytes": 82944,
+        "dev_relative_mse": 0.03154102063134138,
+        "predicted_cpu_ms": 0.054708
+      },
+      {
+        "config": [
+          5,
+          3,
+          2
+        ],
+        "bytes": 82688,
+        "dev_relative_mse": 0.0435548421378619,
+        "predicted_cpu_ms": 0.055292
+      },
+      {
+        "config": [
+          5,
+          3,
+          3
+        ],
+        "bytes": 87552,
+        "dev_relative_mse": 0.00030468047757181715,
+        "predicted_cpu_ms": 0.052708
+      },
+      {
+        "config": [
+          5,
+          3,
+          4
+        ],
+        "bytes": 87040,
+        "dev_relative_mse": 0.0003389100608481224,
+        "predicted_cpu_ms": 0.054041
+      },
+      {
+        "config": [
+          5,
+          3,
+          5
+        ],
+        "bytes": 86784,
+        "dev_relative_mse": 0.00038727335469469667,
+        "predicted_cpu_ms": 0.054541
+      },
+      {
+        "config": [
+          5,
+          4,
+          0
+        ],
+        "bytes": 81920,
+        "dev_relative_mse": 0.020628379201802837,
+        "predicted_cpu_ms": 0.057041
+      },
+      {
+        "config": [
+          5,
+          4,
+          1
+        ],
+        "bytes": 81408,
+        "dev_relative_mse": 0.0315821094834321,
+        "predicted_cpu_ms": 0.057958
+      },
+      {
+        "config": [
+          5,
+          4,
+          2
+        ],
+        "bytes": 81152,
+        "dev_relative_mse": 0.04360159390006804,
+        "predicted_cpu_ms": 0.058542000000000004
+      },
+      {
+        "config": [
+          5,
+          4,
+          3
+        ],
+        "bytes": 86016,
+        "dev_relative_mse": 0.0003507201072205603,
+        "predicted_cpu_ms": 0.055958
+      },
+      {
+        "config": [
+          5,
+          4,
+          4
+        ],
+        "bytes": 85504,
+        "dev_relative_mse": 0.0003863566585192564,
+        "predicted_cpu_ms": 0.057291
+      },
+      {
+        "config": [
+          5,
+          4,
+          5
+        ],
+        "bytes": 85248,
+        "dev_relative_mse": 0.00043098185780161456,
+        "predicted_cpu_ms": 0.057791
+      },
+      {
+        "config": [
+          5,
+          5,
+          0
+        ],
+        "bytes": 89600,
+        "dev_relative_mse": 0.020619401269632555,
+        "predicted_cpu_ms": 0.062874
+      },
+      {
+        "config": [
+          5,
+          5,
+          1
+        ],
+        "bytes": 89088,
+        "dev_relative_mse": 0.03161839867919758,
+        "predicted_cpu_ms": 0.063791
+      },
+      {
+        "config": [
+          5,
+          5,
+          2
+        ],
+        "bytes": 88832,
+        "dev_relative_mse": 0.043582864312754245,
+        "predicted_cpu_ms": 0.064375
+      },
+      {
+        "config": [
+          5,
+          5,
+          3
+        ],
+        "bytes": 93696,
+        "dev_relative_mse": 0.0003868578617690385,
+        "predicted_cpu_ms": 0.061791
+      },
+      {
+        "config": [
+          5,
+          5,
+          4
+        ],
+        "bytes": 93184,
+        "dev_relative_mse": 0.0004245188121753224,
+        "predicted_cpu_ms": 0.063124
+      },
+      {
+        "config": [
+          5,
+          5,
+          5
+        ],
+        "bytes": 92928,
+        "dev_relative_mse": 0.0004725479374020511,
+        "predicted_cpu_ms": 0.063624
+      }
+    ]
+  },
+  {
+    "seed": 23,
+    "layer_costs_ms": [
+      [
+        0.029875,
+        0.0335,
+        0.038875,
+        0.022792,
+        0.029416,
+        0.033083
+      ],
+      [
+        0.01625,
+        0.018459,
+        0.020666,
+        0.013333,
+        0.016166,
+        0.019709
+      ],
+      [
+        0.007583,
+        0.008625,
+        0.009292,
+        0.006583,
+        0.007667,
+        0.008375
+      ]
+    ],
+    "candidates": [
+      {
+        "config": [
+          0,
+          0,
+          0
+        ],
+        "bytes": 51200,
+        "dev_relative_mse": 0.06982455505788365,
+        "predicted_cpu_ms": 0.053708
+      },
+      {
+        "config": [
+          0,
+          0,
+          1
+        ],
+        "bytes": 50688,
+        "dev_relative_mse": 0.0796712470244611,
+        "predicted_cpu_ms": 0.05475
+      },
+      {
+        "config": [
+          0,
+          0,
+          2
+        ],
+        "bytes": 50432,
+        "dev_relative_mse": 0.09614983328081103,
+        "predicted_cpu_ms": 0.055417
+      },
+      {
+        "config": [
+          0,
+          0,
+          3
+        ],
+        "bytes": 55296,
+        "dev_relative_mse": 0.049991219855617545,
+        "predicted_cpu_ms": 0.052708
+      },
+      {
+        "config": [
+          0,
+          0,
+          4
+        ],
+        "bytes": 54784,
+        "dev_relative_mse": 0.050072436480260725,
+        "predicted_cpu_ms": 0.053792
+      },
+      {
+        "config": [
+          0,
+          0,
+          5
+        ],
+        "bytes": 54528,
+        "dev_relative_mse": 0.050021070182325364,
+        "predicted_cpu_ms": 0.0545
+      },
+      {
+        "config": [
+          0,
+          1,
+          0
+        ],
+        "bytes": 49664,
+        "dev_relative_mse": 0.07870214336793456,
+        "predicted_cpu_ms": 0.055917
+      },
+      {
+        "config": [
+          0,
+          1,
+          1
+        ],
+        "bytes": 49152,
+        "dev_relative_mse": 0.08927250210586124,
+        "predicted_cpu_ms": 0.056958999999999996
+      },
+      {
+        "config": [
+          0,
+          1,
+          2
+        ],
+        "bytes": 48896,
+        "dev_relative_mse": 0.10599803416708896,
+        "predicted_cpu_ms": 0.057626
+      },
+      {
+        "config": [
+          0,
+          1,
+          3
+        ],
+        "bytes": 53760,
+        "dev_relative_mse": 0.05892527803872513,
+        "predicted_cpu_ms": 0.054917
+      },
+      {
+        "config": [
+          0,
+          1,
+          4
+        ],
+        "bytes": 53248,
+        "dev_relative_mse": 0.059007868569570236,
+        "predicted_cpu_ms": 0.056000999999999995
+      },
+      {
+        "config": [
+          0,
+          1,
+          5
+        ],
+        "bytes": 52992,
+        "dev_relative_mse": 0.05888966099429671,
+        "predicted_cpu_ms": 0.056708999999999996
+      },
+      {
+        "config": [
+          0,
+          2,
+          0
+        ],
+        "bytes": 53248,
+        "dev_relative_mse": 0.09208070859077869,
+        "predicted_cpu_ms": 0.058124
+      },
+      {
+        "config": [
+          0,
+          2,
+          1
+        ],
+        "bytes": 52736,
+        "dev_relative_mse": 0.10210749356564106,
+        "predicted_cpu_ms": 0.059165999999999996
+      },
+      {
+        "config": [
+          0,
+          2,
+          2
+        ],
+        "bytes": 52480,
+        "dev_relative_mse": 0.11708918837409837,
+        "predicted_cpu_ms": 0.059833
+      },
+      {
+        "config": [
+          0,
+          2,
+          3
+        ],
+        "bytes": 57344,
+        "dev_relative_mse": 0.07223199074886452,
+        "predicted_cpu_ms": 0.057124
+      },
+      {
+        "config": [
+          0,
+          2,
+          4
+        ],
+        "bytes": 56832,
+        "dev_relative_mse": 0.07231296091850999,
+        "predicted_cpu_ms": 0.058207999999999996
+      },
+      {
+        "config": [
+          0,
+          2,
+          5
+        ],
+        "bytes": 56576,
+        "dev_relative_mse": 0.07239885645020612,
+        "predicted_cpu_ms": 0.058915999999999996
+      },
+      {
+        "config": [
+          0,
+          3,
+          0
+        ],
+        "bytes": 63488,
+        "dev_relative_mse": 0.048808768850471335,
+        "predicted_cpu_ms": 0.050790999999999996
+      },
+      {
+        "config": [
+          0,
+          3,
+          1
+        ],
+        "bytes": 62976,
+        "dev_relative_mse": 0.058180723487739026,
+        "predicted_cpu_ms": 0.051833
+      },
+      {
+        "config": [
+          0,
+          3,
+          2
+        ],
+        "bytes": 62720,
+        "dev_relative_mse": 0.07347922164910035,
+        "predicted_cpu_ms": 0.0525
+      },
+      {
+        "config": [
+          0,
+          3,
+          3
+        ],
+        "bytes": 67584,
+        "dev_relative_mse": 0.028318918672086964,
+        "predicted_cpu_ms": 0.049791
+      },
+      {
+        "config": [
+          0,
+          3,
+          4
+        ],
+        "bytes": 67072,
+        "dev_relative_mse": 0.028386197768899047,
+        "predicted_cpu_ms": 0.050875
+      },
+      {
+        "config": [
+          0,
+          3,
+          5
+        ],
+        "bytes": 66816,
+        "dev_relative_mse": 0.028326247661441328,
+        "predicted_cpu_ms": 0.051583
+      },
+      {
+        "config": [
+          0,
+          4,
+          0
+        ],
+        "bytes": 61952,
+        "dev_relative_mse": 0.048908382236249326,
+        "predicted_cpu_ms": 0.053624
+      },
+      {
+        "config": [
+          0,
+          4,
+          1
+        ],
+        "bytes": 61440,
+        "dev_relative_mse": 0.058316642824841454,
+        "predicted_cpu_ms": 0.054666
+      },
+      {
+        "config": [
+          0,
+          4,
+          2
+        ],
+        "bytes": 61184,
+        "dev_relative_mse": 0.07364157948989004,
+        "predicted_cpu_ms": 0.055333
+      },
+      {
+        "config": [
+          0,
+          4,
+          3
+        ],
+        "bytes": 66048,
+        "dev_relative_mse": 0.028442208151776432,
+        "predicted_cpu_ms": 0.052624
+      },
+      {
+        "config": [
+          0,
+          4,
+          4
+        ],
+        "bytes": 65536,
+        "dev_relative_mse": 0.02850657030821114,
+        "predicted_cpu_ms": 0.053708
+      },
+      {
+        "config": [
+          0,
+          4,
+          5
+        ],
+        "bytes": 65280,
+        "dev_relative_mse": 0.028445852802408286,
+        "predicted_cpu_ms": 0.054416
+      },
+      {
+        "config": [
+          0,
+          5,
+          0
+        ],
+        "bytes": 69632,
+        "dev_relative_mse": 0.04902239408590043,
+        "predicted_cpu_ms": 0.057167
+      },
+      {
+        "config": [
+          0,
+          5,
+          1
+        ],
+        "bytes": 69120,
+        "dev_relative_mse": 0.05842432583608489,
+        "predicted_cpu_ms": 0.058209
+      },
+      {
+        "config": [
+          0,
+          5,
+          2
+        ],
+        "bytes": 68864,
+        "dev_relative_mse": 0.07374253589895571,
+        "predicted_cpu_ms": 0.058876
+      },
+      {
+        "config": [
+          0,
+          5,
+          3
+        ],
+        "bytes": 73728,
+        "dev_relative_mse": 0.02851410430814262,
+        "predicted_cpu_ms": 0.056167
+      },
+      {
+        "config": [
+          0,
+          5,
+          4
+        ],
+        "bytes": 73216,
+        "dev_relative_mse": 0.028581078018959045,
+        "predicted_cpu_ms": 0.057250999999999996
+      },
+      {
+        "config": [
+          0,
+          5,
+          5
+        ],
+        "bytes": 72960,
+        "dev_relative_mse": 0.028516905186273873,
+        "predicted_cpu_ms": 0.057959
+      },
+      {
+        "config": [
+          1,
+          0,
+          0
+        ],
+        "bytes": 48128,
+        "dev_relative_mse": 0.0834457754471576,
+        "predicted_cpu_ms": 0.057333
+      },
+      {
+        "config": [
+          1,
+          0,
+          1
+        ],
+        "bytes": 47616,
+        "dev_relative_mse": 0.09395752741387857,
+        "predicted_cpu_ms": 0.058375
+      },
+      {
+        "config": [
+          1,
+          0,
+          2
+        ],
+        "bytes": 47360,
+        "dev_relative_mse": 0.10985031094353727,
+        "predicted_cpu_ms": 0.059042000000000004
+      },
+      {
+        "config": [
+          1,
+          0,
+          3
+        ],
+        "bytes": 52224,
+        "dev_relative_mse": 0.06383630905860317,
+        "predicted_cpu_ms": 0.056333
+      },
+      {
+        "config": [
+          1,
+          0,
+          4
+        ],
+        "bytes": 51712,
+        "dev_relative_mse": 0.06384490966427671,
+        "predicted_cpu_ms": 0.057417
+      },
+      {
+        "config": [
+          1,
+          0,
+          5
+        ],
+        "bytes": 51456,
+        "dev_relative_mse": 0.06378845222542602,
+        "predicted_cpu_ms": 0.058125
+      },
+      {
+        "config": [
+          1,
+          1,
+          0
+        ],
+        "bytes": 46592,
+        "dev_relative_mse": 0.09502362760234752,
+        "predicted_cpu_ms": 0.059542000000000005
+      },
+      {
+        "config": [
+          1,
+          1,
+          1
+        ],
+        "bytes": 46080,
+        "dev_relative_mse": 0.10639957794806183,
+        "predicted_cpu_ms": 0.060584
+      },
+      {
+        "config": [
+          1,
+          1,
+          2
+        ],
+        "bytes": 45824,
+        "dev_relative_mse": 0.12272819346749925,
+        "predicted_cpu_ms": 0.061251
+      },
+      {
+        "config": [
+          1,
+          1,
+          3
+        ],
+        "bytes": 50688,
+        "dev_relative_mse": 0.07523892235314408,
+        "predicted_cpu_ms": 0.058542000000000004
+      },
+      {
+        "config": [
+          1,
+          1,
+          4
+        ],
+        "bytes": 50176,
+        "dev_relative_mse": 0.07525333620346174,
+        "predicted_cpu_ms": 0.059626
+      },
+      {
+        "config": [
+          1,
+          1,
+          5
+        ],
+        "bytes": 49920,
+        "dev_relative_mse": 0.07512314829728843,
+        "predicted_cpu_ms": 0.060334
+      },
+      {
+        "config": [
+          1,
+          2,
+          0
+        ],
+        "bytes": 50176,
+        "dev_relative_mse": 0.1082410351954688,
+        "predicted_cpu_ms": 0.061749000000000005
+      },
+      {
+        "config": [
+          1,
+          2,
+          1
+        ],
+        "bytes": 49664,
+        "dev_relative_mse": 0.11883961728727543,
+        "predicted_cpu_ms": 0.062791
+      },
+      {
+        "config": [
+          1,
+          2,
+          2
+        ],
+        "bytes": 49408,
+        "dev_relative_mse": 0.1329726640442583,
+        "predicted_cpu_ms": 0.063458
+      },
+      {
+        "config": [
+          1,
+          2,
+          3
+        ],
+        "bytes": 54272,
+        "dev_relative_mse": 0.08824891677276332,
+        "predicted_cpu_ms": 0.060749000000000004
+      },
+      {
+        "config": [
+          1,
+          2,
+          4
+        ],
+        "bytes": 53760,
+        "dev_relative_mse": 0.0882641040671866,
+        "predicted_cpu_ms": 0.061833
+      },
+      {
+        "config": [
+          1,
+          2,
+          5
+        ],
+        "bytes": 53504,
+        "dev_relative_mse": 0.0883126814487481,
+        "predicted_cpu_ms": 0.062541
+      },
+      {
+        "config": [
+          1,
+          3,
+          0
+        ],
+        "bytes": 60416,
+        "dev_relative_mse": 0.062274847285715806,
+        "predicted_cpu_ms": 0.054416
+      },
+      {
+        "config": [
+          1,
+          3,
+          1
+        ],
+        "bytes": 59904,
+        "dev_relative_mse": 0.07235312632322002,
+        "predicted_cpu_ms": 0.055458
+      },
+      {
+        "config": [
+          1,
+          3,
+          2
+        ],
+        "bytes": 59648,
+        "dev_relative_mse": 0.08706096246029829,
+        "predicted_cpu_ms": 0.056125
+      },
+      {
+        "config": [
+          1,
+          3,
+          3
+        ],
+        "bytes": 64512,
+        "dev_relative_mse": 0.042094520535081933,
+        "predicted_cpu_ms": 0.053416000000000005
+      },
+      {
+        "config": [
+          1,
+          3,
+          4
+        ],
+        "bytes": 64000,
+        "dev_relative_mse": 0.042094565433669594,
+        "predicted_cpu_ms": 0.0545
+      },
+      {
+        "config": [
+          1,
+          3,
+          5
+        ],
+        "bytes": 63744,
+        "dev_relative_mse": 0.04201431610715707,
+        "predicted_cpu_ms": 0.055208
+      },
+      {
+        "config": [
+          1,
+          4,
+          0
+        ],
+        "bytes": 58880,
+        "dev_relative_mse": 0.06249129938692353,
+        "predicted_cpu_ms": 0.057249
+      },
+      {
+        "config": [
+          1,
+          4,
+          1
+        ],
+        "bytes": 58368,
+        "dev_relative_mse": 0.07260113741928079,
+        "predicted_cpu_ms": 0.058291
+      },
+      {
+        "config": [
+          1,
+          4,
+          2
+        ],
+        "bytes": 58112,
+        "dev_relative_mse": 0.08733554970466191,
+        "predicted_cpu_ms": 0.058958
+      },
+      {
+        "config": [
+          1,
+          4,
+          3
+        ],
+        "bytes": 62976,
+        "dev_relative_mse": 0.04233789225604286,
+        "predicted_cpu_ms": 0.056249
+      },
+      {
+        "config": [
+          1,
+          4,
+          4
+        ],
+        "bytes": 62464,
+        "dev_relative_mse": 0.042335168064715954,
+        "predicted_cpu_ms": 0.057333
+      },
+      {
+        "config": [
+          1,
+          4,
+          5
+        ],
+        "bytes": 62208,
+        "dev_relative_mse": 0.042253186820657346,
+        "predicted_cpu_ms": 0.058041
+      },
+      {
+        "config": [
+          1,
+          5,
+          0
+        ],
+        "bytes": 66560,
+        "dev_relative_mse": 0.06248901677133471,
+        "predicted_cpu_ms": 0.060792000000000006
+      },
+      {
+        "config": [
+          1,
+          5,
+          1
+        ],
+        "bytes": 66048,
+        "dev_relative_mse": 0.07258664241653551,
+        "predicted_cpu_ms": 0.061834
+      },
+      {
+        "config": [
+          1,
+          5,
+          2
+        ],
+        "bytes": 65792,
+        "dev_relative_mse": 0.08729738718733253,
+        "predicted_cpu_ms": 0.062501
+      },
+      {
+        "config": [
+          1,
+          5,
+          3
+        ],
+        "bytes": 70656,
+        "dev_relative_mse": 0.04230352387270108,
+        "predicted_cpu_ms": 0.059792000000000005
+      },
+      {
+        "config": [
+          1,
+          5,
+          4
+        ],
+        "bytes": 70144,
+        "dev_relative_mse": 0.04230290373729196,
+        "predicted_cpu_ms": 0.060876
+      },
+      {
+        "config": [
+          1,
+          5,
+          5
+        ],
+        "bytes": 69888,
+        "dev_relative_mse": 0.04221622285529048,
+        "predicted_cpu_ms": 0.061584
+      },
+      {
+        "config": [
+          2,
+          0,
+          0
+        ],
+        "bytes": 46592,
+        "dev_relative_mse": 0.09705453192050356,
+        "predicted_cpu_ms": 0.062708
+      },
+      {
+        "config": [
+          2,
+          0,
+          1
+        ],
+        "bytes": 46080,
+        "dev_relative_mse": 0.10747415369613901,
+        "predicted_cpu_ms": 0.06375
+      },
+      {
+        "config": [
+          2,
+          0,
+          2
+        ],
+        "bytes": 45824,
+        "dev_relative_mse": 0.12205043238183208,
+        "predicted_cpu_ms": 0.064417
+      },
+      {
+        "config": [
+          2,
+          0,
+          3
+        ],
+        "bytes": 50688,
+        "dev_relative_mse": 0.07728651703883295,
+        "predicted_cpu_ms": 0.061708
+      },
+      {
+        "config": [
+          2,
+          0,
+          4
+        ],
+        "bytes": 50176,
+        "dev_relative_mse": 0.07731145760268346,
+        "predicted_cpu_ms": 0.062792
+      },
+      {
+        "config": [
+          2,
+          0,
+          5
+        ],
+        "bytes": 49920,
+        "dev_relative_mse": 0.07739022399380582,
+        "predicted_cpu_ms": 0.0635
+      },
+      {
+        "config": [
+          2,
+          1,
+          0
+        ],
+        "bytes": 45056,
+        "dev_relative_mse": 0.11033002715921761,
+        "predicted_cpu_ms": 0.064917
+      },
+      {
+        "config": [
+          2,
+          1,
+          1
+        ],
+        "bytes": 44544,
+        "dev_relative_mse": 0.12158966226641241,
+        "predicted_cpu_ms": 0.065959
+      },
+      {
+        "config": [
+          2,
+          1,
+          2
+        ],
+        "bytes": 44288,
+        "dev_relative_mse": 0.136673039166038,
+        "predicted_cpu_ms": 0.066626
+      },
+      {
+        "config": [
+          2,
+          1,
+          3
+        ],
+        "bytes": 49152,
+        "dev_relative_mse": 0.09058427462813777,
+        "predicted_cpu_ms": 0.063917
+      },
+      {
+        "config": [
+          2,
+          1,
+          4
+        ],
+        "bytes": 48640,
+        "dev_relative_mse": 0.09060726068622926,
+        "predicted_cpu_ms": 0.065001
+      },
+      {
+        "config": [
+          2,
+          1,
+          5
+        ],
+        "bytes": 48384,
+        "dev_relative_mse": 0.09061893977642416,
+        "predicted_cpu_ms": 0.065709
+      },
+      {
+        "config": [
+          2,
+          2,
+          0
+        ],
+        "bytes": 48640,
+        "dev_relative_mse": 0.12342841398248759,
+        "predicted_cpu_ms": 0.067124
+      },
+      {
+        "config": [
+          2,
+          2,
+          1
+        ],
+        "bytes": 48128,
+        "dev_relative_mse": 0.13424548345244058,
+        "predicted_cpu_ms": 0.068166
+      },
+      {
+        "config": [
+          2,
+          2,
+          2
+        ],
+        "bytes": 47872,
+        "dev_relative_mse": 0.1471578934298923,
+        "predicted_cpu_ms": 0.068833
+      },
+      {
+        "config": [
+          2,
+          2,
+          3
+        ],
+        "bytes": 52736,
+        "dev_relative_mse": 0.10337923598045218,
+        "predicted_cpu_ms": 0.066124
+      },
+      {
+        "config": [
+          2,
+          2,
+          4
+        ],
+        "bytes": 52224,
+        "dev_relative_mse": 0.10340122006413949,
+        "predicted_cpu_ms": 0.067208
+      },
+      {
+        "config": [
+          2,
+          2,
+          5
+        ],
+        "bytes": 51968,
+        "dev_relative_mse": 0.10358264033025366,
+        "predicted_cpu_ms": 0.067916
+      },
+      {
+        "config": [
+          2,
+          3,
+          0
+        ],
+        "bytes": 58880,
+        "dev_relative_mse": 0.07846617484781139,
+        "predicted_cpu_ms": 0.059791
+      },
+      {
+        "config": [
+          2,
+          3,
+          1
+        ],
+        "bytes": 58368,
+        "dev_relative_mse": 0.08831982593376057,
+        "predicted_cpu_ms": 0.060833
+      },
+      {
+        "config": [
+          2,
+          3,
+          2
+        ],
+        "bytes": 58112,
+        "dev_relative_mse": 0.10189511441170014,
+        "predicted_cpu_ms": 0.0615
+      },
+      {
+        "config": [
+          2,
+          3,
+          3
+        ],
+        "bytes": 62976,
+        "dev_relative_mse": 0.05791966131500553,
+        "predicted_cpu_ms": 0.058790999999999996
+      },
+      {
+        "config": [
+          2,
+          3,
+          4
+        ],
+        "bytes": 62464,
+        "dev_relative_mse": 0.05792552459707984,
+        "predicted_cpu_ms": 0.059875
+      },
+      {
+        "config": [
+          2,
+          3,
+          5
+        ],
+        "bytes": 62208,
+        "dev_relative_mse": 0.05799294298910012,
+        "predicted_cpu_ms": 0.060583
+      },
+      {
+        "config": [
+          2,
+          4,
+          0
+        ],
+        "bytes": 57344,
+        "dev_relative_mse": 0.07867440246848298,
+        "predicted_cpu_ms": 0.062624
+      },
+      {
+        "config": [
+          2,
+          4,
+          1
+        ],
+        "bytes": 56832,
+        "dev_relative_mse": 0.08855021119012653,
+        "predicted_cpu_ms": 0.063666
+      },
+      {
+        "config": [
+          2,
+          4,
+          2
+        ],
+        "bytes": 56576,
+        "dev_relative_mse": 0.10216068452479199,
+        "predicted_cpu_ms": 0.064333
+      },
+      {
+        "config": [
+          2,
+          4,
+          3
+        ],
+        "bytes": 61440,
+        "dev_relative_mse": 0.05812829288548387,
+        "predicted_cpu_ms": 0.061624
+      },
+      {
+        "config": [
+          2,
+          4,
+          4
+        ],
+        "bytes": 60928,
+        "dev_relative_mse": 0.058130950538045435,
+        "predicted_cpu_ms": 0.062708
+      },
+      {
+        "config": [
+          2,
+          4,
+          5
+        ],
+        "bytes": 60672,
+        "dev_relative_mse": 0.05819715018019716,
+        "predicted_cpu_ms": 0.063416
+      },
+      {
+        "config": [
+          2,
+          5,
+          0
+        ],
+        "bytes": 65024,
+        "dev_relative_mse": 0.07876638027799711,
+        "predicted_cpu_ms": 0.066167
+      },
+      {
+        "config": [
+          2,
+          5,
+          1
+        ],
+        "bytes": 64512,
+        "dev_relative_mse": 0.0886213981686653,
+        "predicted_cpu_ms": 0.067209
+      },
+      {
+        "config": [
+          2,
+          5,
+          2
+        ],
+        "bytes": 64256,
+        "dev_relative_mse": 0.10222237939891574,
+        "predicted_cpu_ms": 0.067876
+      },
+      {
+        "config": [
+          2,
+          5,
+          3
+        ],
+        "bytes": 69120,
+        "dev_relative_mse": 0.058201507199990045,
+        "predicted_cpu_ms": 0.065167
+      },
+      {
+        "config": [
+          2,
+          5,
+          4
+        ],
+        "bytes": 68608,
+        "dev_relative_mse": 0.05820717179878479,
+        "predicted_cpu_ms": 0.066251
+      },
+      {
+        "config": [
+          2,
+          5,
+          5
+        ],
+        "bytes": 68352,
+        "dev_relative_mse": 0.05826833258654718,
+        "predicted_cpu_ms": 0.066959
+      },
+      {
+        "config": [
+          3,
+          0,
+          0
+        ],
+        "bytes": 75776,
+        "dev_relative_mse": 0.04318315920926109,
+        "predicted_cpu_ms": 0.046625
+      },
+      {
+        "config": [
+          3,
+          0,
+          1
+        ],
+        "bytes": 75264,
+        "dev_relative_mse": 0.052907428585564305,
+        "predicted_cpu_ms": 0.047667
+      },
+      {
+        "config": [
+          3,
+          0,
+          2
+        ],
+        "bytes": 75008,
+        "dev_relative_mse": 0.06854125658149897,
+        "predicted_cpu_ms": 0.048334
+      },
+      {
+        "config": [
+          3,
+          0,
+          3
+        ],
+        "bytes": 79872,
+        "dev_relative_mse": 0.02304132442218673,
+        "predicted_cpu_ms": 0.045625
+      },
+      {
+        "config": [
+          3,
+          0,
+          4
+        ],
+        "bytes": 79360,
+        "dev_relative_mse": 0.02308432376677278,
+        "predicted_cpu_ms": 0.046709
+      },
+      {
+        "config": [
+          3,
+          0,
+          5
+        ],
+        "bytes": 79104,
+        "dev_relative_mse": 0.023138243376984665,
+        "predicted_cpu_ms": 0.047417
+      },
+      {
+        "config": [
+          3,
+          1,
+          0
+        ],
+        "bytes": 74240,
+        "dev_relative_mse": 0.05471742248391696,
+        "predicted_cpu_ms": 0.048834
+      },
+      {
+        "config": [
+          3,
+          1,
+          1
+        ],
+        "bytes": 73728,
+        "dev_relative_mse": 0.06537142805439103,
+        "predicted_cpu_ms": 0.049876000000000004
+      },
+      {
+        "config": [
+          3,
+          1,
+          2
+        ],
+        "bytes": 73472,
+        "dev_relative_mse": 0.08124665132069281,
+        "predicted_cpu_ms": 0.050543
+      },
+      {
+        "config": [
+          3,
+          1,
+          3
+        ],
+        "bytes": 78336,
+        "dev_relative_mse": 0.034744166470592475,
+        "predicted_cpu_ms": 0.047834
+      },
+      {
+        "config": [
+          3,
+          1,
+          4
+        ],
+        "bytes": 77824,
+        "dev_relative_mse": 0.03479113115205788,
+        "predicted_cpu_ms": 0.048918
+      },
+      {
+        "config": [
+          3,
+          1,
+          5
+        ],
+        "bytes": 77568,
+        "dev_relative_mse": 0.03478399945504791,
+        "predicted_cpu_ms": 0.049626
+      },
+      {
+        "config": [
+          3,
+          2,
+          0
+        ],
+        "bytes": 77824,
+        "dev_relative_mse": 0.0698123896154852,
+        "predicted_cpu_ms": 0.051041
+      },
+      {
+        "config": [
+          3,
+          2,
+          1
+        ],
+        "bytes": 77312,
+        "dev_relative_mse": 0.07982572116999005,
+        "predicted_cpu_ms": 0.052083000000000004
+      },
+      {
+        "config": [
+          3,
+          2,
+          2
+        ],
+        "bytes": 77056,
+        "dev_relative_mse": 0.094307504106203,
+        "predicted_cpu_ms": 0.05275
+      },
+      {
+        "config": [
+          3,
+          2,
+          3
+        ],
+        "bytes": 81920,
+        "dev_relative_mse": 0.04978162421932487,
+        "predicted_cpu_ms": 0.050041
+      },
+      {
+        "config": [
+          3,
+          2,
+          4
+        ],
+        "bytes": 81408,
+        "dev_relative_mse": 0.049829326257917694,
+        "predicted_cpu_ms": 0.051125000000000004
+      },
+      {
+        "config": [
+          3,
+          2,
+          5
+        ],
+        "bytes": 81152,
+        "dev_relative_mse": 0.0500171460703293,
+        "predicted_cpu_ms": 0.051833000000000004
+      },
+      {
+        "config": [
+          3,
+          3,
+          0
+        ],
+        "bytes": 88064,
+        "dev_relative_mse": 0.02099699619562613,
+        "predicted_cpu_ms": 0.043708
+      },
+      {
+        "config": [
+          3,
+          3,
+          1
+        ],
+        "bytes": 87552,
+        "dev_relative_mse": 0.030239814997013302,
+        "predicted_cpu_ms": 0.04475
+      },
+      {
+        "config": [
+          3,
+          3,
+          2
+        ],
+        "bytes": 87296,
+        "dev_relative_mse": 0.04485397835931155,
+        "predicted_cpu_ms": 0.045417
+      },
+      {
+        "config": [
+          3,
+          3,
+          3
+        ],
+        "bytes": 92160,
+        "dev_relative_mse": 0.0002186488023418515,
+        "predicted_cpu_ms": 0.042707999999999996
+      },
+      {
+        "config": [
+          3,
+          3,
+          4
+        ],
+        "bytes": 91648,
+        "dev_relative_mse": 0.0002504104910216547,
+        "predicted_cpu_ms": 0.043792
+      },
+      {
+        "config": [
+          3,
+          3,
+          5
+        ],
+        "bytes": 91392,
+        "dev_relative_mse": 0.0002961614227861591,
+        "predicted_cpu_ms": 0.0445
+      },
+      {
+        "config": [
+          3,
+          4,
+          0
+        ],
+        "bytes": 86528,
+        "dev_relative_mse": 0.02102226869675561,
+        "predicted_cpu_ms": 0.046541
+      },
+      {
+        "config": [
+          3,
+          4,
+          1
+        ],
+        "bytes": 86016,
+        "dev_relative_mse": 0.030312114865912124,
+        "predicted_cpu_ms": 0.047583
+      },
+      {
+        "config": [
+          3,
+          4,
+          2
+        ],
+        "bytes": 85760,
+        "dev_relative_mse": 0.04493508784078173,
+        "predicted_cpu_ms": 0.04825
+      },
+      {
+        "config": [
+          3,
+          4,
+          3
+        ],
+        "bytes": 90624,
+        "dev_relative_mse": 0.00026789318118665347,
+        "predicted_cpu_ms": 0.045541
+      },
+      {
+        "config": [
+          3,
+          4,
+          4
+        ],
+        "bytes": 90112,
+        "dev_relative_mse": 0.0002963186682322195,
+        "predicted_cpu_ms": 0.046625
+      },
+      {
+        "config": [
+          3,
+          4,
+          5
+        ],
+        "bytes": 89856,
+        "dev_relative_mse": 0.00034239741797353933,
+        "predicted_cpu_ms": 0.047333
+      },
+      {
+        "config": [
+          3,
+          5,
+          0
+        ],
+        "bytes": 94208,
+        "dev_relative_mse": 0.021088681534700292,
+        "predicted_cpu_ms": 0.050084000000000004
+      },
+      {
+        "config": [
+          3,
+          5,
+          1
+        ],
+        "bytes": 93696,
+        "dev_relative_mse": 0.030363232397163098,
+        "predicted_cpu_ms": 0.051126000000000005
+      },
+      {
+        "config": [
+          3,
+          5,
+          2
+        ],
+        "bytes": 93440,
+        "dev_relative_mse": 0.04497599785464586,
+        "predicted_cpu_ms": 0.051793
+      },
+      {
+        "config": [
+          3,
+          5,
+          3
+        ],
+        "bytes": 98304,
+        "dev_relative_mse": 0.000297522857379689,
+        "predicted_cpu_ms": 0.049084
+      },
+      {
+        "config": [
+          3,
+          5,
+          4
+        ],
+        "bytes": 97792,
+        "dev_relative_mse": 0.0003280246271733783,
+        "predicted_cpu_ms": 0.050168000000000004
+      },
+      {
+        "config": [
+          3,
+          5,
+          5
+        ],
+        "bytes": 97536,
+        "dev_relative_mse": 0.00037018174182551467,
+        "predicted_cpu_ms": 0.050876000000000005
+      },
+      {
+        "config": [
+          4,
+          0,
+          0
+        ],
+        "bytes": 72704,
+        "dev_relative_mse": 0.043284390067526476,
+        "predicted_cpu_ms": 0.053249000000000005
+      },
+      {
+        "config": [
+          4,
+          0,
+          1
+        ],
+        "bytes": 72192,
+        "dev_relative_mse": 0.05291737400716363,
+        "predicted_cpu_ms": 0.054291000000000006
+      },
+      {
+        "config": [
+          4,
+          0,
+          2
+        ],
+        "bytes": 71936,
+        "dev_relative_mse": 0.06853996197855278,
+        "predicted_cpu_ms": 0.054958
+      },
+      {
+        "config": [
+          4,
+          0,
+          3
+        ],
+        "bytes": 76800,
+        "dev_relative_mse": 0.02309816643866018,
+        "predicted_cpu_ms": 0.052249000000000004
+      },
+      {
+        "config": [
+          4,
+          0,
+          4
+        ],
+        "bytes": 76288,
+        "dev_relative_mse": 0.02313860252903218,
+        "predicted_cpu_ms": 0.053333000000000005
+      },
+      {
+        "config": [
+          4,
+          0,
+          5
+        ],
+        "bytes": 76032,
+        "dev_relative_mse": 0.02319139754474903,
+        "predicted_cpu_ms": 0.054041000000000006
+      },
+      {
+        "config": [
+          4,
+          1,
+          0
+        ],
+        "bytes": 71168,
+        "dev_relative_mse": 0.05463276366424206,
+        "predicted_cpu_ms": 0.055458
+      },
+      {
+        "config": [
+          4,
+          1,
+          1
+        ],
+        "bytes": 70656,
+        "dev_relative_mse": 0.06520250384890619,
+        "predicted_cpu_ms": 0.0565
+      },
+      {
+        "config": [
+          4,
+          1,
+          2
+        ],
+        "bytes": 70400,
+        "dev_relative_mse": 0.08107016744471104,
+        "predicted_cpu_ms": 0.057167
+      },
+      {
+        "config": [
+          4,
+          1,
+          3
+        ],
+        "bytes": 75264,
+        "dev_relative_mse": 0.034606374696036814,
+        "predicted_cpu_ms": 0.054458
+      },
+      {
+        "config": [
+          4,
+          1,
+          4
+        ],
+        "bytes": 74752,
+        "dev_relative_mse": 0.03465005515563693,
+        "predicted_cpu_ms": 0.055542
+      },
+      {
+        "config": [
+          4,
+          1,
+          5
+        ],
+        "bytes": 74496,
+        "dev_relative_mse": 0.034640396912842326,
+        "predicted_cpu_ms": 0.05625
+      },
+      {
+        "config": [
+          4,
+          2,
+          0
+        ],
+        "bytes": 74752,
+        "dev_relative_mse": 0.06989490161809914,
+        "predicted_cpu_ms": 0.057665
+      },
+      {
+        "config": [
+          4,
+          2,
+          1
+        ],
+        "bytes": 74240,
+        "dev_relative_mse": 0.07982961805917697,
+        "predicted_cpu_ms": 0.058707
+      },
+      {
+        "config": [
+          4,
+          2,
+          2
+        ],
+        "bytes": 73984,
+        "dev_relative_mse": 0.09433110591199213,
+        "predicted_cpu_ms": 0.059374
+      },
+      {
+        "config": [
+          4,
+          2,
+          3
+        ],
+        "bytes": 78848,
+        "dev_relative_mse": 0.049826804903357405,
+        "predicted_cpu_ms": 0.056665
+      },
+      {
+        "config": [
+          4,
+          2,
+          4
+        ],
+        "bytes": 78336,
+        "dev_relative_mse": 0.04987079122862646,
+        "predicted_cpu_ms": 0.057749
+      },
+      {
+        "config": [
+          4,
+          2,
+          5
+        ],
+        "bytes": 78080,
+        "dev_relative_mse": 0.05005624811768139,
+        "predicted_cpu_ms": 0.058457
+      },
+      {
+        "config": [
+          4,
+          3,
+          0
+        ],
+        "bytes": 84992,
+        "dev_relative_mse": 0.021056792778087332,
+        "predicted_cpu_ms": 0.050332
+      },
+      {
+        "config": [
+          4,
+          3,
+          1
+        ],
+        "bytes": 84480,
+        "dev_relative_mse": 0.030231396274611532,
+        "predicted_cpu_ms": 0.051374
+      },
+      {
+        "config": [
+          4,
+          3,
+          2
+        ],
+        "bytes": 84224,
+        "dev_relative_mse": 0.04484373838873194,
+        "predicted_cpu_ms": 0.052041000000000004
+      },
+      {
+        "config": [
+          4,
+          3,
+          3
+        ],
+        "bytes": 89088,
+        "dev_relative_mse": 0.00025695287203006997,
+        "predicted_cpu_ms": 0.049332
+      },
+      {
+        "config": [
+          4,
+          3,
+          4
+        ],
+        "bytes": 88576,
+        "dev_relative_mse": 0.00028505308930331286,
+        "predicted_cpu_ms": 0.050416
+      },
+      {
+        "config": [
+          4,
+          3,
+          5
+        ],
+        "bytes": 88320,
+        "dev_relative_mse": 0.0003290655162618053,
+        "predicted_cpu_ms": 0.051124
+      },
+      {
+        "config": [
+          4,
+          4,
+          0
+        ],
+        "bytes": 83456,
+        "dev_relative_mse": 0.021073168592351872,
+        "predicted_cpu_ms": 0.053165000000000004
+      },
+      {
+        "config": [
+          4,
+          4,
+          1
+        ],
+        "bytes": 82944,
+        "dev_relative_mse": 0.030294416196760737,
+        "predicted_cpu_ms": 0.054207000000000005
+      },
+      {
+        "config": [
+          4,
+          4,
+          2
+        ],
+        "bytes": 82688,
+        "dev_relative_mse": 0.04491476322133493,
+        "predicted_cpu_ms": 0.054874
+      },
+      {
+        "config": [
+          4,
+          4,
+          3
+        ],
+        "bytes": 87552,
+        "dev_relative_mse": 0.00029751923566895803,
+        "predicted_cpu_ms": 0.052165
+      },
+      {
+        "config": [
+          4,
+          4,
+          4
+        ],
+        "bytes": 87040,
+        "dev_relative_mse": 0.00032231942125401827,
+        "predicted_cpu_ms": 0.053249000000000005
+      },
+      {
+        "config": [
+          4,
+          4,
+          5
+        ],
+        "bytes": 86784,
+        "dev_relative_mse": 0.0003666347589617985,
+        "predicted_cpu_ms": 0.053957000000000005
+      },
+      {
+        "config": [
+          4,
+          5,
+          0
+        ],
+        "bytes": 91136,
+        "dev_relative_mse": 0.021141041446381344,
+        "predicted_cpu_ms": 0.056708
+      },
+      {
+        "config": [
+          4,
+          5,
+          1
+        ],
+        "bytes": 90624,
+        "dev_relative_mse": 0.030347195673427148,
+        "predicted_cpu_ms": 0.05775
+      },
+      {
+        "config": [
+          4,
+          5,
+          2
+        ],
+        "bytes": 90368,
+        "dev_relative_mse": 0.044957495150125266,
+        "predicted_cpu_ms": 0.058417000000000004
+      },
+      {
+        "config": [
+          4,
+          5,
+          3
+        ],
+        "bytes": 95232,
+        "dev_relative_mse": 0.0003291292609273322,
+        "predicted_cpu_ms": 0.055708
+      },
+      {
+        "config": [
+          4,
+          5,
+          4
+        ],
+        "bytes": 94720,
+        "dev_relative_mse": 0.0003560712845719275,
+        "predicted_cpu_ms": 0.056792
+      },
+      {
+        "config": [
+          4,
+          5,
+          5
+        ],
+        "bytes": 94464,
+        "dev_relative_mse": 0.00039639433708178523,
+        "predicted_cpu_ms": 0.0575
+      },
+      {
+        "config": [
+          5,
+          0,
+          0
+        ],
+        "bytes": 71168,
+        "dev_relative_mse": 0.043354278728736075,
+        "predicted_cpu_ms": 0.056916
+      },
+      {
+        "config": [
+          5,
+          0,
+          1
+        ],
+        "bytes": 70656,
+        "dev_relative_mse": 0.05292017300822257,
+        "predicted_cpu_ms": 0.057958
+      },
+      {
+        "config": [
+          5,
+          0,
+          2
+        ],
+        "bytes": 70400,
+        "dev_relative_mse": 0.06862934311580819,
+        "predicted_cpu_ms": 0.058625000000000003
+      },
+      {
+        "config": [
+          5,
+          0,
+          3
+        ],
+        "bytes": 75264,
+        "dev_relative_mse": 0.023148647180455412,
+        "predicted_cpu_ms": 0.055916
+      },
+      {
+        "config": [
+          5,
+          0,
+          4
+        ],
+        "bytes": 74752,
+        "dev_relative_mse": 0.0231844615269098,
+        "predicted_cpu_ms": 0.057
+      },
+      {
+        "config": [
+          5,
+          0,
+          5
+        ],
+        "bytes": 74496,
+        "dev_relative_mse": 0.023233222586601997,
+        "predicted_cpu_ms": 0.057708
+      },
+      {
+        "config": [
+          5,
+          1,
+          0
+        ],
+        "bytes": 69632,
+        "dev_relative_mse": 0.054653542477778795,
+        "predicted_cpu_ms": 0.059125000000000004
+      },
+      {
+        "config": [
+          5,
+          1,
+          1
+        ],
+        "bytes": 69120,
+        "dev_relative_mse": 0.06515650189340495,
+        "predicted_cpu_ms": 0.060167
+      },
+      {
+        "config": [
+          5,
+          1,
+          2
+        ],
+        "bytes": 68864,
+        "dev_relative_mse": 0.08112362711791106,
+        "predicted_cpu_ms": 0.060834
+      },
+      {
+        "config": [
+          5,
+          1,
+          3
+        ],
+        "bytes": 73728,
+        "dev_relative_mse": 0.034629723603639626,
+        "predicted_cpu_ms": 0.058125
+      },
+      {
+        "config": [
+          5,
+          1,
+          4
+        ],
+        "bytes": 73216,
+        "dev_relative_mse": 0.03466836131682434,
+        "predicted_cpu_ms": 0.059209
+      },
+      {
+        "config": [
+          5,
+          1,
+          5
+        ],
+        "bytes": 72960,
+        "dev_relative_mse": 0.034655338157136985,
+        "predicted_cpu_ms": 0.059917
+      },
+      {
+        "config": [
+          5,
+          2,
+          0
+        ],
+        "bytes": 73216,
+        "dev_relative_mse": 0.06993453389145175,
+        "predicted_cpu_ms": 0.061332000000000005
+      },
+      {
+        "config": [
+          5,
+          2,
+          1
+        ],
+        "bytes": 72704,
+        "dev_relative_mse": 0.07980816787842682,
+        "predicted_cpu_ms": 0.062374
+      },
+      {
+        "config": [
+          5,
+          2,
+          2
+        ],
+        "bytes": 72448,
+        "dev_relative_mse": 0.09442771808837963,
+        "predicted_cpu_ms": 0.063041
+      },
+      {
+        "config": [
+          5,
+          2,
+          3
+        ],
+        "bytes": 77312,
+        "dev_relative_mse": 0.04987241791561891,
+        "predicted_cpu_ms": 0.060332000000000004
+      },
+      {
+        "config": [
+          5,
+          2,
+          4
+        ],
+        "bytes": 76800,
+        "dev_relative_mse": 0.049911975086581774,
+        "predicted_cpu_ms": 0.061416
+      },
+      {
+        "config": [
+          5,
+          2,
+          5
+        ],
+        "bytes": 76544,
+        "dev_relative_mse": 0.05009376732346663,
+        "predicted_cpu_ms": 0.062124
+      },
+      {
+        "config": [
+          5,
+          3,
+          0
+        ],
+        "bytes": 83456,
+        "dev_relative_mse": 0.02114520899362718,
+        "predicted_cpu_ms": 0.053999
+      },
+      {
+        "config": [
+          5,
+          3,
+          1
+        ],
+        "bytes": 82944,
+        "dev_relative_mse": 0.030264167048864057,
+        "predicted_cpu_ms": 0.055041
+      },
+      {
+        "config": [
+          5,
+          3,
+          2
+        ],
+        "bytes": 82688,
+        "dev_relative_mse": 0.04492570582094431,
+        "predicted_cpu_ms": 0.055708
+      },
+      {
+        "config": [
+          5,
+          3,
+          3
+        ],
+        "bytes": 87552,
+        "dev_relative_mse": 0.00031709489439239415,
+        "predicted_cpu_ms": 0.052999000000000004
+      },
+      {
+        "config": [
+          5,
+          3,
+          4
+        ],
+        "bytes": 87040,
+        "dev_relative_mse": 0.00034226524238955376,
+        "predicted_cpu_ms": 0.054083
+      },
+      {
+        "config": [
+          5,
+          3,
+          5
+        ],
+        "bytes": 86784,
+        "dev_relative_mse": 0.0003816417745605215,
+        "predicted_cpu_ms": 0.054791
+      },
+      {
+        "config": [
+          5,
+          4,
+          0
+        ],
+        "bytes": 81920,
+        "dev_relative_mse": 0.021174666497338034,
+        "predicted_cpu_ms": 0.056832
+      },
+      {
+        "config": [
+          5,
+          4,
+          1
+        ],
+        "bytes": 81408,
+        "dev_relative_mse": 0.03034055234548162,
+        "predicted_cpu_ms": 0.057874
+      },
+      {
+        "config": [
+          5,
+          4,
+          2
+        ],
+        "bytes": 81152,
+        "dev_relative_mse": 0.045010190397904194,
+        "predicted_cpu_ms": 0.058541
+      },
+      {
+        "config": [
+          5,
+          4,
+          3
+        ],
+        "bytes": 86016,
+        "dev_relative_mse": 0.0003698441131977737,
+        "predicted_cpu_ms": 0.055832
+      },
+      {
+        "config": [
+          5,
+          4,
+          4
+        ],
+        "bytes": 85504,
+        "dev_relative_mse": 0.0003917061546104257,
+        "predicted_cpu_ms": 0.056916
+      },
+      {
+        "config": [
+          5,
+          4,
+          5
+        ],
+        "bytes": 85248,
+        "dev_relative_mse": 0.000431389288039887,
+        "predicted_cpu_ms": 0.057624
+      },
+      {
+        "config": [
+          5,
+          5,
+          0
+        ],
+        "bytes": 89600,
+        "dev_relative_mse": 0.021243582730844052,
+        "predicted_cpu_ms": 0.060375000000000005
+      },
+      {
+        "config": [
+          5,
+          5,
+          1
+        ],
+        "bytes": 89088,
+        "dev_relative_mse": 0.030395531570691327,
+        "predicted_cpu_ms": 0.061417
+      },
+      {
+        "config": [
+          5,
+          5,
+          2
+        ],
+        "bytes": 88832,
+        "dev_relative_mse": 0.04505493631019767,
+        "predicted_cpu_ms": 0.062084
+      },
+      {
+        "config": [
+          5,
+          5,
+          3
+        ],
+        "bytes": 93696,
+        "dev_relative_mse": 0.0004034872548371352,
+        "predicted_cpu_ms": 0.059375000000000004
+      },
+      {
+        "config": [
+          5,
+          5,
+          4
+        ],
+        "bytes": 93184,
+        "dev_relative_mse": 0.0004275312460734177,
+        "predicted_cpu_ms": 0.060459
+      },
+      {
+        "config": [
+          5,
+          5,
+          5
+        ],
+        "bytes": 92928,
+        "dev_relative_mse": 0.00046315649533955295,
+        "predicted_cpu_ms": 0.061167
+      }
+    ]
+  },
+  {
+    "seed": 37,
+    "layer_costs_ms": [
+      [
+        0.028084,
+        0.033875,
+        0.037417,
+        0.02325,
+        0.029292,
+        0.033
+      ],
+      [
+        0.017958,
+        0.019,
+        0.021375,
+        0.013041,
+        0.016458,
+        0.017667
+      ],
+      [
+        0.007708,
+        0.008666,
+        0.009083,
+        0.00675,
+        0.00775,
+        0.008334
+      ]
+    ],
+    "candidates": [
+      {
+        "config": [
+          0,
+          0,
+          0
+        ],
+        "bytes": 51200,
+        "dev_relative_mse": 0.06656418673571574,
+        "predicted_cpu_ms": 0.05375
+      },
+      {
+        "config": [
+          0,
+          0,
+          1
+        ],
+        "bytes": 50688,
+        "dev_relative_mse": 0.07695682212910099,
+        "predicted_cpu_ms": 0.054708
+      },
+      {
+        "config": [
+          0,
+          0,
+          2
+        ],
+        "bytes": 50432,
+        "dev_relative_mse": 0.0949231765241975,
+        "predicted_cpu_ms": 0.055125
+      },
+      {
+        "config": [
+          0,
+          0,
+          3
+        ],
+        "bytes": 55296,
+        "dev_relative_mse": 0.0480508207322328,
+        "predicted_cpu_ms": 0.052792
+      },
+      {
+        "config": [
+          0,
+          0,
+          4
+        ],
+        "bytes": 54784,
+        "dev_relative_mse": 0.04802959388806863,
+        "predicted_cpu_ms": 0.053792
+      },
+      {
+        "config": [
+          0,
+          0,
+          5
+        ],
+        "bytes": 54528,
+        "dev_relative_mse": 0.048110630929076734,
+        "predicted_cpu_ms": 0.054376
+      },
+      {
+        "config": [
+          0,
+          1,
+          0
+        ],
+        "bytes": 49664,
+        "dev_relative_mse": 0.07943342085375796,
+        "predicted_cpu_ms": 0.054792
+      },
+      {
+        "config": [
+          0,
+          1,
+          1
+        ],
+        "bytes": 49152,
+        "dev_relative_mse": 0.09034580349078294,
+        "predicted_cpu_ms": 0.05575
+      },
+      {
+        "config": [
+          0,
+          1,
+          2
+        ],
+        "bytes": 48896,
+        "dev_relative_mse": 0.1075801984786953,
+        "predicted_cpu_ms": 0.056167
+      },
+      {
+        "config": [
+          0,
+          1,
+          3
+        ],
+        "bytes": 53760,
+        "dev_relative_mse": 0.060753676137551255,
+        "predicted_cpu_ms": 0.053834
+      },
+      {
+        "config": [
+          0,
+          1,
+          4
+        ],
+        "bytes": 53248,
+        "dev_relative_mse": 0.060730404553267225,
+        "predicted_cpu_ms": 0.054834
+      },
+      {
+        "config": [
+          0,
+          1,
+          5
+        ],
+        "bytes": 52992,
+        "dev_relative_mse": 0.06082972304486493,
+        "predicted_cpu_ms": 0.055418
+      },
+      {
+        "config": [
+          0,
+          2,
+          0
+        ],
+        "bytes": 53248,
+        "dev_relative_mse": 0.08990299508140981,
+        "predicted_cpu_ms": 0.057167
+      },
+      {
+        "config": [
+          0,
+          2,
+          1
+        ],
+        "bytes": 52736,
+        "dev_relative_mse": 0.10042822966825397,
+        "predicted_cpu_ms": 0.058125
+      },
+      {
+        "config": [
+          0,
+          2,
+          2
+        ],
+        "bytes": 52480,
+        "dev_relative_mse": 0.11656358469869392,
+        "predicted_cpu_ms": 0.058542000000000004
+      },
+      {
+        "config": [
+          0,
+          2,
+          3
+        ],
+        "bytes": 57344,
+        "dev_relative_mse": 0.07104217126921547,
+        "predicted_cpu_ms": 0.056209
+      },
+      {
+        "config": [
+          0,
+          2,
+          4
+        ],
+        "bytes": 56832,
+        "dev_relative_mse": 0.07102184698899891,
+        "predicted_cpu_ms": 0.057209
+      },
+      {
+        "config": [
+          0,
+          2,
+          5
+        ],
+        "bytes": 56576,
+        "dev_relative_mse": 0.0710995268532895,
+        "predicted_cpu_ms": 0.057793000000000004
+      },
+      {
+        "config": [
+          0,
+          3,
+          0
+        ],
+        "bytes": 63488,
+        "dev_relative_mse": 0.0467924277718116,
+        "predicted_cpu_ms": 0.048833
+      },
+      {
+        "config": [
+          0,
+          3,
+          1
+        ],
+        "bytes": 62976,
+        "dev_relative_mse": 0.05724416716672199,
+        "predicted_cpu_ms": 0.049791
+      },
+      {
+        "config": [
+          0,
+          3,
+          2
+        ],
+        "bytes": 62720,
+        "dev_relative_mse": 0.07497231982010877,
+        "predicted_cpu_ms": 0.050208
+      },
+      {
+        "config": [
+          0,
+          3,
+          3
+        ],
+        "bytes": 67584,
+        "dev_relative_mse": 0.027809432640016937,
+        "predicted_cpu_ms": 0.047875
+      },
+      {
+        "config": [
+          0,
+          3,
+          4
+        ],
+        "bytes": 67072,
+        "dev_relative_mse": 0.027807314502345575,
+        "predicted_cpu_ms": 0.048875
+      },
+      {
+        "config": [
+          0,
+          3,
+          5
+        ],
+        "bytes": 66816,
+        "dev_relative_mse": 0.02790635727956976,
+        "predicted_cpu_ms": 0.049459
+      },
+      {
+        "config": [
+          0,
+          4,
+          0
+        ],
+        "bytes": 61952,
+        "dev_relative_mse": 0.04675118141560394,
+        "predicted_cpu_ms": 0.052250000000000005
+      },
+      {
+        "config": [
+          0,
+          4,
+          1
+        ],
+        "bytes": 61440,
+        "dev_relative_mse": 0.05727342059606629,
+        "predicted_cpu_ms": 0.053208000000000005
+      },
+      {
+        "config": [
+          0,
+          4,
+          2
+        ],
+        "bytes": 61184,
+        "dev_relative_mse": 0.07496051449191023,
+        "predicted_cpu_ms": 0.053625000000000006
+      },
+      {
+        "config": [
+          0,
+          4,
+          3
+        ],
+        "bytes": 66048,
+        "dev_relative_mse": 0.027752810574144363,
+        "predicted_cpu_ms": 0.051292000000000004
+      },
+      {
+        "config": [
+          0,
+          4,
+          4
+        ],
+        "bytes": 65536,
+        "dev_relative_mse": 0.027751766206109637,
+        "predicted_cpu_ms": 0.052292000000000005
+      },
+      {
+        "config": [
+          0,
+          4,
+          5
+        ],
+        "bytes": 65280,
+        "dev_relative_mse": 0.027851593244737675,
+        "predicted_cpu_ms": 0.052876
+      },
+      {
+        "config": [
+          0,
+          5,
+          0
+        ],
+        "bytes": 69632,
+        "dev_relative_mse": 0.04680858052607037,
+        "predicted_cpu_ms": 0.053459
+      },
+      {
+        "config": [
+          0,
+          5,
+          1
+        ],
+        "bytes": 69120,
+        "dev_relative_mse": 0.057315993939664696,
+        "predicted_cpu_ms": 0.054417
+      },
+      {
+        "config": [
+          0,
+          5,
+          2
+        ],
+        "bytes": 68864,
+        "dev_relative_mse": 0.07500395972547867,
+        "predicted_cpu_ms": 0.054834
+      },
+      {
+        "config": [
+          0,
+          5,
+          3
+        ],
+        "bytes": 73728,
+        "dev_relative_mse": 0.027801829023417043,
+        "predicted_cpu_ms": 0.052501
+      },
+      {
+        "config": [
+          0,
+          5,
+          4
+        ],
+        "bytes": 73216,
+        "dev_relative_mse": 0.02780301709001284,
+        "predicted_cpu_ms": 0.053501
+      },
+      {
+        "config": [
+          0,
+          5,
+          5
+        ],
+        "bytes": 72960,
+        "dev_relative_mse": 0.027902956481802705,
+        "predicted_cpu_ms": 0.054085
+      },
+      {
+        "config": [
+          1,
+          0,
+          0
+        ],
+        "bytes": 48128,
+        "dev_relative_mse": 0.08317606110905613,
+        "predicted_cpu_ms": 0.059541
+      },
+      {
+        "config": [
+          1,
+          0,
+          1
+        ],
+        "bytes": 47616,
+        "dev_relative_mse": 0.09306655956178318,
+        "predicted_cpu_ms": 0.060499
+      },
+      {
+        "config": [
+          1,
+          0,
+          2
+        ],
+        "bytes": 47360,
+        "dev_relative_mse": 0.112946209063565,
+        "predicted_cpu_ms": 0.060916
+      },
+      {
+        "config": [
+          1,
+          0,
+          3
+        ],
+        "bytes": 52224,
+        "dev_relative_mse": 0.06408433468494511,
+        "predicted_cpu_ms": 0.058583
+      },
+      {
+        "config": [
+          1,
+          0,
+          4
+        ],
+        "bytes": 51712,
+        "dev_relative_mse": 0.0640898340893422,
+        "predicted_cpu_ms": 0.059583
+      },
+      {
+        "config": [
+          1,
+          0,
+          5
+        ],
+        "bytes": 51456,
+        "dev_relative_mse": 0.06415826613035223,
+        "predicted_cpu_ms": 0.060167
+      },
+      {
+        "config": [
+          1,
+          1,
+          0
+        ],
+        "bytes": 46592,
+        "dev_relative_mse": 0.09590302050552746,
+        "predicted_cpu_ms": 0.060583
+      },
+      {
+        "config": [
+          1,
+          1,
+          1
+        ],
+        "bytes": 46080,
+        "dev_relative_mse": 0.10625587321172633,
+        "predicted_cpu_ms": 0.061541
+      },
+      {
+        "config": [
+          1,
+          1,
+          2
+        ],
+        "bytes": 45824,
+        "dev_relative_mse": 0.12516519865824252,
+        "predicted_cpu_ms": 0.061958
+      },
+      {
+        "config": [
+          1,
+          1,
+          3
+        ],
+        "bytes": 50688,
+        "dev_relative_mse": 0.07663535636279797,
+        "predicted_cpu_ms": 0.059625000000000004
+      },
+      {
+        "config": [
+          1,
+          1,
+          4
+        ],
+        "bytes": 50176,
+        "dev_relative_mse": 0.0766325054892756,
+        "predicted_cpu_ms": 0.060625
+      },
+      {
+        "config": [
+          1,
+          1,
+          5
+        ],
+        "bytes": 49920,
+        "dev_relative_mse": 0.07672635435655163,
+        "predicted_cpu_ms": 0.061209
+      },
+      {
+        "config": [
+          1,
+          2,
+          0
+        ],
+        "bytes": 50176,
+        "dev_relative_mse": 0.10502113522388178,
+        "predicted_cpu_ms": 0.062958
+      },
+      {
+        "config": [
+          1,
+          2,
+          1
+        ],
+        "bytes": 49664,
+        "dev_relative_mse": 0.11503861380755029,
+        "predicted_cpu_ms": 0.063916
+      },
+      {
+        "config": [
+          1,
+          2,
+          2
+        ],
+        "bytes": 49408,
+        "dev_relative_mse": 0.13292308355739335,
+        "predicted_cpu_ms": 0.064333
+      },
+      {
+        "config": [
+          1,
+          2,
+          3
+        ],
+        "bytes": 54272,
+        "dev_relative_mse": 0.08577289649008982,
+        "predicted_cpu_ms": 0.062000000000000006
+      },
+      {
+        "config": [
+          1,
+          2,
+          4
+        ],
+        "bytes": 53760,
+        "dev_relative_mse": 0.08575389959320413,
+        "predicted_cpu_ms": 0.063
+      },
+      {
+        "config": [
+          1,
+          2,
+          5
+        ],
+        "bytes": 53504,
+        "dev_relative_mse": 0.08583560455295945,
+        "predicted_cpu_ms": 0.063584
+      },
+      {
+        "config": [
+          1,
+          3,
+          0
+        ],
+        "bytes": 60416,
+        "dev_relative_mse": 0.06519837718871073,
+        "predicted_cpu_ms": 0.054624000000000006
+      },
+      {
+        "config": [
+          1,
+          3,
+          1
+        ],
+        "bytes": 59904,
+        "dev_relative_mse": 0.07542360916647843,
+        "predicted_cpu_ms": 0.055582000000000006
+      },
+      {
+        "config": [
+          1,
+          3,
+          2
+        ],
+        "bytes": 59648,
+        "dev_relative_mse": 0.09528006561314092,
+        "predicted_cpu_ms": 0.05599900000000001
+      },
+      {
+        "config": [
+          1,
+          3,
+          3
+        ],
+        "bytes": 64512,
+        "dev_relative_mse": 0.04587147899325218,
+        "predicted_cpu_ms": 0.053666000000000005
+      },
+      {
+        "config": [
+          1,
+          3,
+          4
+        ],
+        "bytes": 64000,
+        "dev_relative_mse": 0.04587862474467115,
+        "predicted_cpu_ms": 0.054666000000000006
+      },
+      {
+        "config": [
+          1,
+          3,
+          5
+        ],
+        "bytes": 63744,
+        "dev_relative_mse": 0.045956801434059794,
+        "predicted_cpu_ms": 0.05525
+      },
+      {
+        "config": [
+          1,
+          4,
+          0
+        ],
+        "bytes": 58880,
+        "dev_relative_mse": 0.06512645756815325,
+        "predicted_cpu_ms": 0.058041
+      },
+      {
+        "config": [
+          1,
+          4,
+          1
+        ],
+        "bytes": 58368,
+        "dev_relative_mse": 0.07540281819823183,
+        "predicted_cpu_ms": 0.058999
+      },
+      {
+        "config": [
+          1,
+          4,
+          2
+        ],
+        "bytes": 58112,
+        "dev_relative_mse": 0.09522642238960044,
+        "predicted_cpu_ms": 0.059416000000000004
+      },
+      {
+        "config": [
+          1,
+          4,
+          3
+        ],
+        "bytes": 62976,
+        "dev_relative_mse": 0.04578784207884767,
+        "predicted_cpu_ms": 0.057083
+      },
+      {
+        "config": [
+          1,
+          4,
+          4
+        ],
+        "bytes": 62464,
+        "dev_relative_mse": 0.04579634062111737,
+        "predicted_cpu_ms": 0.058083
+      },
+      {
+        "config": [
+          1,
+          4,
+          5
+        ],
+        "bytes": 62208,
+        "dev_relative_mse": 0.045875701688116756,
+        "predicted_cpu_ms": 0.058667000000000004
+      },
+      {
+        "config": [
+          1,
+          5,
+          0
+        ],
+        "bytes": 66560,
+        "dev_relative_mse": 0.06517328767544153,
+        "predicted_cpu_ms": 0.05925
+      },
+      {
+        "config": [
+          1,
+          5,
+          1
+        ],
+        "bytes": 66048,
+        "dev_relative_mse": 0.07544543378615387,
+        "predicted_cpu_ms": 0.060208
+      },
+      {
+        "config": [
+          1,
+          5,
+          2
+        ],
+        "bytes": 65792,
+        "dev_relative_mse": 0.09529250373716933,
+        "predicted_cpu_ms": 0.060625
+      },
+      {
+        "config": [
+          1,
+          5,
+          3
+        ],
+        "bytes": 70656,
+        "dev_relative_mse": 0.045811995333498154,
+        "predicted_cpu_ms": 0.058292000000000004
+      },
+      {
+        "config": [
+          1,
+          5,
+          4
+        ],
+        "bytes": 70144,
+        "dev_relative_mse": 0.04582191543857144,
+        "predicted_cpu_ms": 0.059292
+      },
+      {
+        "config": [
+          1,
+          5,
+          5
+        ],
+        "bytes": 69888,
+        "dev_relative_mse": 0.045900753328002954,
+        "predicted_cpu_ms": 0.059876
+      },
+      {
+        "config": [
+          2,
+          0,
+          0
+        ],
+        "bytes": 46592,
+        "dev_relative_mse": 0.10628925390388314,
+        "predicted_cpu_ms": 0.063083
+      },
+      {
+        "config": [
+          2,
+          0,
+          1
+        ],
+        "bytes": 46080,
+        "dev_relative_mse": 0.11409613817667895,
+        "predicted_cpu_ms": 0.064041
+      },
+      {
+        "config": [
+          2,
+          0,
+          2
+        ],
+        "bytes": 45824,
+        "dev_relative_mse": 0.13340799053300867,
+        "predicted_cpu_ms": 0.064458
+      },
+      {
+        "config": [
+          2,
+          0,
+          3
+        ],
+        "bytes": 50688,
+        "dev_relative_mse": 0.08687687495865647,
+        "predicted_cpu_ms": 0.062125
+      },
+      {
+        "config": [
+          2,
+          0,
+          4
+        ],
+        "bytes": 50176,
+        "dev_relative_mse": 0.08679814242826198,
+        "predicted_cpu_ms": 0.063125
+      },
+      {
+        "config": [
+          2,
+          0,
+          5
+        ],
+        "bytes": 49920,
+        "dev_relative_mse": 0.0868905553452118,
+        "predicted_cpu_ms": 0.063709
+      },
+      {
+        "config": [
+          2,
+          1,
+          0
+        ],
+        "bytes": 45056,
+        "dev_relative_mse": 0.12041775442547661,
+        "predicted_cpu_ms": 0.064125
+      },
+      {
+        "config": [
+          2,
+          1,
+          1
+        ],
+        "bytes": 44544,
+        "dev_relative_mse": 0.12875001580113676,
+        "predicted_cpu_ms": 0.065083
+      },
+      {
+        "config": [
+          2,
+          1,
+          2
+        ],
+        "bytes": 44288,
+        "dev_relative_mse": 0.14679318546126183,
+        "predicted_cpu_ms": 0.0655
+      },
+      {
+        "config": [
+          2,
+          1,
+          3
+        ],
+        "bytes": 49152,
+        "dev_relative_mse": 0.10060392079208809,
+        "predicted_cpu_ms": 0.063167
+      },
+      {
+        "config": [
+          2,
+          1,
+          4
+        ],
+        "bytes": 48640,
+        "dev_relative_mse": 0.1005249788577893,
+        "predicted_cpu_ms": 0.064167
+      },
+      {
+        "config": [
+          2,
+          1,
+          5
+        ],
+        "bytes": 48384,
+        "dev_relative_mse": 0.10065235716928556,
+        "predicted_cpu_ms": 0.064751
+      },
+      {
+        "config": [
+          2,
+          2,
+          0
+        ],
+        "bytes": 48640,
+        "dev_relative_mse": 0.12907934316901806,
+        "predicted_cpu_ms": 0.0665
+      },
+      {
+        "config": [
+          2,
+          2,
+          1
+        ],
+        "bytes": 48128,
+        "dev_relative_mse": 0.13700647816528858,
+        "predicted_cpu_ms": 0.067458
+      },
+      {
+        "config": [
+          2,
+          2,
+          2
+        ],
+        "bytes": 47872,
+        "dev_relative_mse": 0.15434092428578197,
+        "predicted_cpu_ms": 0.067875
+      },
+      {
+        "config": [
+          2,
+          2,
+          3
+        ],
+        "bytes": 52736,
+        "dev_relative_mse": 0.1088446096091655,
+        "predicted_cpu_ms": 0.065542
+      },
+      {
+        "config": [
+          2,
+          2,
+          4
+        ],
+        "bytes": 52224,
+        "dev_relative_mse": 0.10873945181309443,
+        "predicted_cpu_ms": 0.066542
+      },
+      {
+        "config": [
+          2,
+          2,
+          5
+        ],
+        "bytes": 51968,
+        "dev_relative_mse": 0.10883787752770105,
+        "predicted_cpu_ms": 0.067126
+      },
+      {
+        "config": [
+          2,
+          3,
+          0
+        ],
+        "bytes": 58880,
+        "dev_relative_mse": 0.08882123318216847,
+        "predicted_cpu_ms": 0.058165999999999995
+      },
+      {
+        "config": [
+          2,
+          3,
+          1
+        ],
+        "bytes": 58368,
+        "dev_relative_mse": 0.09712578851577323,
+        "predicted_cpu_ms": 0.059123999999999996
+      },
+      {
+        "config": [
+          2,
+          3,
+          2
+        ],
+        "bytes": 58112,
+        "dev_relative_mse": 0.11614544168360313,
+        "predicted_cpu_ms": 0.059541
+      },
+      {
+        "config": [
+          2,
+          3,
+          3
+        ],
+        "bytes": 62976,
+        "dev_relative_mse": 0.06937757651362912,
+        "predicted_cpu_ms": 0.057208
+      },
+      {
+        "config": [
+          2,
+          3,
+          4
+        ],
+        "bytes": 62464,
+        "dev_relative_mse": 0.0693193812689081,
+        "predicted_cpu_ms": 0.058207999999999996
+      },
+      {
+        "config": [
+          2,
+          3,
+          5
+        ],
+        "bytes": 62208,
+        "dev_relative_mse": 0.06942255566615817,
+        "predicted_cpu_ms": 0.058792
+      },
+      {
+        "config": [
+          2,
+          4,
+          0
+        ],
+        "bytes": 57344,
+        "dev_relative_mse": 0.088729374108776,
+        "predicted_cpu_ms": 0.061583
+      },
+      {
+        "config": [
+          2,
+          4,
+          1
+        ],
+        "bytes": 56832,
+        "dev_relative_mse": 0.09710433727465428,
+        "predicted_cpu_ms": 0.062541
+      },
+      {
+        "config": [
+          2,
+          4,
+          2
+        ],
+        "bytes": 56576,
+        "dev_relative_mse": 0.11610059070319521,
+        "predicted_cpu_ms": 0.062958
+      },
+      {
+        "config": [
+          2,
+          4,
+          3
+        ],
+        "bytes": 61440,
+        "dev_relative_mse": 0.06927789262825568,
+        "predicted_cpu_ms": 0.060625
+      },
+      {
+        "config": [
+          2,
+          4,
+          4
+        ],
+        "bytes": 60928,
+        "dev_relative_mse": 0.06921944101122447,
+        "predicted_cpu_ms": 0.061625
+      },
+      {
+        "config": [
+          2,
+          4,
+          5
+        ],
+        "bytes": 60672,
+        "dev_relative_mse": 0.0693232285733919,
+        "predicted_cpu_ms": 0.062209
+      },
+      {
+        "config": [
+          2,
+          5,
+          0
+        ],
+        "bytes": 65024,
+        "dev_relative_mse": 0.0888267625572312,
+        "predicted_cpu_ms": 0.062792
+      },
+      {
+        "config": [
+          2,
+          5,
+          1
+        ],
+        "bytes": 64512,
+        "dev_relative_mse": 0.0971836266575482,
+        "predicted_cpu_ms": 0.06375
+      },
+      {
+        "config": [
+          2,
+          5,
+          2
+        ],
+        "bytes": 64256,
+        "dev_relative_mse": 0.11619874731121525,
+        "predicted_cpu_ms": 0.064167
+      },
+      {
+        "config": [
+          2,
+          5,
+          3
+        ],
+        "bytes": 69120,
+        "dev_relative_mse": 0.0693294258239747,
+        "predicted_cpu_ms": 0.061834
+      },
+      {
+        "config": [
+          2,
+          5,
+          4
+        ],
+        "bytes": 68608,
+        "dev_relative_mse": 0.0692725517499339,
+        "predicted_cpu_ms": 0.062834
+      },
+      {
+        "config": [
+          2,
+          5,
+          5
+        ],
+        "bytes": 68352,
+        "dev_relative_mse": 0.06937651037720718,
+        "predicted_cpu_ms": 0.063418
+      },
+      {
+        "config": [
+          3,
+          0,
+          0
+        ],
+        "bytes": 75776,
+        "dev_relative_mse": 0.039305328321671204,
+        "predicted_cpu_ms": 0.048916
+      },
+      {
+        "config": [
+          3,
+          0,
+          1
+        ],
+        "bytes": 75264,
+        "dev_relative_mse": 0.05020670935134111,
+        "predicted_cpu_ms": 0.049874
+      },
+      {
+        "config": [
+          3,
+          0,
+          2
+        ],
+        "bytes": 75008,
+        "dev_relative_mse": 0.06954241045738922,
+        "predicted_cpu_ms": 0.050291
+      },
+      {
+        "config": [
+          3,
+          0,
+          3
+        ],
+        "bytes": 79872,
+        "dev_relative_mse": 0.02078920980611644,
+        "predicted_cpu_ms": 0.047958
+      },
+      {
+        "config": [
+          3,
+          0,
+          4
+        ],
+        "bytes": 79360,
+        "dev_relative_mse": 0.020779166449518997,
+        "predicted_cpu_ms": 0.048958
+      },
+      {
+        "config": [
+          3,
+          0,
+          5
+        ],
+        "bytes": 79104,
+        "dev_relative_mse": 0.020808956851451697,
+        "predicted_cpu_ms": 0.049541999999999996
+      },
+      {
+        "config": [
+          3,
+          1,
+          0
+        ],
+        "bytes": 74240,
+        "dev_relative_mse": 0.05177358990881824,
+        "predicted_cpu_ms": 0.049958
+      },
+      {
+        "config": [
+          3,
+          1,
+          1
+        ],
+        "bytes": 73728,
+        "dev_relative_mse": 0.06309718783364106,
+        "predicted_cpu_ms": 0.050916
+      },
+      {
+        "config": [
+          3,
+          1,
+          2
+        ],
+        "bytes": 73472,
+        "dev_relative_mse": 0.08186920222071967,
+        "predicted_cpu_ms": 0.051333000000000004
+      },
+      {
+        "config": [
+          3,
+          1,
+          3
+        ],
+        "bytes": 78336,
+        "dev_relative_mse": 0.032959766969407486,
+        "predicted_cpu_ms": 0.049
+      },
+      {
+        "config": [
+          3,
+          1,
+          4
+        ],
+        "bytes": 77824,
+        "dev_relative_mse": 0.032939154135383,
+        "predicted_cpu_ms": 0.05
+      },
+      {
+        "config": [
+          3,
+          1,
+          5
+        ],
+        "bytes": 77568,
+        "dev_relative_mse": 0.032996715850007005,
+        "predicted_cpu_ms": 0.050584
+      },
+      {
+        "config": [
+          3,
+          2,
+          0
+        ],
+        "bytes": 77824,
+        "dev_relative_mse": 0.0619963141699646,
+        "predicted_cpu_ms": 0.052333000000000005
+      },
+      {
+        "config": [
+          3,
+          2,
+          1
+        ],
+        "bytes": 77312,
+        "dev_relative_mse": 0.07299347205656079,
+        "predicted_cpu_ms": 0.053291000000000005
+      },
+      {
+        "config": [
+          3,
+          2,
+          2
+        ],
+        "bytes": 77056,
+        "dev_relative_mse": 0.09057601206119945,
+        "predicted_cpu_ms": 0.053708000000000006
+      },
+      {
+        "config": [
+          3,
+          2,
+          3
+        ],
+        "bytes": 81920,
+        "dev_relative_mse": 0.042809049505841426,
+        "predicted_cpu_ms": 0.051375000000000004
+      },
+      {
+        "config": [
+          3,
+          2,
+          4
+        ],
+        "bytes": 81408,
+        "dev_relative_mse": 0.04279306580132269,
+        "predicted_cpu_ms": 0.052375000000000005
+      },
+      {
+        "config": [
+          3,
+          2,
+          5
+        ],
+        "bytes": 81152,
+        "dev_relative_mse": 0.04281944861045982,
+        "predicted_cpu_ms": 0.052959
+      },
+      {
+        "config": [
+          3,
+          3,
+          0
+        ],
+        "bytes": 88064,
+        "dev_relative_mse": 0.01892179159740576,
+        "predicted_cpu_ms": 0.043998999999999996
+      },
+      {
+        "config": [
+          3,
+          3,
+          1
+        ],
+        "bytes": 87552,
+        "dev_relative_mse": 0.02980440678452834,
+        "predicted_cpu_ms": 0.044957
+      },
+      {
+        "config": [
+          3,
+          3,
+          2
+        ],
+        "bytes": 87296,
+        "dev_relative_mse": 0.04929456197923835,
+        "predicted_cpu_ms": 0.045374
+      },
+      {
+        "config": [
+          3,
+          3,
+          3
+        ],
+        "bytes": 92160,
+        "dev_relative_mse": 0.0002277083725557099,
+        "predicted_cpu_ms": 0.043041
+      },
+      {
+        "config": [
+          3,
+          3,
+          4
+        ],
+        "bytes": 91648,
+        "dev_relative_mse": 0.0002454620566640913,
+        "predicted_cpu_ms": 0.044041
+      },
+      {
+        "config": [
+          3,
+          3,
+          5
+        ],
+        "bytes": 91392,
+        "dev_relative_mse": 0.0002964689846402183,
+        "predicted_cpu_ms": 0.044625
+      },
+      {
+        "config": [
+          3,
+          4,
+          0
+        ],
+        "bytes": 86528,
+        "dev_relative_mse": 0.01898739783944104,
+        "predicted_cpu_ms": 0.047416
+      },
+      {
+        "config": [
+          3,
+          4,
+          1
+        ],
+        "bytes": 86016,
+        "dev_relative_mse": 0.029942389404233164,
+        "predicted_cpu_ms": 0.048374
+      },
+      {
+        "config": [
+          3,
+          4,
+          2
+        ],
+        "bytes": 85760,
+        "dev_relative_mse": 0.049386876938144454,
+        "predicted_cpu_ms": 0.048791
+      },
+      {
+        "config": [
+          3,
+          4,
+          3
+        ],
+        "bytes": 90624,
+        "dev_relative_mse": 0.00026377952423088517,
+        "predicted_cpu_ms": 0.046458
+      },
+      {
+        "config": [
+          3,
+          4,
+          4
+        ],
+        "bytes": 90112,
+        "dev_relative_mse": 0.0002826990247505468,
+        "predicted_cpu_ms": 0.047458
+      },
+      {
+        "config": [
+          3,
+          4,
+          5
+        ],
+        "bytes": 89856,
+        "dev_relative_mse": 0.0003352320592933455,
+        "predicted_cpu_ms": 0.048042
+      },
+      {
+        "config": [
+          3,
+          5,
+          0
+        ],
+        "bytes": 94208,
+        "dev_relative_mse": 0.019031892440118218,
+        "predicted_cpu_ms": 0.048625
+      },
+      {
+        "config": [
+          3,
+          5,
+          1
+        ],
+        "bytes": 93696,
+        "dev_relative_mse": 0.029969192753872,
+        "predicted_cpu_ms": 0.049583
+      },
+      {
+        "config": [
+          3,
+          5,
+          2
+        ],
+        "bytes": 93440,
+        "dev_relative_mse": 0.049417312733762486,
+        "predicted_cpu_ms": 0.05
+      },
+      {
+        "config": [
+          3,
+          5,
+          3
+        ],
+        "bytes": 98304,
+        "dev_relative_mse": 0.00029863333538958446,
+        "predicted_cpu_ms": 0.047667
+      },
+      {
+        "config": [
+          3,
+          5,
+          4
+        ],
+        "bytes": 97792,
+        "dev_relative_mse": 0.0003204135025784368,
+        "predicted_cpu_ms": 0.048667
+      },
+      {
+        "config": [
+          3,
+          5,
+          5
+        ],
+        "bytes": 97536,
+        "dev_relative_mse": 0.00037239894103767077,
+        "predicted_cpu_ms": 0.049250999999999996
+      },
+      {
+        "config": [
+          4,
+          0,
+          0
+        ],
+        "bytes": 72704,
+        "dev_relative_mse": 0.039287138650874125,
+        "predicted_cpu_ms": 0.05495799999999999
+      },
+      {
+        "config": [
+          4,
+          0,
+          1
+        ],
+        "bytes": 72192,
+        "dev_relative_mse": 0.050198990724059325,
+        "predicted_cpu_ms": 0.055915999999999993
+      },
+      {
+        "config": [
+          4,
+          0,
+          2
+        ],
+        "bytes": 71936,
+        "dev_relative_mse": 0.06958249812894936,
+        "predicted_cpu_ms": 0.056332999999999994
+      },
+      {
+        "config": [
+          4,
+          0,
+          3
+        ],
+        "bytes": 76800,
+        "dev_relative_mse": 0.02078986879784381,
+        "predicted_cpu_ms": 0.054
+      },
+      {
+        "config": [
+          4,
+          0,
+          4
+        ],
+        "bytes": 76288,
+        "dev_relative_mse": 0.02077904007853202,
+        "predicted_cpu_ms": 0.05499999999999999
+      },
+      {
+        "config": [
+          4,
+          0,
+          5
+        ],
+        "bytes": 76032,
+        "dev_relative_mse": 0.020810007271676804,
+        "predicted_cpu_ms": 0.055583999999999995
+      },
+      {
+        "config": [
+          4,
+          1,
+          0
+        ],
+        "bytes": 71168,
+        "dev_relative_mse": 0.05168385844111432,
+        "predicted_cpu_ms": 0.055999999999999994
+      },
+      {
+        "config": [
+          4,
+          1,
+          1
+        ],
+        "bytes": 70656,
+        "dev_relative_mse": 0.06302482955589997,
+        "predicted_cpu_ms": 0.056957999999999995
+      },
+      {
+        "config": [
+          4,
+          1,
+          2
+        ],
+        "bytes": 70400,
+        "dev_relative_mse": 0.0818488405728381,
+        "predicted_cpu_ms": 0.057374999999999995
+      },
+      {
+        "config": [
+          4,
+          1,
+          3
+        ],
+        "bytes": 75264,
+        "dev_relative_mse": 0.03289325715939549,
+        "predicted_cpu_ms": 0.055042
+      },
+      {
+        "config": [
+          4,
+          1,
+          4
+        ],
+        "bytes": 74752,
+        "dev_relative_mse": 0.03287165429397355,
+        "predicted_cpu_ms": 0.056041999999999995
+      },
+      {
+        "config": [
+          4,
+          1,
+          5
+        ],
+        "bytes": 74496,
+        "dev_relative_mse": 0.032930857089993444,
+        "predicted_cpu_ms": 0.056625999999999996
+      },
+      {
+        "config": [
+          4,
+          2,
+          0
+        ],
+        "bytes": 74752,
+        "dev_relative_mse": 0.061984482169892885,
+        "predicted_cpu_ms": 0.058374999999999996
+      },
+      {
+        "config": [
+          4,
+          2,
+          1
+        ],
+        "bytes": 74240,
+        "dev_relative_mse": 0.07299550157368956,
+        "predicted_cpu_ms": 0.059333
+      },
+      {
+        "config": [
+          4,
+          2,
+          2
+        ],
+        "bytes": 73984,
+        "dev_relative_mse": 0.09062572598136763,
+        "predicted_cpu_ms": 0.05975
+      },
+      {
+        "config": [
+          4,
+          2,
+          3
+        ],
+        "bytes": 78848,
+        "dev_relative_mse": 0.04281588197467159,
+        "predicted_cpu_ms": 0.057417
+      },
+      {
+        "config": [
+          4,
+          2,
+          4
+        ],
+        "bytes": 78336,
+        "dev_relative_mse": 0.04279935247146158,
+        "predicted_cpu_ms": 0.058417
+      },
+      {
+        "config": [
+          4,
+          2,
+          5
+        ],
+        "bytes": 78080,
+        "dev_relative_mse": 0.04282803056627849,
+        "predicted_cpu_ms": 0.059001
+      },
+      {
+        "config": [
+          4,
+          3,
+          0
+        ],
+        "bytes": 84992,
+        "dev_relative_mse": 0.018939374152639504,
+        "predicted_cpu_ms": 0.050041
+      },
+      {
+        "config": [
+          4,
+          3,
+          1
+        ],
+        "bytes": 84480,
+        "dev_relative_mse": 0.029830132402372922,
+        "predicted_cpu_ms": 0.050999
+      },
+      {
+        "config": [
+          4,
+          3,
+          2
+        ],
+        "bytes": 84224,
+        "dev_relative_mse": 0.04937527354202873,
+        "predicted_cpu_ms": 0.051416
+      },
+      {
+        "config": [
+          4,
+          3,
+          3
+        ],
+        "bytes": 89088,
+        "dev_relative_mse": 0.00028726099214572344,
+        "predicted_cpu_ms": 0.049083
+      },
+      {
+        "config": [
+          4,
+          3,
+          4
+        ],
+        "bytes": 88576,
+        "dev_relative_mse": 0.0003045089831285825,
+        "predicted_cpu_ms": 0.050083
+      },
+      {
+        "config": [
+          4,
+          3,
+          5
+        ],
+        "bytes": 88320,
+        "dev_relative_mse": 0.00035581725317305015,
+        "predicted_cpu_ms": 0.050667
+      },
+      {
+        "config": [
+          4,
+          4,
+          0
+        ],
+        "bytes": 83456,
+        "dev_relative_mse": 0.01901409147690591,
+        "predicted_cpu_ms": 0.053458
+      },
+      {
+        "config": [
+          4,
+          4,
+          1
+        ],
+        "bytes": 82944,
+        "dev_relative_mse": 0.02997760246304825,
+        "predicted_cpu_ms": 0.054416
+      },
+      {
+        "config": [
+          4,
+          4,
+          2
+        ],
+        "bytes": 82688,
+        "dev_relative_mse": 0.04947602916665807,
+        "predicted_cpu_ms": 0.054833
+      },
+      {
+        "config": [
+          4,
+          4,
+          3
+        ],
+        "bytes": 87552,
+        "dev_relative_mse": 0.00033256299729427104,
+        "predicted_cpu_ms": 0.0525
+      },
+      {
+        "config": [
+          4,
+          4,
+          4
+        ],
+        "bytes": 87040,
+        "dev_relative_mse": 0.0003509549341161364,
+        "predicted_cpu_ms": 0.0535
+      },
+      {
+        "config": [
+          4,
+          4,
+          5
+        ],
+        "bytes": 86784,
+        "dev_relative_mse": 0.00040375455137919137,
+        "predicted_cpu_ms": 0.054084
+      },
+      {
+        "config": [
+          4,
+          5,
+          0
+        ],
+        "bytes": 91136,
+        "dev_relative_mse": 0.019055861911541905,
+        "predicted_cpu_ms": 0.05466699999999999
+      },
+      {
+        "config": [
+          4,
+          5,
+          1
+        ],
+        "bytes": 90624,
+        "dev_relative_mse": 0.030001688859906468,
+        "predicted_cpu_ms": 0.055624999999999994
+      },
+      {
+        "config": [
+          4,
+          5,
+          2
+        ],
+        "bytes": 90368,
+        "dev_relative_mse": 0.049503707489514576,
+        "predicted_cpu_ms": 0.056041999999999995
+      },
+      {
+        "config": [
+          4,
+          5,
+          3
+        ],
+        "bytes": 95232,
+        "dev_relative_mse": 0.00036428177773683895,
+        "predicted_cpu_ms": 0.053709
+      },
+      {
+        "config": [
+          4,
+          5,
+          4
+        ],
+        "bytes": 94720,
+        "dev_relative_mse": 0.00038554386632156046,
+        "predicted_cpu_ms": 0.054708999999999994
+      },
+      {
+        "config": [
+          4,
+          5,
+          5
+        ],
+        "bytes": 94464,
+        "dev_relative_mse": 0.00043779440240141414,
+        "predicted_cpu_ms": 0.055292999999999995
+      },
+      {
+        "config": [
+          5,
+          0,
+          0
+        ],
+        "bytes": 71168,
+        "dev_relative_mse": 0.03934883381710347,
+        "predicted_cpu_ms": 0.058665999999999996
+      },
+      {
+        "config": [
+          5,
+          0,
+          1
+        ],
+        "bytes": 70656,
+        "dev_relative_mse": 0.05029481339461256,
+        "predicted_cpu_ms": 0.059623999999999996
+      },
+      {
+        "config": [
+          5,
+          0,
+          2
+        ],
+        "bytes": 70400,
+        "dev_relative_mse": 0.06966638226493616,
+        "predicted_cpu_ms": 0.060041
+      },
+      {
+        "config": [
+          5,
+          0,
+          3
+        ],
+        "bytes": 75264,
+        "dev_relative_mse": 0.02085999134098389,
+        "predicted_cpu_ms": 0.057708
+      },
+      {
+        "config": [
+          5,
+          0,
+          4
+        ],
+        "bytes": 74752,
+        "dev_relative_mse": 0.02085195919951705,
+        "predicted_cpu_ms": 0.058707999999999996
+      },
+      {
+        "config": [
+          5,
+          0,
+          5
+        ],
+        "bytes": 74496,
+        "dev_relative_mse": 0.02088053236004973,
+        "predicted_cpu_ms": 0.059292
+      },
+      {
+        "config": [
+          5,
+          1,
+          0
+        ],
+        "bytes": 69632,
+        "dev_relative_mse": 0.05172658666916426,
+        "predicted_cpu_ms": 0.059708
+      },
+      {
+        "config": [
+          5,
+          1,
+          1
+        ],
+        "bytes": 69120,
+        "dev_relative_mse": 0.06308022619122419,
+        "predicted_cpu_ms": 0.060666
+      },
+      {
+        "config": [
+          5,
+          1,
+          2
+        ],
+        "bytes": 68864,
+        "dev_relative_mse": 0.08189423699644108,
+        "predicted_cpu_ms": 0.061083
+      },
+      {
+        "config": [
+          5,
+          1,
+          3
+        ],
+        "bytes": 73728,
+        "dev_relative_mse": 0.03294953462553623,
+        "predicted_cpu_ms": 0.058750000000000004
+      },
+      {
+        "config": [
+          5,
+          1,
+          4
+        ],
+        "bytes": 73216,
+        "dev_relative_mse": 0.03292948871979392,
+        "predicted_cpu_ms": 0.05975
+      },
+      {
+        "config": [
+          5,
+          1,
+          5
+        ],
+        "bytes": 72960,
+        "dev_relative_mse": 0.032986154966850076,
+        "predicted_cpu_ms": 0.060334
+      },
+      {
+        "config": [
+          5,
+          2,
+          0
+        ],
+        "bytes": 73216,
+        "dev_relative_mse": 0.062027015245729004,
+        "predicted_cpu_ms": 0.062083
+      },
+      {
+        "config": [
+          5,
+          2,
+          1
+        ],
+        "bytes": 72704,
+        "dev_relative_mse": 0.0730411760682605,
+        "predicted_cpu_ms": 0.063041
+      },
+      {
+        "config": [
+          5,
+          2,
+          2
+        ],
+        "bytes": 72448,
+        "dev_relative_mse": 0.09067427229561162,
+        "predicted_cpu_ms": 0.063458
+      },
+      {
+        "config": [
+          5,
+          2,
+          3
+        ],
+        "bytes": 77312,
+        "dev_relative_mse": 0.04287126692428511,
+        "predicted_cpu_ms": 0.061125000000000006
+      },
+      {
+        "config": [
+          5,
+          2,
+          4
+        ],
+        "bytes": 76800,
+        "dev_relative_mse": 0.04285538052815504,
+        "predicted_cpu_ms": 0.062125
+      },
+      {
+        "config": [
+          5,
+          2,
+          5
+        ],
+        "bytes": 76544,
+        "dev_relative_mse": 0.04288214579429039,
+        "predicted_cpu_ms": 0.062709
+      },
+      {
+        "config": [
+          5,
+          3,
+          0
+        ],
+        "bytes": 83456,
+        "dev_relative_mse": 0.018996953632624058,
+        "predicted_cpu_ms": 0.053749000000000005
+      },
+      {
+        "config": [
+          5,
+          3,
+          1
+        ],
+        "bytes": 82944,
+        "dev_relative_mse": 0.02990912271646004,
+        "predicted_cpu_ms": 0.054707000000000006
+      },
+      {
+        "config": [
+          5,
+          3,
+          2
+        ],
+        "bytes": 82688,
+        "dev_relative_mse": 0.0494456929815366,
+        "predicted_cpu_ms": 0.055124000000000006
+      },
+      {
+        "config": [
+          5,
+          3,
+          3
+        ],
+        "bytes": 87552,
+        "dev_relative_mse": 0.0003445145130066724,
+        "predicted_cpu_ms": 0.052791000000000005
+      },
+      {
+        "config": [
+          5,
+          3,
+          4
+        ],
+        "bytes": 87040,
+        "dev_relative_mse": 0.00036348607143689735,
+        "predicted_cpu_ms": 0.053791000000000005
+      },
+      {
+        "config": [
+          5,
+          3,
+          5
+        ],
+        "bytes": 86784,
+        "dev_relative_mse": 0.0004127561435544779,
+        "predicted_cpu_ms": 0.054375
+      },
+      {
+        "config": [
+          5,
+          4,
+          0
+        ],
+        "bytes": 81920,
+        "dev_relative_mse": 0.019076209181269878,
+        "predicted_cpu_ms": 0.057166
+      },
+      {
+        "config": [
+          5,
+          4,
+          1
+        ],
+        "bytes": 81408,
+        "dev_relative_mse": 0.03006223597929074,
+        "predicted_cpu_ms": 0.058124
+      },
+      {
+        "config": [
+          5,
+          4,
+          2
+        ],
+        "bytes": 81152,
+        "dev_relative_mse": 0.04955126342884341,
+        "predicted_cpu_ms": 0.058541
+      },
+      {
+        "config": [
+          5,
+          4,
+          3
+        ],
+        "bytes": 86016,
+        "dev_relative_mse": 0.00039419219209971376,
+        "predicted_cpu_ms": 0.056208
+      },
+      {
+        "config": [
+          5,
+          4,
+          4
+        ],
+        "bytes": 85504,
+        "dev_relative_mse": 0.0004143180103630949,
+        "predicted_cpu_ms": 0.057208
+      },
+      {
+        "config": [
+          5,
+          4,
+          5
+        ],
+        "bytes": 85248,
+        "dev_relative_mse": 0.0004651048333551235,
+        "predicted_cpu_ms": 0.057792
+      },
+      {
+        "config": [
+          5,
+          5,
+          0
+        ],
+        "bytes": 89600,
+        "dev_relative_mse": 0.019117990754083877,
+        "predicted_cpu_ms": 0.058374999999999996
+      },
+      {
+        "config": [
+          5,
+          5,
+          1
+        ],
+        "bytes": 89088,
+        "dev_relative_mse": 0.030085437761235335,
+        "predicted_cpu_ms": 0.059333
+      },
+      {
+        "config": [
+          5,
+          5,
+          2
+        ],
+        "bytes": 88832,
+        "dev_relative_mse": 0.049578476462345665,
+        "predicted_cpu_ms": 0.05975
+      },
+      {
+        "config": [
+          5,
+          5,
+          3
+        ],
+        "bytes": 93696,
+        "dev_relative_mse": 0.0004255756260139587,
+        "predicted_cpu_ms": 0.057417
+      },
+      {
+        "config": [
+          5,
+          5,
+          4
+        ],
+        "bytes": 93184,
+        "dev_relative_mse": 0.0004485791863137595,
+        "predicted_cpu_ms": 0.058417
+      },
+      {
+        "config": [
+          5,
+          5,
+          5
+        ],
+        "bytes": 92928,
+        "dev_relative_mse": 0.000498693900383172,
+        "predicted_cpu_ms": 0.059001
+      }
+    ]
+  }
+]

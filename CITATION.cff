@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Cite this artifact as a technical working draft; it is not an arXiv publication."
+title: "EdgeDecode: An Auditable Pilot for Groupwise Quantization and Architecture Exploration"
+authors:
+  - name: "EdgeDecode contributors"
+version: 0.1.0
+date-released: 2026-09-10
+license: MIT

@@ -1,0 +1,181 @@
+{
+  "experiment_id": "m4-qwen2.5-1.5b-stage2-v1",
+  "models": {
+    "F16": {
+      "file_bytes": 3560416288,
+      "size_fraction_of_f16": 1.0,
+      "compression_vs_f16": 1.0,
+      "perplexity": 8.9573,
+      "perplexity_delta_percent_vs_f16": 0.0,
+      "hellaswag_acc_norm_percent": 61.5,
+      "hellaswag_delta_points_vs_f16": 0.0,
+      "hellaswag_ci95_percent": [
+        54.5999,
+        67.9667
+      ]
+    },
+    "Q8_0": {
+      "file_bytes": 1894532128,
+      "size_fraction_of_f16": 0.5321097239065321,
+      "compression_vs_f16": 1.8793116439564546,
+      "perplexity": 8.9524,
+      "perplexity_delta_percent_vs_f16": -0.054703984459592014,
+      "hellaswag_acc_norm_percent": 61.5,
+      "hellaswag_delta_points_vs_f16": 0.0,
+      "hellaswag_ci95_percent": [
+        54.5999,
+        67.9667
+      ]
+    },
+    "Q4_K_M": {
+      "file_bytes": 1117320736,
+      "size_fraction_of_f16": 0.31381744313602017,
+      "compression_vs_f16": 3.1865660175128085,
+      "perplexity": 9.3102,
+      "perplexity_delta_percent_vs_f16": 3.9398032889375045,
+      "hellaswag_acc_norm_percent": 60.0,
+      "hellaswag_delta_points_vs_f16": -1.5,
+      "hellaswag_ci95_percent": [
+        53.0837,
+        66.5394
+      ]
+    }
+  },
+  "performance": {
+    "cpu": {
+      "pp128": {
+        "F16": {
+          "tokens_per_second": 325.693288,
+          "stddev_tokens_per_second": 27.097214,
+          "speedup_vs_f16": 1.0,
+          "repetitions": 7
+        },
+        "Q8_0": {
+          "tokens_per_second": 449.839408,
+          "stddev_tokens_per_second": 52.260304,
+          "speedup_vs_f16": 1.3811749414989478,
+          "repetitions": 7
+        },
+        "Q4_K_M": {
+          "tokens_per_second": 423.200096,
+          "stddev_tokens_per_second": 6.202743,
+          "speedup_vs_f16": 1.2993823071969477,
+          "repetitions": 7
+        }
+      },
+      "pp2048": {
+        "F16": {
+          "tokens_per_second": 516.126109,
+          "stddev_tokens_per_second": 12.080339,
+          "speedup_vs_f16": 1.0,
+          "repetitions": 7
+        },
+        "Q8_0": {
+          "tokens_per_second": 419.665692,
+          "stddev_tokens_per_second": 22.959471,
+          "speedup_vs_f16": 0.8131068835349307,
+          "repetitions": 7
+        },
+        "Q4_K_M": {
+          "tokens_per_second": 357.343896,
+          "stddev_tokens_per_second": 8.785148,
+          "speedup_vs_f16": 0.6923577198843083,
+          "repetitions": 7
+        }
+      },
+      "tg128": {
+        "F16": {
+          "tokens_per_second": 40.952826,
+          "stddev_tokens_per_second": 11.328114,
+          "speedup_vs_f16": 1.0,
+          "repetitions": 7
+        },
+        "Q8_0": {
+          "tokens_per_second": 70.811579,
+          "stddev_tokens_per_second": 24.319942,
+          "speedup_vs_f16": 1.7291011614192386,
+          "repetitions": 7
+        },
+        "Q4_K_M": {
+          "tokens_per_second": 113.98602,
+          "stddev_tokens_per_second": 8.826998,
+          "speedup_vs_f16": 2.7833493102527282,
+          "repetitions": 7
+        }
+      }
+    },
+    "metal": {
+      "pp128": {
+        "F16": {
+          "tokens_per_second": 1629.815358,
+          "stddev_tokens_per_second": 52.510616,
+          "speedup_vs_f16": 1.0,
+          "repetitions": 7
+        },
+        "Q8_0": {
+          "tokens_per_second": 1591.19429,
+          "stddev_tokens_per_second": 29.758144,
+          "speedup_vs_f16": 0.9763034089656676,
+          "repetitions": 7
+        },
+        "Q4_K_M": {
+          "tokens_per_second": 1406.198487,
+          "stddev_tokens_per_second": 52.01019,
+          "speedup_vs_f16": 0.8627961935059885,
+          "repetitions": 7
+        }
+      },
+      "pp2048": {
+        "F16": {
+          "tokens_per_second": 1872.158221,
+          "stddev_tokens_per_second": 30.177173,
+          "speedup_vs_f16": 1.0,
+          "repetitions": 7
+        },
+        "Q8_0": {
+          "tokens_per_second": 1530.356856,
+          "stddev_tokens_per_second": 32.466452,
+          "speedup_vs_f16": 0.8174292315862978,
+          "repetitions": 7
+        },
+        "Q4_K_M": {
+          "tokens_per_second": 1287.244472,
+          "stddev_tokens_per_second": 53.001096,
+          "speedup_vs_f16": 0.6875724805526467,
+          "repetitions": 7
+        }
+      },
+      "tg128": {
+        "F16": {
+          "tokens_per_second": 62.783064,
+          "stddev_tokens_per_second": 2.945469,
+          "speedup_vs_f16": 1.0,
+          "repetitions": 7
+        },
+        "Q8_0": {
+          "tokens_per_second": 98.756319,
+          "stddev_tokens_per_second": 4.813244,
+          "speedup_vs_f16": 1.5729770531747225,
+          "repetitions": 7
+        },
+        "Q4_K_M": {
+          "tokens_per_second": 121.291691,
+          "stddev_tokens_per_second": 9.043124,
+          "speedup_vs_f16": 1.931917355928981,
+          "repetitions": 7
+        }
+      }
+    }
+  },
+  "decision": {
+    "observation": "Precision choice is phase- and backend-dependent: Q4_K_M is fastest for single-stream decode, while F16 is fastest for Metal prefill.",
+    "quality_gate": "Q8_0 matches the F16 pilot; Q4_K_M has 3.94% higher WikiText-2 perplexity and 1.5-point lower HellaSwag accuracy, with overlapping HellaSwag intervals at 200 tasks.",
+    "architecture_implication": "Do not propose one universal low-precision path. Preserve a high-throughput dense prefill path and separately optimize weight-streaming decode."
+  },
+  "evidence_limits": [
+    "One 1.5B model family and one Apple M4 Pro host.",
+    "Apple Metal results are not Arm GPU results.",
+    "No measured power, silicon area, Arm NPU, or long-context KV-cache sweep.",
+    "The WikiText-2 run uses 32 chunks and HellaSwag uses 200 tasks."
+  ]
+}

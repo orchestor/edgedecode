@@ -1,0 +1,11 @@
+{
+  "experiment_id": "m4-qwen2.5-7b-generation-check-v1",
+  "model_family": "Qwen2.5-7B",
+  "model_path": "models/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "backend": "llama.cpp",
+  "binary": "third_party/llama.cpp/build/bin/llama-cli",
+  "prompt": "Write a one-sentence description of EdgeDecode.",
+  "response": "EdgeDecode is an edge computing solution that decodes and processes media content locally, reducing latency and improving performance for real-time applications.",
+  "status": "verified",
+  "notes": "Validated locally on the M4 Pro using the available split GGUF model and llama.cpp build. This is a real generation smoke test, not a full benchmark suite."
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "machine_arch_observed": "arm64",
+  "os": "macOS-26.5.1-arm64-arm-64bit",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "device_user_report": "Apple M4 Pro, 24 GB (not independently verified by sysctl)",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "sources_sha256": {
+    "edgedecode/backend.py": "e068877c256320489d3a7ec57b8f78289894a07c84681685de5fe958056f4acc",
+    "edgedecode/__init__.py": "3ed000ec62be78cd7192286764ed54928b70ebaabe2d1a4d66d63e086af199b3",
+    "edgedecode/experiment.py": "2c2d4206c81c33b5cb6c92eddb3b6b434afc2fa79598ddbcc2c32e96b6a5f574",
+    "edgedecode/architecture.py": "5c9deb35717736a1fc07b09862cc88ad838eca3c08c4ecec937a005d1e6d4d28",
+    "edgedecode/quant.py": "4254e83effd7d4effdd1bd5fee910b80a053442ce07355f0bafb68c8f17097f0",
+    "edgedecode/npu_contract.py": "b7b444449944e1d829314fc9a71596158bdc7d5a57447761c579d9cf9e507b5d",
+    "native/cpu.c": "c644e1ae80f408304c910522cf2a65866e6bbc6914412038eb1b0d78ede91944",
+    "native/metal.m": "01dd970f663d634bd912c07404047b5dc4a67820341d9e269243d8e1bdde629c",
+    "native/linear.metal": "75759a71cb0da7bed97b100fcf3c7c414abef5d7743c957704dc78061428df86",
+    "configs/architecture.json": "9ebbc28ccc5b70a4429b64b7320023b3c93491b00f5d1e2c744a2e57c0c82704",
+    "configs/operator.json": "7aa828961ee508dec60613c2a5c1e664d165b6b4703663b6b2e14992bfbed0f8",
+    "configs/npu-contract.json": "bbe9dc07ad48d8e17069d2d7c8be078f35c1d3f0d74f5d7ed12c37e07f242c4a"
+  },
+  "measurement_notice": "hot-cache pilot; no CPU affinity/frequency lock; no power/area measurement",
+  "native_build": {
+    "commands": [
+      [
+        "clang",
+        "-O3",
+        "-fPIC",
+        "-dynamiclib",
+        "native/cpu.c",
+        "-o",
+        "build/cpu.so"
+      ],
+      [
+        "clang",
+        "-O3",
+        "-fPIC",
+        "-dynamiclib",
+        "-fobjc-arc",
+        "native/metal.m",
+        "-framework",
+        "Foundation",
+        "-framework",
+        "Metal",
+        "-o",
+        "build/metal.so"
+      ]
+    ],
+    "compiler": "Apple clang version 17.0.0 (clang-1700.6.3.2)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n"
+  }
+}

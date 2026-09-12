@@ -1,0 +1,73 @@
+{
+  "experiment_id": "m4-qwen2.5-1.5b-stage2-v1",
+  "created_utc": "2026-09-11T07:22:25Z",
+  "host": {
+    "cpu": "Apple M4 Pro",
+    "cpu_cores": {
+      "performance": 8,
+      "efficiency": 4
+    },
+    "gpu": "Apple M4 Pro, 16 cores, Metal 4",
+    "memory_bytes": 25769803776,
+    "os": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "architecture": "arm64"
+  },
+  "host_evidence": "system_profiler and sysctl observed locally; serial numbers and hardware identifiers intentionally excluded",
+  "software": {
+    "commit": "451b89bae0c4b1dd612eb503ceace906c01ddcc9",
+    "source_archive_sha256": "521328f0de2b137c3aaa6058cd4bdd0f18f59a125e7f9aa9e3fe29168998b0a0",
+    "cpu_binary": "third_party/llama.cpp/build-cpu/bin/llama-bench",
+    "metal_binary": "third_party/llama.cpp/build/bin/llama-bench",
+    "cpu_quality_binary": "third_party/llama.cpp/build-cpu/bin/llama-perplexity",
+    "metal_quality_binary": "third_party/llama.cpp/build/bin/llama-perplexity"
+  },
+  "inputs": {
+    "models": [
+      {
+        "label": "F16",
+        "path": "models/qwen2.5-1.5b-instruct-fp16.gguf",
+        "bytes": 3560416288,
+        "sha256": "fc89e330deb3fd8fa560f1c0f35a1e2b8da96d59e13445559ed190307a6f5649",
+        "verified": true
+      },
+      {
+        "label": "Q8_0",
+        "path": "models/qwen2.5-1.5b-instruct-q8_0.gguf",
+        "bytes": 1894532128,
+        "sha256": "d7efb072e7724d25048a4fda0a3e10b04bdef5d06b1403a1c93bd9f1240a63c8",
+        "verified": true
+      },
+      {
+        "label": "Q4_K_M",
+        "path": "models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+        "bytes": 1117320736,
+        "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+        "verified": true
+      }
+    ],
+    "datasets": {
+      "wikitext2": {
+        "path": "datasets/wikitext-2-test.txt",
+        "url": "https://raw.githubusercontent.com/pytorch/examples/main/word_language_model/data/wikitext-2/test.txt",
+        "sha256": "d790b833ef8cf03a90db7bf1271b7520b83c45ce07ba3c1a9699df81e239eca0",
+        "bytes": 1256449,
+        "verified": true
+      },
+      "hellaswag": {
+        "path": "datasets/hellaswag_val_full.txt",
+        "url": "https://raw.githubusercontent.com/klosax/hellaswag_text_data/main/hellaswag_val_full.txt",
+        "sha256": "d572539320eb2050e858ca34b495bbe2103e3b3f1391a9c3bcdf215b0bb93bd1",
+        "bytes": 7770677,
+        "verified": true
+      }
+    }
+  },
+  "power": {
+    "measured": false,
+    "reason": "powermetrics requires interactive administrator authorization"
+  },
+  "area": {
+    "measured": false,
+    "reason": "no RTL synthesis in this stage"
+  }
+}

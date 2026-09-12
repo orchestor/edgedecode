@@ -1,0 +1,550 @@
+{
+  "rows": [
+    {
+      "config": [
+        3,
+        3,
+        3
+      ],
+      "bytes": 92160,
+      "dev_relative_mse": 0.00019199001958396475,
+      "predicted_cpu_ms": 0.042832999999999996,
+      "seed": 11,
+      "policy": "quality_only",
+      "test_relative_mse": 0.00021640914149325015,
+      "budget_bytes": 98304.0,
+      "threshold": 0.005,
+      "feasible_count": 27,
+      "evidence": "synthetic_composed_network",
+      "config_names": [
+        "q8_g32",
+        "q8_g32",
+        "q8_g32"
+      ],
+      "median_ms": 0.133708,
+      "p25_ms": 0.124959,
+      "p75_ms": 0.135708,
+      "samples_ms": [
+        0.134625,
+        0.133708,
+        0.135708,
+        0.18175,
+        0.16325,
+        0.122625,
+        0.133,
+        0.124959,
+        0.12025
+      ]
+    },
+    {
+      "config": [
+        2,
+        2,
+        2
+      ],
+      "bytes": 47872,
+      "dev_relative_mse": 0.1427517055705832,
+      "predicted_cpu_ms": 0.07216700000000001,
+      "seed": 11,
+      "policy": "uniform_q4_g128",
+      "test_relative_mse": 0.14803994449959992,
+      "budget_bytes": 98304.0,
+      "threshold": 0.005,
+      "feasible_count": 27,
+      "evidence": "synthetic_composed_network",
+      "config_names": [
+        "q4_g128",
+        "q4_g128",
+        "q4_g128"
+      ],
+      "median_ms": 0.155708,
+      "p25_ms": 0.151333,
+      "p75_ms": 0.208042,
+      "samples_ms": [
+        0.153583,
+        0.155708,
+        0.151333,
+        0.149084,
+        0.148,
+        0.160209,
+        0.208042,
+        0.222334,
+        0.236917
+      ]
+    },
+    {
+      "config": [
+        4,
+        4,
+        4
+      ],
+      "bytes": 87040,
+      "dev_relative_mse": 0.0003051284880017373,
+      "predicted_cpu_ms": 0.053708,
+      "seed": 11,
+      "policy": "uniform_q8_g64",
+      "test_relative_mse": 0.00032562367558655397,
+      "budget_bytes": 98304.0,
+      "threshold": 0.005,
+      "feasible_count": 27,
+      "evidence": "synthetic_composed_network",
+      "config_names": [
+        "q8_g64",
+        "q8_g64",
+        "q8_g64"
+      ],
+      "median_ms": 0.132667,
+      "p25_ms": 0.131,
+      "p75_ms": 0.133542,
+      "samples_ms": [
+        0.133542,
+        0.182083,
+        0.135458,
+        0.129875,
+        0.13275,
+        0.132667,
+        0.131,
+        0.131792,
+        0.129041
+      ]
+    },
+    {
+      "config": [
+        3,
+        3,
+        3
+      ],
+      "bytes": 92160,
+      "dev_relative_mse": 0.00019199001958396475,
+      "predicted_cpu_ms": 0.042832999999999996,
+      "seed": 11,
+      "policy": "hardware_aware",
+      "test_relative_mse": 0.00021640914149325015,
+      "budget_bytes": 98304.0,
+      "threshold": 0.005,
+      "feasible_count": 27,
+      "evidence": "synthetic_composed_network",
+      "config_names": [
+        "q8_g32",
+        "q8_g32",
+        "q8_g32"
+      ],
+      "median_ms": 0.125417,
+      "p25_ms": 0.124833,
+      "p75_ms": 0.133625,
+      "samples_ms": [
+        0.124334,
+        0.124833,
+        0.126666,
+        0.125417,
+        0.198167,
+        0.133625,
+        0.125125,
+        0.133708,
+        0.117875
+      ]
+    },
+    {
+      "config": [
+        4,
+        4,
+        5
+      ],
+      "bytes": 86784,
+      "dev_relative_mse": 0.0003481277033812173,
+      "predicted_cpu_ms": 0.054208,
+      "seed": 11,
+      "policy": "random_feasible",
+      "test_relative_mse": 0.0003727810428354086,
+      "budget_bytes": 98304.0,
+      "threshold": 0.005,
+      "feasible_count": 27,
+      "evidence": "synthetic_composed_network",
+      "config_names": [
+        "q8_g64",
+        "q8_g64",
+        "q8_g128"
+      ],
+      "median_ms": 0.134541,
+      "p25_ms": 0.133291,
+      "p75_ms": 0.143667,
+      "samples_ms": [
+        0.179625,
+        0.143667,
+        0.12925,
+        0.133291,
+        0.134541,
+        0.134209,
+        0.130458,
+        0.192333,
+        0.134709
+      ]
+    },
+    {
+      "config": [
+        3,
+        3,
+        3
+      ],
+      "bytes": 92160,
+      "dev_relative_mse": 0.0002186488023418515,
+      "predicted_cpu_ms": 0.042707999999999996,
+      "seed": 23,
+      "policy": "quality_only",
+      "test_relative_mse": 0.00022147403761270745,
+      "budget_bytes": 98304.0,
+      "threshold": 0.005,
+      "feasible_count": 27,
+      "evidence": "synthetic_composed_network",
+      "config_names": [
+        "q8_g32",
+        "q8_g32",
+        "q8_g32"
+      ],
+      "median_ms": 0.12575,
+      "p25_ms": 0.124875,
+      "p75_ms": 0.127208,
+      "samples_ms": [
+        0.171375,
+        0.120541,
+        0.12225,
+        0.124875,
+        0.125958,
+        0.12575,
+        0.1255,
+        0.127208,
+        0.170833
+      ]
+    },
+    {
+      "config": [
+        2,
+        2,
+        2
+      ],
+      "bytes": 47872,
+      "dev_relative_mse": 0.1471578934298923,
+      "predicted_cpu_ms": 0.068833,
+      "seed": 23,
+      "policy": "uniform_q4_g128",
+      "test_relative_mse": 0.1530584179600074,
+      "budget_bytes": 98304.0,
+      "threshold": 0.005,
+      "feasible_count": 27,
+      "evidence": "synthetic_composed_network",
+      "config_names": [
+        "q4_g128",
+        "q4_g128",
+        "q4_g128"
+      ],
+      "median_ms": 0.152042,
+      "p25_ms": 0.147542,
+      "p75_ms": 0.154458,
+      "samples_ms": [
+        0.150958,
+        0.146958,
+        0.14725,
+        0.272333,
+        0.154458,
+        0.152416,
+        0.152042,
+        0.147542,
+        0.164708
+      ]
+    },
+    {
+      "config": [
+        4,
+        4,
+        4
+      ],
+      "bytes": 87040,
+      "dev_relative_mse": 0.00032231942125401827,
+      "predicted_cpu_ms": 0.053249000000000005,
+      "seed": 23,
+      "policy": "uniform_q8_g64",
+      "test_relative_mse": 0.0003284596370492259,
+      "budget_bytes": 98304.0,
+      "threshold": 0.005,
+      "feasible_count": 27,
+      "evidence": "synthetic_composed_network",
+      "config_names": [
+        "q8_g64",
+        "q8_g64",
+        "q8_g64"
+      ],
+      "median_ms": 0.135167,
+      "p25_ms": 0.132875,
+      "p75_ms": 0.136125,
+      "samples_ms": [
+        0.140833,
+        0.136125,
+        0.13525,
+        0.132875,
+        0.134708,
+        0.131958,
+        0.177875,
+        0.135167,
+        0.131958
+      ]
+    },
+    {
+      "config": [
+        3,
+        3,
+        3
+      ],
+      "bytes": 92160,
+      "dev_relative_mse": 0.0002186488023418515,
+      "predicted_cpu_ms": 0.042707999999999996,
+      "seed": 23,
+      "policy": "hardware_aware",
+      "test_relative_mse": 0.00022147403761270745,
+      "budget_bytes": 98304.0,
+      "threshold": 0.005,
+      "feasible_count": 27,
+      "evidence": "synthetic_composed_network",
+      "config_names": [
+        "q8_g32",
+        "q8_g32",
+        "q8_g32"
+      ],
+      "median_ms": 0.129625,
+      "p25_ms": 0.1255,
+      "p75_ms": 0.141125,
+      "samples_ms": [
+        0.1255,
+        0.175042,
+        0.126708,
+        0.141125,
+        0.125208,
+        0.123084,
+        0.13825,
+        0.129625,
+        0.168708
+      ]
+    },
+    {
+      "config": [
+        5,
+        5,
+        3
+      ],
+      "bytes": 93696,
+      "dev_relative_mse": 0.0004034872548371352,
+      "predicted_cpu_ms": 0.059375000000000004,
+      "seed": 23,
+      "policy": "random_feasible",
+      "test_relative_mse": 0.00040202137019583456,
+      "budget_bytes": 98304.0,
+      "threshold": 0.005,
+      "feasible_count": 27,
+      "evidence": "synthetic_composed_network",
+      "config_names": [
+        "q8_g128",
+        "q8_g128",
+        "q8_g32"
+      ],
+      "median_ms": 0.139458,
+      "p25_ms": 0.138792,
+      "p75_ms": 0.1425,
+      "samples_ms": [
+        0.145208,
+        0.1425,
+        0.1375,
+        0.139458,
+        0.185375,
+        0.138792,
+        0.138875,
+        0.141041,
+        0.138209
+      ]
+    },
+    {
+      "config": [
+        3,
+        3,
+        3
+      ],
+      "bytes": 92160,
+      "dev_relative_mse": 0.0002277083725557099,
+      "predicted_cpu_ms": 0.043041,
+      "seed": 37,
+      "policy": "quality_only",
+      "test_relative_mse": 0.00021896143547258458,
+      "budget_bytes": 98304.0,
+      "threshold": 0.005,
+      "feasible_count": 27,
+      "evidence": "synthetic_composed_network",
+      "config_names": [
+        "q8_g32",
+        "q8_g32",
+        "q8_g32"
+      ],
+      "median_ms": 0.134625,
+      "p25_ms": 0.126541,
+      "p75_ms": 0.176,
+      "samples_ms": [
+        0.134625,
+        0.1285,
+        0.126167,
+        0.126541,
+        0.178292,
+        0.12575,
+        0.176,
+        0.27925,
+        0.141208
+      ]
+    },
+    {
+      "config": [
+        2,
+        2,
+        2
+      ],
+      "bytes": 47872,
+      "dev_relative_mse": 0.15434092428578197,
+      "predicted_cpu_ms": 0.067875,
+      "seed": 37,
+      "policy": "uniform_q4_g128",
+      "test_relative_mse": 0.15551183529368864,
+      "budget_bytes": 98304.0,
+      "threshold": 0.005,
+      "feasible_count": 27,
+      "evidence": "synthetic_composed_network",
+      "config_names": [
+        "q4_g128",
+        "q4_g128",
+        "q4_g128"
+      ],
+      "median_ms": 0.15125,
+      "p25_ms": 0.149584,
+      "p75_ms": 0.16125,
+      "samples_ms": [
+        0.16125,
+        0.148833,
+        0.162584,
+        0.15125,
+        0.148,
+        0.158666,
+        0.149792,
+        0.25075,
+        0.149584
+      ]
+    },
+    {
+      "config": [
+        4,
+        4,
+        4
+      ],
+      "bytes": 87040,
+      "dev_relative_mse": 0.0003509549341161364,
+      "predicted_cpu_ms": 0.0535,
+      "seed": 37,
+      "policy": "uniform_q8_g64",
+      "test_relative_mse": 0.00032532071289813076,
+      "budget_bytes": 98304.0,
+      "threshold": 0.005,
+      "feasible_count": 27,
+      "evidence": "synthetic_composed_network",
+      "config_names": [
+        "q8_g64",
+        "q8_g64",
+        "q8_g64"
+      ],
+      "median_ms": 0.143792,
+      "p25_ms": 0.134167,
+      "p75_ms": 0.173375,
+      "samples_ms": [
+        0.132583,
+        0.134167,
+        0.186792,
+        0.173375,
+        0.176917,
+        0.141375,
+        0.144125,
+        0.131,
+        0.143792
+      ]
+    },
+    {
+      "config": [
+        3,
+        3,
+        3
+      ],
+      "bytes": 92160,
+      "dev_relative_mse": 0.0002277083725557099,
+      "predicted_cpu_ms": 0.043041,
+      "seed": 37,
+      "policy": "hardware_aware",
+      "test_relative_mse": 0.00021896143547258458,
+      "budget_bytes": 98304.0,
+      "threshold": 0.005,
+      "feasible_count": 27,
+      "evidence": "synthetic_composed_network",
+      "config_names": [
+        "q8_g32",
+        "q8_g32",
+        "q8_g32"
+      ],
+      "median_ms": 0.124625,
+      "p25_ms": 0.1235,
+      "p75_ms": 0.127625,
+      "samples_ms": [
+        0.124291,
+        0.126542,
+        0.127625,
+        0.11875,
+        0.124625,
+        0.169458,
+        0.1235,
+        0.120041,
+        0.129959
+      ]
+    },
+    {
+      "config": [
+        5,
+        4,
+        3
+      ],
+      "bytes": 86016,
+      "dev_relative_mse": 0.00039419219209971376,
+      "predicted_cpu_ms": 0.056208,
+      "seed": 37,
+      "policy": "random_feasible",
+      "test_relative_mse": 0.000378029316311246,
+      "budget_bytes": 98304.0,
+      "threshold": 0.005,
+      "feasible_count": 27,
+      "evidence": "synthetic_composed_network",
+      "config_names": [
+        "q8_g128",
+        "q8_g64",
+        "q8_g32"
+      ],
+      "median_ms": 0.143583,
+      "p25_ms": 0.140167,
+      "p75_ms": 0.149125,
+      "samples_ms": [
+        0.20525,
+        0.140167,
+        0.129084,
+        0.148208,
+        0.143583,
+        0.121875,
+        0.141,
+        0.149125,
+        0.175167
+      ]
+    }
+  ],
+  "search_space": 216,
+  "threshold": 0.005,
+  "budget_fraction_of_f32": 0.3,
+  "data_origin": "untrained synthetic three-layer tanh network; no language-model accuracy claims",
+  "selection": "minimize additive measured CPU operator latency over development-quality feasible configurations; test never used for selection",
+  "timing_scope": "composition includes runner creation, ctypes dispatch, output copies and tanh; differs from additive operator proxy"
+}

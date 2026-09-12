@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edgedecode"
+version = "0.1.0"
+description = "Auditable groupwise quantization and architecture exploration"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3"]
+
+[project.optional-dependencies]
+paper = ["reportlab>=4,<5", "pypdf>=5,<7"]
+
+[tool.setuptools]
+packages = ["edgedecode"]

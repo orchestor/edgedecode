@@ -1,0 +1,2197 @@
+{
+  "assumptions": {
+    "evidence": "hypothetical_uncalibrated_scenarios_not_product_specs",
+    "activation_bytes": 4,
+    "profiles": [
+      {
+        "name": "cpu_like",
+        "bandwidth_GB_s": 30,
+        "compute_GFLOP_s": 100,
+        "decode_Gweight_s": 3,
+        "launch_us": 1
+      },
+      {
+        "name": "gpu_like",
+        "bandwidth_GB_s": 100,
+        "compute_GFLOP_s": 2000,
+        "decode_Gweight_s": 20,
+        "launch_us": 20
+      },
+      {
+        "name": "npu_like",
+        "bandwidth_GB_s": 20,
+        "compute_GFLOP_s": 4000,
+        "decode_Gweight_s": 4,
+        "launch_us": 5
+      }
+    ],
+    "energy_assumptions": {
+      "external_pJ_byte": 20,
+      "mac_pJ": 0.5,
+      "decode_pJ_weight": 0.2
+    },
+    "note": "Illustrative values only. No product calibration, NPU compilation, synthesis, or measured energy. Resident weights/activation reuse are idealized."
+  },
+  "rows": [
+    {
+      "profile": "cpu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 14.0050432,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 22.1184,
+        "compute": 20.971519999999998,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 14.0050432,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 22.1184,
+        "compute": 10.485759999999999,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 175.76266666666666,
+      "energy_uJ": 14.0050432,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 22.1184,
+        "compute": 20.971519999999998,
+        "decode": 174.76266666666666
+      },
+      "speedup": 1.9943105096266178,
+      "max_extra_area_fraction_for_perf_per_area": 0.9943105096266178,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 12.0389632,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 18.8416,
+        "compute": 20.971519999999998,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 12.0389632,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 18.8416,
+        "compute": 10.485759999999999,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 175.76266666666666,
+      "energy_uJ": 12.0389632,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 18.8416,
+        "compute": 20.971519999999998,
+        "decode": 174.76266666666666
+      },
+      "speedup": 1.9943105096266178,
+      "max_extra_area_fraction_for_perf_per_area": 0.9943105096266178,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 24.4908032,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 39.59466666666667,
+        "compute": 20.971519999999998,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 24.4908032,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 39.59466666666667,
+        "compute": 10.485759999999999,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 175.76266666666666,
+      "energy_uJ": 24.4908032,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 39.59466666666667,
+        "compute": 20.971519999999998,
+        "decode": 174.76266666666666
+      },
+      "speedup": 1.9943105096266178,
+      "max_extra_area_fraction_for_perf_per_area": 0.9943105096266178,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 22.524723199999997,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 36.31786666666667,
+        "compute": 20.971519999999998,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 22.524723199999997,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 36.31786666666667,
+        "compute": 10.485759999999999,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 175.76266666666666,
+      "energy_uJ": 22.524723199999997,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 36.31786666666667,
+        "compute": 20.971519999999998,
+        "decode": 174.76266666666666
+      },
+      "speedup": 1.9943105096266178,
+      "max_extra_area_fraction_for_perf_per_area": 0.9943105096266178,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 24.326963199999998,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 26.2144,
+        "compute": 335.54431999999997,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 24.326963199999998,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 26.2144,
+        "compute": 167.77215999999999,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 336.54432,
+      "energy_uJ": 24.326963199999998,
+      "weight_bytes": 655360.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 26.2144,
+        "compute": 335.54431999999997,
+        "decode": 174.76266666666666
+      },
+      "speedup": 1.0415428592980958,
+      "max_extra_area_fraction_for_perf_per_area": 0.04154285929809576,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 22.3608832,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 22.9376,
+        "compute": 335.54431999999997,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 22.3608832,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 22.9376,
+        "compute": 167.77215999999999,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 336.54432,
+      "energy_uJ": 22.3608832,
+      "weight_bytes": 557056.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 22.9376,
+        "compute": 335.54431999999997,
+        "decode": 174.76266666666666
+      },
+      "speedup": 1.0415428592980958,
+      "max_extra_area_fraction_for_perf_per_area": 0.04154285929809576,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 34.8127232,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 43.690666666666665,
+        "compute": 335.54431999999997,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 34.8127232,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 43.690666666666665,
+        "compute": 167.77215999999999,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 336.54432,
+      "energy_uJ": 34.8127232,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 43.690666666666665,
+        "compute": 335.54431999999997,
+        "decode": 174.76266666666666
+      },
+      "speedup": 1.0415428592980958,
+      "max_extra_area_fraction_for_perf_per_area": 0.04154285929809576,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 32.846643199999995,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 40.41386666666667,
+        "compute": 335.54431999999997,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 350.5253333333333,
+      "energy_uJ": 32.846643199999995,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 40.41386666666667,
+        "compute": 167.77215999999999,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 336.54432,
+      "energy_uJ": 32.846643199999995,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 40.41386666666667,
+        "compute": 335.54431999999997,
+        "decode": 174.76266666666666
+      },
+      "speedup": 1.0415428592980958,
+      "max_extra_area_fraction_for_perf_per_area": 0.04154285929809576,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 2685.3545599999998,
+      "energy_uJ": 101.39729919999999,
+      "weight_bytes": 655360.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 56.797866666666664,
+        "compute": 2684.3545599999998,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 1343.1772799999999,
+      "energy_uJ": 101.39729919999999,
+      "weight_bytes": 655360.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 56.797866666666664,
+        "compute": 1342.1772799999999,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.9992554966385376,
+      "max_extra_area_fraction_for_perf_per_area": 0.9992554966385376,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 2685.3545599999998,
+      "energy_uJ": 101.39729919999999,
+      "weight_bytes": 655360.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 56.797866666666664,
+        "compute": 2684.3545599999998,
+        "decode": 174.76266666666666
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 2685.3545599999998,
+      "energy_uJ": 99.4312192,
+      "weight_bytes": 557056.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 53.52106666666666,
+        "compute": 2684.3545599999998,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 1343.1772799999999,
+      "energy_uJ": 99.4312192,
+      "weight_bytes": 557056.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 53.52106666666666,
+        "compute": 1342.1772799999999,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.9992554966385376,
+      "max_extra_area_fraction_for_perf_per_area": 0.9992554966385376,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 2685.3545599999998,
+      "energy_uJ": 99.4312192,
+      "weight_bytes": 557056.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 53.52106666666666,
+        "compute": 2684.3545599999998,
+        "decode": 174.76266666666666
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 2685.3545599999998,
+      "energy_uJ": 111.88305919999999,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 74.27413333333334,
+        "compute": 2684.3545599999998,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 1343.1772799999999,
+      "energy_uJ": 111.88305919999999,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 74.27413333333334,
+        "compute": 1342.1772799999999,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.9992554966385376,
+      "max_extra_area_fraction_for_perf_per_area": 0.9992554966385376,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 2685.3545599999998,
+      "energy_uJ": 111.88305919999999,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 74.27413333333334,
+        "compute": 2684.3545599999998,
+        "decode": 174.76266666666666
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 2685.3545599999998,
+      "energy_uJ": 109.9169792,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 70.99733333333333,
+        "compute": 2684.3545599999998,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 1343.1772799999999,
+      "energy_uJ": 109.9169792,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 70.99733333333333,
+        "compute": 1342.1772799999999,
+        "decode": 349.5253333333333
+      },
+      "speedup": 1.9992554966385376,
+      "max_extra_area_fraction_for_perf_per_area": 0.9992554966385376,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "cpu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 2685.3545599999998,
+      "energy_uJ": 109.9169792,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 70.99733333333333,
+        "compute": 2684.3545599999998,
+        "decode": 174.76266666666666
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 14.0050432,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 6.63552,
+        "compute": 1.048576,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 14.0050432,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 6.63552,
+        "compute": 0.524288,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 46.214400000000005,
+      "energy_uJ": 14.0050432,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 6.63552,
+        "compute": 1.048576,
+        "decode": 26.2144
+      },
+      "speedup": 1.567234455061626,
+      "max_extra_area_fraction_for_perf_per_area": 0.567234455061626,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 12.0389632,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 5.65248,
+        "compute": 1.048576,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 12.0389632,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 5.65248,
+        "compute": 0.524288,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 46.214400000000005,
+      "energy_uJ": 12.0389632,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 5.65248,
+        "compute": 1.048576,
+        "decode": 26.2144
+      },
+      "speedup": 1.567234455061626,
+      "max_extra_area_fraction_for_perf_per_area": 0.567234455061626,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 24.4908032,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 11.8784,
+        "compute": 1.048576,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 24.4908032,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 11.8784,
+        "compute": 0.524288,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 46.214400000000005,
+      "energy_uJ": 24.4908032,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 11.8784,
+        "compute": 1.048576,
+        "decode": 26.2144
+      },
+      "speedup": 1.567234455061626,
+      "max_extra_area_fraction_for_perf_per_area": 0.567234455061626,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 22.524723199999997,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 10.89536,
+        "compute": 1.048576,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 22.524723199999997,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 10.89536,
+        "compute": 0.524288,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 46.214400000000005,
+      "energy_uJ": 22.524723199999997,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 10.89536,
+        "compute": 1.048576,
+        "decode": 26.2144
+      },
+      "speedup": 1.567234455061626,
+      "max_extra_area_fraction_for_perf_per_area": 0.567234455061626,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 24.326963199999998,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 7.86432,
+        "compute": 16.777216,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 24.326963199999998,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 7.86432,
+        "compute": 8.388608,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 46.214400000000005,
+      "energy_uJ": 24.326963199999998,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 7.86432,
+        "compute": 16.777216,
+        "decode": 26.2144
+      },
+      "speedup": 1.567234455061626,
+      "max_extra_area_fraction_for_perf_per_area": 0.567234455061626,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 22.3608832,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 6.88128,
+        "compute": 16.777216,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 22.3608832,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 6.88128,
+        "compute": 8.388608,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 46.214400000000005,
+      "energy_uJ": 22.3608832,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 6.88128,
+        "compute": 16.777216,
+        "decode": 26.2144
+      },
+      "speedup": 1.567234455061626,
+      "max_extra_area_fraction_for_perf_per_area": 0.567234455061626,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 34.8127232,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 13.1072,
+        "compute": 16.777216,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 34.8127232,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 13.1072,
+        "compute": 8.388608,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 46.214400000000005,
+      "energy_uJ": 34.8127232,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 13.1072,
+        "compute": 16.777216,
+        "decode": 26.2144
+      },
+      "speedup": 1.567234455061626,
+      "max_extra_area_fraction_for_perf_per_area": 0.567234455061626,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 32.846643199999995,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 12.12416,
+        "compute": 16.777216,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 72.42880000000001,
+      "energy_uJ": 32.846643199999995,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 12.12416,
+        "compute": 8.388608,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 46.214400000000005,
+      "energy_uJ": 32.846643199999995,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 12.12416,
+        "compute": 16.777216,
+        "decode": 26.2144
+      },
+      "speedup": 1.567234455061626,
+      "max_extra_area_fraction_for_perf_per_area": 0.567234455061626,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 154.217728,
+      "energy_uJ": 101.39729919999999,
+      "weight_bytes": 655360.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 17.03936,
+        "compute": 134.217728,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 87.108864,
+      "energy_uJ": 101.39729919999999,
+      "weight_bytes": 655360.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 17.03936,
+        "compute": 67.108864,
+        "decode": 52.4288
+      },
+      "speedup": 1.7704022405802469,
+      "max_extra_area_fraction_for_perf_per_area": 0.7704022405802469,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 154.217728,
+      "energy_uJ": 101.39729919999999,
+      "weight_bytes": 655360.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 17.03936,
+        "compute": 134.217728,
+        "decode": 26.2144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 154.217728,
+      "energy_uJ": 99.4312192,
+      "weight_bytes": 557056.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 16.05632,
+        "compute": 134.217728,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 87.108864,
+      "energy_uJ": 99.4312192,
+      "weight_bytes": 557056.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 16.05632,
+        "compute": 67.108864,
+        "decode": 52.4288
+      },
+      "speedup": 1.7704022405802469,
+      "max_extra_area_fraction_for_perf_per_area": 0.7704022405802469,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 154.217728,
+      "energy_uJ": 99.4312192,
+      "weight_bytes": 557056.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 16.05632,
+        "compute": 134.217728,
+        "decode": 26.2144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 154.217728,
+      "energy_uJ": 111.88305919999999,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 22.28224,
+        "compute": 134.217728,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 87.108864,
+      "energy_uJ": 111.88305919999999,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 22.28224,
+        "compute": 67.108864,
+        "decode": 52.4288
+      },
+      "speedup": 1.7704022405802469,
+      "max_extra_area_fraction_for_perf_per_area": 0.7704022405802469,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 154.217728,
+      "energy_uJ": 111.88305919999999,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 22.28224,
+        "compute": 134.217728,
+        "decode": 26.2144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 154.217728,
+      "energy_uJ": 109.9169792,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 21.299200000000003,
+        "compute": 134.217728,
+        "decode": 52.4288
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 87.108864,
+      "energy_uJ": 109.9169792,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 21.299200000000003,
+        "compute": 67.108864,
+        "decode": 52.4288
+      },
+      "speedup": 1.7704022405802469,
+      "max_extra_area_fraction_for_perf_per_area": 0.7704022405802469,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "gpu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 154.217728,
+      "energy_uJ": 109.9169792,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "compute",
+      "stage_us": {
+        "memory": 21.299200000000003,
+        "compute": 134.217728,
+        "decode": 26.2144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 267.144,
+      "energy_uJ": 14.0050432,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 33.1776,
+        "compute": 0.524288,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 267.144,
+      "energy_uJ": 14.0050432,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 33.1776,
+        "compute": 0.262144,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 136.072,
+      "energy_uJ": 14.0050432,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 33.1776,
+        "compute": 0.524288,
+        "decode": 131.072
+      },
+      "speedup": 1.9632547474866247,
+      "max_extra_area_fraction_for_perf_per_area": 0.9632547474866247,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 267.144,
+      "energy_uJ": 12.0389632,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 28.2624,
+        "compute": 0.524288,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 267.144,
+      "energy_uJ": 12.0389632,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 28.2624,
+        "compute": 0.262144,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 1,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 136.072,
+      "energy_uJ": 12.0389632,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 28.2624,
+        "compute": 0.524288,
+        "decode": 131.072
+      },
+      "speedup": 1.9632547474866247,
+      "max_extra_area_fraction_for_perf_per_area": 0.9632547474866247,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 267.144,
+      "energy_uJ": 24.4908032,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 59.392,
+        "compute": 0.524288,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 267.144,
+      "energy_uJ": 24.4908032,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 59.392,
+        "compute": 0.262144,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 136.072,
+      "energy_uJ": 24.4908032,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 59.392,
+        "compute": 0.524288,
+        "decode": 131.072
+      },
+      "speedup": 1.9632547474866247,
+      "max_extra_area_fraction_for_perf_per_area": 0.9632547474866247,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 267.144,
+      "energy_uJ": 22.524723199999997,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 54.4768,
+        "compute": 0.524288,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 267.144,
+      "energy_uJ": 22.524723199999997,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 54.4768,
+        "compute": 0.262144,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 1,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 136.072,
+      "energy_uJ": 22.524723199999997,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 54.4768,
+        "compute": 0.524288,
+        "decode": 131.072
+      },
+      "speedup": 1.9632547474866247,
+      "max_extra_area_fraction_for_perf_per_area": 0.9632547474866247,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 267.144,
+      "energy_uJ": 24.326963199999998,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 39.3216,
+        "compute": 8.388608,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 267.144,
+      "energy_uJ": 24.326963199999998,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 39.3216,
+        "compute": 4.194304,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 136.072,
+      "energy_uJ": 24.326963199999998,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 39.3216,
+        "compute": 8.388608,
+        "decode": 131.072
+      },
+      "speedup": 1.9632547474866247,
+      "max_extra_area_fraction_for_perf_per_area": 0.9632547474866247,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 267.144,
+      "energy_uJ": 22.3608832,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 34.406400000000005,
+        "compute": 8.388608,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 267.144,
+      "energy_uJ": 22.3608832,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 34.406400000000005,
+        "compute": 4.194304,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 16,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 136.072,
+      "energy_uJ": 22.3608832,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 34.406400000000005,
+        "compute": 8.388608,
+        "decode": 131.072
+      },
+      "speedup": 1.9632547474866247,
+      "max_extra_area_fraction_for_perf_per_area": 0.9632547474866247,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 267.144,
+      "energy_uJ": 34.8127232,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 65.536,
+        "compute": 8.388608,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 267.144,
+      "energy_uJ": 34.8127232,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 65.536,
+        "compute": 4.194304,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 136.072,
+      "energy_uJ": 34.8127232,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 65.536,
+        "compute": 8.388608,
+        "decode": 131.072
+      },
+      "speedup": 1.9632547474866247,
+      "max_extra_area_fraction_for_perf_per_area": 0.9632547474866247,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 267.144,
+      "energy_uJ": 32.846643199999995,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 60.6208,
+        "compute": 8.388608,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 267.144,
+      "energy_uJ": 32.846643199999995,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 60.6208,
+        "compute": 4.194304,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 16,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 136.072,
+      "energy_uJ": 32.846643199999995,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 60.6208,
+        "compute": 8.388608,
+        "decode": 131.072
+      },
+      "speedup": 1.9632547474866247,
+      "max_extra_area_fraction_for_perf_per_area": 0.9632547474866247,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 267.144,
+      "energy_uJ": 101.39729919999999,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 85.19680000000001,
+        "compute": 67.108864,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 267.144,
+      "energy_uJ": 101.39729919999999,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 85.19680000000001,
+        "compute": 33.554432,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 136.072,
+      "energy_uJ": 101.39729919999999,
+      "weight_bytes": 655360.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 85.19680000000001,
+        "compute": 67.108864,
+        "decode": 131.072
+      },
+      "speedup": 1.9632547474866247,
+      "max_extra_area_fraction_for_perf_per_area": 0.9632547474866247,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 267.144,
+      "energy_uJ": 99.4312192,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 80.2816,
+        "compute": 67.108864,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 267.144,
+      "energy_uJ": 99.4312192,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 80.2816,
+        "compute": 33.554432,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 128,
+      "bits": 4,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 136.072,
+      "energy_uJ": 99.4312192,
+      "weight_bytes": 557056.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 80.2816,
+        "compute": 67.108864,
+        "decode": 131.072
+      },
+      "speedup": 1.9632547474866247,
+      "max_extra_area_fraction_for_perf_per_area": 0.9632547474866247,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 32,
+      "feature": "baseline",
+      "latency_us": 267.144,
+      "energy_uJ": 111.88305919999999,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 111.4112,
+        "compute": 67.108864,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_compute",
+      "latency_us": 267.144,
+      "energy_uJ": 111.88305919999999,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 111.4112,
+        "compute": 33.554432,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 32,
+      "feature": "double_decode",
+      "latency_us": 136.072,
+      "energy_uJ": 111.88305919999999,
+      "weight_bytes": 1179648.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 111.4112,
+        "compute": 67.108864,
+        "decode": 131.072
+      },
+      "speedup": 1.9632547474866247,
+      "max_extra_area_fraction_for_perf_per_area": 0.9632547474866247,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 128,
+      "feature": "baseline",
+      "latency_us": 267.144,
+      "energy_uJ": 109.9169792,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 106.49600000000001,
+        "compute": 67.108864,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_compute",
+      "latency_us": 267.144,
+      "energy_uJ": 109.9169792,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 106.49600000000001,
+        "compute": 33.554432,
+        "decode": 262.144
+      },
+      "speedup": 1.0,
+      "max_extra_area_fraction_for_perf_per_area": 0.0,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    },
+    {
+      "profile": "npu_like",
+      "n": 128,
+      "bits": 8,
+      "group": 128,
+      "feature": "double_decode",
+      "latency_us": 136.072,
+      "energy_uJ": 109.9169792,
+      "weight_bytes": 1081344.0,
+      "bottleneck": "decode",
+      "stage_us": {
+        "memory": 106.49600000000001,
+        "compute": 67.108864,
+        "decode": 131.072
+      },
+      "speedup": 1.9632547474866247,
+      "max_extra_area_fraction_for_perf_per_area": 0.9632547474866247,
+      "energy_change_assessed": false,
+      "evidence": "hypothetical_uncalibrated"
+    }
+  ]
+}
