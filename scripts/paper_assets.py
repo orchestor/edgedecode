@@ -80,7 +80,7 @@ for gi,(label,g) in enumerate(groups):
   c.setFillColor(palette[model]);c.rect(x,54,15,value/maxv*142,fill=1,stroke=0)
  c.setFillColor(gray);c.setFont('Helvetica',6.5);c.drawCentredString(base+20,42,label)
 for i,(model,color) in enumerate(palette.items()):
- x=142+i*78;c.setFillColor(color);c.rect(x,212,8,8,fill=1,stroke=0);c.setFillColor(gray);c.setFont('Helvetica',7);c.drawString(x+12,213,model.replace('_',r'\_'))
+ x=142+i*78;c.setFillColor(color);c.rect(x,212,8,8,fill=1,stroke=0);c.setFillColor(gray);c.setFont('Helvetica',7);c.drawString(x+12,213,model)
 c.setFillColor(gray);c.setFont('Helvetica',7);c.drawString(55,19,'tokens/s; seven llama.cpp repetitions. Prefill uses 2048 tokens; decode uses 128.')
 c.save()
 
