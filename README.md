@@ -61,9 +61,9 @@ The measured data shows that the same model can prefer different formats dependi
 
 | Format | Model size | WikiText-2 PPL | HellaSwag accuracy | CPU decode | Metal decode |
 |---|---:|---:|---:|---:|---:|
-| F16 | 3.56 GB | 8.9573 | 61.5% | 40.95 tok/s | 62.78 tok/s |
-| Q8_0 | 1.89 GB | 8.9524 | 61.5% | 70.81 tok/s | 98.76 tok/s |
-| Q4_K_M | 1.12 GB | 9.3102 | 60.0% | 113.99 tok/s | 121.29 tok/s |
+| F16 | 3.56 GB | 8.9573 | 61.5% | 40.95 tokens/s | 62.78 tokens/s |
+| Q8_0 | 1.89 GB | 8.9524 | 61.5% | 70.81 tokens/s | 98.76 tokens/s |
+| Q4_K_M | 1.12 GB | 9.3102 | 60.0% | 113.99 tokens/s | 121.29 tokens/s |
 
 ### Phase split in plain terms
 
@@ -100,17 +100,17 @@ The project includes a set of paper figures and evidence views for the resulting
 
 | Phase | F16 | Q8_0 | Q4_K_M |
 |---|---:|---:|---:|
-| pp128 | 325.69 tok/s | 449.84 tok/s | 423.20 tok/s |
-| pp2048 | 516.13 tok/s | 419.67 tok/s | 357.34 tok/s |
-| tg128 | 40.95 tok/s | 70.81 tok/s | 113.99 tok/s |
+| pp128 | 325.69 tokens/s | 449.84 tokens/s | 423.20 tokens/s |
+| pp2048 | 516.13 tokens/s | 419.67 tokens/s | 357.34 tokens/s |
+| tg128 | 40.95 tokens/s | 70.81 tokens/s | 113.99 tokens/s |
 
 ### Metal throughput
 
 | Phase | F16 | Q8_0 | Q4_K_M |
 |---|---:|---:|---:|
-| pp128 | 1629.82 tok/s | 1591.19 tok/s | 1406.20 tok/s |
-| pp2048 | 1872.16 tok/s | 1530.36 tok/s | 1287.24 tok/s |
-| tg128 | 62.78 tok/s | 98.76 tok/s | 121.29 tok/s |
+| pp128 | 1629.82 tokens/s | 1591.19 tokens/s | 1406.20 tokens/s |
+| pp2048 | 1872.16 tokens/s | 1530.36 tokens/s | 1287.24 tokens/s |
+| tg128 | 62.78 tokens/s | 98.76 tokens/s | 121.29 tokens/s |
 
 ---
 
